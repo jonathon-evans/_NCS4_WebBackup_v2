@@ -1,0 +1,22 @@
+<style>
+    .pubs p {
+        text-indent: -3em;
+        padding-left: 3em;
+    }
+</style>
+<h1 style="text-decoration: underline;">Staff Publications &amp; Articles</h1>
+<br />
+<div ng-app="Publications" ng-controller="PubCtrl">
+    <ul class="pubs">
+        <li ng-repeat="x in pubList">
+            <div>
+                <p ng-if="x.link"><a href="{{x.link}}">{{x.authors + " (" + x.year + "). " + x.desc}}</a>
+                </p>
+                <p ng-if="!x.link">{{x.authors + " (" + x.year + "). " + x.desc}}</a>
+                </p>
+            </div>
+        </li>
+        <br />
+        <br />
+    </ul>
+</div>

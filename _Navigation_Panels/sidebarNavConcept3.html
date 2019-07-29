@@ -66,7 +66,7 @@ Notes on structure:
 
   button.togglesidebar:hover {
     /* width: 55px;
-      height: 55px; */
+        height: 55px; */
   }
 
   button.togglesidebar:focus {
@@ -173,7 +173,7 @@ Notes on structure:
 
   .droplistleaf:hover {
     margin: 0;
-    padding-right: 0px;
+    /* padding-right: 0px; */
     border-left: 16px solid black;
     /* background-color: #eac257; */
     /* background-color: var(--beta-bg-color); */
@@ -320,86 +320,111 @@ Notes on structure:
 </style>
 <div id="background" style="visibility: hidden;">
   <div id="sidenav-bg"></div>
-  <div id="about" class="stickit" style="display: none;"><button type="button" class="togglesidebar" onclick="open_close()">
-      <img style="height: 30px;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
+  <div id="about" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
+      onclick="open_close()"> <img style="height: 30px;"
+        src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
     </button> <a class="accordion" href="/aboutncs4"> ABOUT NCS4</a> <a class="accordion" href="/aboutncs4/our-staff">
       OUR STAFF</a> <a class="accordion" href="/aboutncs4/research-fellows"> RESEARCH FELLOWS</a> <button type="button"
       class="accordion"> ADVISORY BOARDS</button>
     <div id="fema-dhs" class="sidebar_panel"><a class="droplistleaf" href="/aboutncs4/advisory-committees"> ADVISORY
-        COMMITTEES</a> <a class="droplistleaf" href="/aboutncs4/national-advisory-board"> NATIONAL ADVISORY BOARD</a></div>
-    <a class="accordion" href="/aboutncs4/news"> NEWS</a> <a class="accordion" href="/aboutncs4/ncs4-recognition-awards">
-      NCS4 RECOGNITION AWARDS</a> <a class="accordion" href="/aboutncs4/9-11-sport-security-memorial"> 9/11 SPORT
-      SECURITY MEMORIAL</a> <a class="accordion" href="/aboutncs4/contact"> CONTACT</a>
+        COMMITTEES</a> <a class="droplistleaf" href="/aboutncs4/national-advisory-board"> NATIONAL ADVISORY BOARD</a>
+    </div>
+    <a class="accordion" href="/aboutncs4/news"> NEWS</a> <a class="accordion"
+      href="/aboutncs4/ncs4-recognition-awards"> NCS4 RECOGNITION AWARDS</a> <a class="accordion"
+      href="/aboutncs4/9-11-sport-security-memorial"> 9/11 SPORT SECURITY MEMORIAL</a> <a class="accordion"
+      href="/aboutncs4/contact"> CONTACT</a>
   </div>
   <!-- ========================================[KNOWLEDGE]============================================================ -->
-  <div id="knowledge" class="stickit" style="display: none;"><button type="button" class="togglesidebar" onclick="open_close()">
-      <img style="height: 30px;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
-    </button> <a class="accordion" href="/knowledgeportal/buyers-guide"> BUYER'S GUIDE</a> <a class="accordion" href="/knowledgeportal/best-practices">
-      BEST PRACTICES</a> <a class="accordion" href="/knowledgeportal/gameday-security"> GAMEDAY SECURITY</a> <a class="accordion"
-      href="/connect/connect-knowledge/uav-summit-2018"> 2018 UAV SUMMIT</a> <a class="accordion" href="/connect/knowledge-portal/knowledge-portal-search">
-      KNOWLEDGE PORTAL (MEMBERS)</a></div>
+  <div id="knowledge" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
+      onclick="open_close()"> <img style="height: 30px;"
+        src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
+    </button> <a class="accordion" href="/knowledgeportal/buyers-guide"> BUYER'S GUIDE</a> <a class="accordion"
+      href="/knowledgeportal/best-practices"> BEST PRACTICES</a> <a class="accordion"
+      href="/knowledgeportal/gameday-security"> GAMEDAY SECURITY</a> <a class="accordion"
+      href="/connect/connect-knowledge/uav-summit-2018"> 2018 UAV SUMMIT</a> <a class="accordion"
+      href="/connect/knowledge-portal/knowledge-portal-search"> KNOWLEDGE PORTAL (MEMBERS)</a></div>
   <!-- =======================================[TRAINING]============================================================= -->
-  <div id="training" class="stickit" style="display: none;"><button type="button" class="togglesidebar" onclick="open_close()">
-      <img style="height: 30px;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
+  <div id="training" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
+      onclick="open_close()"> <img style="height: 30px;"
+        src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
     </button> <button type="button" class="accordion"> FEMA/DHS</button>
-    <div id="fema-dhs" class="sidebar_panel"><a class="droplistleaf" href="/trainingportal/fema-dhs/overview"> OVERVIEW</a>
-      <a class="droplistleaf" style="white-space: nowrap;" href="/trainingportal/fema-dhs/risk-management"> RISK
-        MANAGEMENT</a> <a class="droplistleaf" href="/trainingportal/fema-dhs/evacuation"> EVACUATION</a> <a class="droplistleaf"
-        href="/trainingportal/fema-dhs/incident-management"> INCIDENT MANAGEMENT</a> <a class="droplistleaf" href="/trainingportal/fema-dhs/enhanced-incident-management">
-        ENHANCED INCIDENT MANAGEMENT</a></div>
+    <div id="fema-dhs" class="sidebar_panel"><a class="droplistleaf" href="/trainingportal/fema-dhs/overview">
+        OVERVIEW</a> <a class="droplistleaf" style="white-space: nowrap;"
+        href="/trainingportal/fema-dhs/risk-management"> RISK MANAGEMENT</a> <a class="droplistleaf"
+        href="/trainingportal/fema-dhs/evacuation"> EVACUATION</a> <a class="droplistleaf"
+        href="/trainingportal/fema-dhs/incident-management"> INCIDENT MANAGEMENT</a> <a class="droplistleaf"
+        href="/trainingportal/fema-dhs/enhanced-incident-management"> ENHANCED INCIDENT MANAGEMENT</a></div>
     <button type="button" class="accordion">INTERNATIONAL</button>
     <div id="international" class="sidebar_panel">
       <div class="hoversubContainer"><a class="droplistleaf" href="/trainingportal/international/interpol"> INTERPOL</a>
-        <span style="float: right; height: 0px;"><button id="hsub_btn1" class="hoversub_btn" type="button"> </button></span>
-        <div id="hsub1" class="hoversub"><a class="hoversubLeaf" href="/trainingportal/international/interpol/project-stadia">PROJECT
-            STADIA</a> <a class="hoversubLeaf" href="/trainingportal/international/interpol/international-sport-safety-and-security-professional-certificate">
+        <span style="float: right; height: 0px;"><button id="hsub_btn1" class="hoversub_btn" type="button">
+          </button></span>
+        <div id="hsub1" class="hoversub"><a class="hoversubLeaf"
+            href="/trainingportal/international/interpol/project-stadia">PROJECT STADIA</a> <a class="hoversubLeaf"
+            href="/trainingportal/international/interpol/international-sport-safety-and-security-professional-certificate">
             INTERNATIONAL SPORT SAFETY AND SECURITY PROFESSIONAL CERTIFICATE</a></div>
       </div>
-      <a class="droplistleaf" href="/trainingportal/international/alliance-members">ALLIANCE MEMBERS</a> <a class="droplistleaf"
+      <a class="droplistleaf" href="/trainingportal/international/alliance-members">ALLIANCE MEMBERS</a> <a
+        class="droplistleaf"
         href="/trainingportal/international/international-institute-for-counter-terrorism">INTERNATIONAL INSTITUTE FOR
         COUNTER-TERRORISM</a> <a class="droplistleaf" href="/trainingportal/international/resource-links"> RESOURCE
         LINKS</a>
     </div>
+    <button type="button" class="accordion">ONLINE</button>
+    <div id="online" class="sidebar_panel">
+      <div class="hoversubContainer"><a class="droplistleaf" href="/trainingportal/online/set"><em>NEW</em> SPORTS &amp;
+          ENTERTAINMENT TRAINING</a> <span style="float: right; height: 0px;"><button id="hsub_btn2"
+            class="hoversub_btn" type="button"> </button></span>
+        <div id="hsub2" class="hoversub"><a class="hoversubLeaf" href="/trainingportal/online/set/training">
+            TRAINING</a> <a class="hoversubLeaf" href="/trainingportal/online/set/reporting"> REPORTING</a> <a
+            class="hoversubLeaf" href="/trainingportal/online/set/testing"> TESTING</a> <a class="hoversubLeaf"
+            href="/trainingportal/online/set/contact"> CONTACT</a></div>
+        <a class="droplistleaf" href="/trainingportal/online/risk-management-for-interscholastic-athletics"> RISK
+          MANAGEMENT FOR INTERSCHOLASTIC ATHLETICS</a>
+      </div>
+    </div>
   </div>
   <!-- ========================================[EVENTS]============================================================ -->
-  <div id="eventsportal" class="stickit" style="display: none;"><button type="button" class="togglesidebar" onclick="open_close()">
-      <img style="height: 30px;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
-    </button> 
-    <a class="accordion" href="/events/national-conference"> CONFERENCE</a> 
-    <a class="accordion" href="/events/summits">SUMMITS</a>
-    <a class="accordion" href="/workshop">WORKSHOP</a>
+  <div id="eventsportal" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
+      onclick="open_close()"> <img style="height: 30px;"
+        src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
+    </button> <a class="accordion" href="/events/national-conference"> CONFERENCE</a> <a class="accordion"
+      href="/events/summits">SUMMITS</a> <!-- <a class="accordion" href="/roi">WORKSHOP</a> -->
   </div>
   <!-- ========================================[RESEARCH]============================================================ -->
-  <div id="research" class="stickit" style="display: none;"><button type="button" class="togglesidebar" onclick="open_close()">
-      <img style="height: 30px;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
+  <div id="research" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
+      onclick="open_close()"> <img style="height: 30px;"
+        src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
     </button> <a class="accordion" href="http://aquila.usm.edu/jsss/"> JOURNAL OF SPORT SAFETY</a> <a class="accordion"
       href="/researchportal/dissertations"> DISSERTATIONS</a> <a class="accordion" href="/researchportal/publications">
       PUBLICATIONS</a> <a class="accordion" href="/aboutncs4/research-fellows"> RESEARCH FELLOWS</a></div>
   <!-- =======================================[LAB]============================================================= -->
-  <div id="lab" class="stickit" style="display: none;"><button type="button" class="togglesidebar" onclick="open_close()">
-      <img style="height: 30px;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512_WHITE.png" />
+  <div id="lab" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
+      onclick="open_close()"> <img style="height: 30px;"
+        src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512_WHITE.png" />
     </button> <button type="button" class="accordion"> ABOUT</button>
     <div id="lab-about" class="sidebar_panel">
       <!-- <a href="/labportal/about" class="droplistleaf">
-            OVERVIEW</a> --> <a href="/labportal/about/integrated-technology"
-        class="droplistleaf"> INTEGRATED TECHNOLOGY</a> <a href="/labportal/about/charter-donors" class="droplistleaf">
-        CHARTER <br />DONORS</a></div>
+              OVERVIEW</a> --> <a href="/labportal/about/integrated-technology" class="droplistleaf"> INTEGRATED
+        TECHNOLOGY</a> <a href="/labportal/about/charter-donors" class="droplistleaf"> CHARTER <br />DONORS</a></div>
     <button type="button" class="accordion"> LAB SERVICES</button>
-    <div id="lab-services" class="sidebar_panel"><a href="/labportal/lab-services" class="droplistleaf"> OVERVIEW</a>
-      <a href="/labportal/lab-services/evaluated-product-list" class="droplistleaf"> EVALUATED PRODUCT LIST</a></div>
+    <div id="lab-services" class="sidebar_panel"><a href="/labportal/lab-services" class="droplistleaf"> OVERVIEW</a> <a
+        href="/labportal/lab-services/evaluated-product-list" class="droplistleaf"> EVALUATED PRODUCT LIST</a></div>
     <a href="/labportal/train" class="accordion"> TRAINING ACADEMY</a> <a href="/labportal/contact" class="accordion">
       CONTACT</a>
   </div>
   <!-- ========================================[PROF_DEV]============================================================ -->
-  <div id="professionaldev" class="stickit" style="display: none;"><button type="button" class="togglesidebar" onclick="open_close()">
-      <img style="height: 30px;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
+  <div id="professionaldev" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
+      onclick="open_close()"> <img style="height: 30px;"
+        src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
     </button> <button type="button" class="accordion"> CERTIFICATIONS</button>
     <div id="certifications" class="sidebar_panel">
       <div class="hoversubContainer"><a class="droplistleaf" href="/professionaldevportal/certifications/cssp">
           CERTIFIED SPORT SECURITY PROFESSIONAL</a> <span style="float: right; height: 0px;"><button id="hsub_btn2"
-            class="hoversub_btn" type="button"> </button></span>
-        <div id="hsub2" class="hoversub"><a class="hoversubLeaf" href="/professionaldevportal/certifications/cssp">OVERVIEW</a>
-          <a class="hoversubLeaf" style="white-space: nowrap;" href="/professionaldevportal/certifications/cssp/getting-started">GETTING
+            class="hoversub_btn" type="button"> </button></span>
+        <div id="hsub2" class="hoversub"><a class="hoversubLeaf"
+            href="/professionaldevportal/certifications/cssp">OVERVIEW</a> <a class="hoversubLeaf"
+            style="white-space: nowrap;" href="/professionaldevportal/certifications/cssp/getting-started">GETTING
             STARTED</a> <a class="hoversubLeaf" href="/professionaldevportal/certifications/cssp/benefits">BENEFITS</a>
           <a class="hoversubLeaf" href="/professionaldevportal/certifications/cssp/news-testimonials">NEWS &amp;
             TESTIMONIALS</a> <a class="hoversubLeaf" href="/professionaldevportal/certifications/cssp/forms">FORMS</a>
@@ -408,21 +433,23 @@ Notes on structure:
             COMPLAINTS</a></div>
       </div>
       <div class="hoversubContainer"><a class="droplistleaf" href="/professionaldevportal/certifications/csvs">
-          CERTIFIED SPORT VENUE STAFF</a> <span style="float: right; height: 0px;"><button id="hsub_btn3" class="hoversub_btn"
-            type="button"> </button></span>
-        <div id="hsub3" class="hoversub"><a class="hoversubLeaf" href="/professionaldevportal/certifications/csvs/how-it-works">
-            HOW IT WORKS</a> <a class="hoversubLeaf" href="/professionaldevportal/certifications/csvs/training">
-            TRAINING</a> <a class="hoversubLeaf" href="/professionaldevportal/certifications/csvs/background-screening">
-            BACKGROUND SCREENING</a> <a class="hoversubLeaf" href="/professionaldevportal/certifications/csvs/reporting">
-            REPORTING</a> <a class="hoversubLeaf" href="/professionaldevportal/certifications/csvs/faqs"> FAQ's</a> <a
+          CERTIFIED SPORT VENUE STAFF</a> <span style="float: right; height: 0px;"><button id="hsub_btn3"
+            class="hoversub_btn" type="button"> </button></span>
+        <div id="hsub3" class="hoversub"><a class="hoversubLeaf"
+            href="/professionaldevportal/certifications/csvs/how-it-works"> HOW IT WORKS</a> <a class="hoversubLeaf"
+            href="/professionaldevportal/certifications/csvs/training"> TRAINING</a> <a class="hoversubLeaf"
+            href="/professionaldevportal/certifications/csvs/background-screening"> BACKGROUND SCREENING</a> <a
+            class="hoversubLeaf" href="/professionaldevportal/certifications/csvs/reporting"> REPORTING</a> <a
+            class="hoversubLeaf" href="/professionaldevportal/certifications/csvs/faqs"> FAQ's</a> <a
             class="hoversubLeaf" href="/professionaldevportal/certifications/csvs/contact"> CONTACT</a></div>
       </div>
     </div>
     <a href="/connect" class="accordion"> NCS<sup>4</sup> CONNECT</a> <button type="button" class="accordion">
       ACADEMICS</button>
-    <div id="academics" class="sidebar_panel"><a class="droplistleaf" href="/professionaldevportal/academics/mba-program">
-        MBA PROGRAM</a> <a class="droplistleaf" href="/professionaldevportal/academics/graduate-certificate">GRADUATE
-        CERTIFICATE</a></div>
+    <div id="academics" class="sidebar_panel"><a class="droplistleaf"
+        href="/professionaldevportal/academics/mba-program"> MBA PROGRAM</a> <a class="droplistleaf"
+        href="/professionaldevportal/academics/graduate-certificate">GRADUATE CERTIFICATE</a></div>
+    <a class="accordion" href="/professionaldevportal/interscholastic">INTERSCHOLASTIC (COMING SOON)</a>
   </div>
   <!-- <script src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/JSFiles/sidebarNavConcept3_min.js"></script> -->
   <script>
@@ -491,8 +518,8 @@ Notes on structure:
     function open_close() {
       //alert(dlist.length);
       open = !open;
-      console.log("OPEN:", open);
-      console.log("SCRUNCH:", scrunch);
+      // console.log("OPEN:", open);
+      // console.log("SCRUNCH:", scrunch);
       if (open) { //open it
         width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
         if (width > 768) {
@@ -682,7 +709,8 @@ Notes on structure:
           if (localStorage.getItem(sidebar_panel_list[i].id + "_isopen") === "true") {
             if (sidebar_panel_list[i].previousElementSibling != null) {
               sidebar_panel_list[i].style.transition = "none";
-              sidebar_panel_list[i].previousElementSibling.classList.toggle("active"); //toggle parent accordion active
+              sidebar_panel_list[i].previousElementSibling.classList.toggle(
+              "active"); //toggle parent accordion active
 
               sidebar_panel_list[i].style.maxHeight = sidebar_panel_list[i].scrollHeight + "px";
               let thing = sidebar_panel_list[i].style;
@@ -707,7 +735,8 @@ Notes on structure:
       //also panels
       for (let i = 0; i < sidebar_panel_list.length; ++i) {
         for (let j = 0; j < sidebar_panel_list[i].children.length; ++j) {
-          if (sidebar_panel_list[i].children[j].pathname !== undefined && window.path === sidebar_panel_list[i].children[
+          if (sidebar_panel_list[i].children[j].pathname !== undefined && window.path === sidebar_panel_list[i]
+            .children[
               j].pathname) { // check if btn is the active tab by comparing with path
             sidebar_panel_list[i].children[j].classList.add('bot-left');
             sidebar_panel_list[i].previousElementSibling.classList.add('bot-left');
@@ -717,7 +746,8 @@ Notes on structure:
       //also hsubs
       for (let i = 0; i < hsub.length; ++i) {
         for (let j = 0; j < hsub[i].children.length; ++j) {
-          if (hsub[i].children[j].pathname !== undefined && window.path === hsub[i].children[j].pathname) { // check if btn is the active tab by comparing with path
+          if (hsub[i].children[j].pathname !== undefined && window.path === hsub[i].children[j]
+            .pathname) { // check if btn is the active tab by comparing with path
             hsub[i].children[j].classList.add('bot-left');
             hsub[i].previousElementSibling.previousElementSibling.classList.add('bot-left');
             hsub[i].parentElement.parentElement.previousElementSibling.classList.add('bot-left');
@@ -733,7 +763,8 @@ Notes on structure:
     $(window).resize(function () {
       repositionNav();
       //add padding to bottom of main content
-      document.getElementById("MPOuter").style.paddingBottom = parseInt(document.getElementById("MPOuterFooter").style
+      document.getElementById("MPOuter").style.paddingBottom = parseInt(document.getElementById("MPOuterFooter")
+        .style
         .height.replace("px", "")) + 10 + "px";
       document.getElementById("MPOuter").style.paddingTop = $("#NAV").height() + "px";
     });
