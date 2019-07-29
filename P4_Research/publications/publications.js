@@ -7,6 +7,11 @@ app.filter("slice", function () {
 });
 
 app.controller("PubCtrl", function ($scope) {
+    $scope.filt = [
+      '-year',
+      'authors'
+    ];
+    
     $scope.pubList = [
           {
             "authors": "Zale, J., Kar, B., & Cochran, D.",
@@ -278,7 +283,7 @@ app.controller("PubCtrl", function ($scope) {
             "desc": [
                 "An analysis of the Spatio-temporal ‘footprint’ in and around Sheffield Wednesday (Hillsborough). Association of Chief Police Officers.",
             ],
-            "link": ""
+            "link": "https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F310322119_An_analysis_of_the_Spatio-temporal_%27footprint%27_of_crime_in_and_around_Sheffield_Wednesday_FC_Hillsborough&data=02%7C01%7C%7C5302bd69a00340db6c9d08d7142c22b8%7C7f3da4be2722432ebfa764080d1eb1dc%7C0%7C0%7C637000052109478637&sdata=u1rULGlptp5N8WheqfPXP7YmHbGapapprn730og9L8U%3D&reserved=0"
           },
           {
             "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
@@ -294,7 +299,7 @@ app.controller("PubCtrl", function ($scope) {
             "desc": [
                 "An analysis of the Spatio-temporal ‘footprint’ in and around Leeds United (Elland Road). Association of Chief Police Officers.",
             ],
-            "link": ""
+            "link": "https://www.researchgate.net/publication/310319529_An_analysis_of_Spatio-temporal_'footprint'_of_crime_in_and_around_Leeds_United_FC_Elland_Road"
           },
           {
             "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
