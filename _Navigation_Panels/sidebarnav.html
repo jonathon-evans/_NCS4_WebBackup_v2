@@ -12,7 +12,8 @@ Notes on structure:
   Accordion buttons are used for base links, nested links are put into panels, and nested nested links go in hoversubs
 
  -->
-<style type="text/css">
+ <style type="text/css">
+  
   :root {
     --alpha-text-color: black;
     --alpha-bg-color: #e8bf43;
@@ -317,6 +318,7 @@ Notes on structure:
     margin-left: 223px;
     width: calc(100% - 223px);
   }
+  
 </style>
 <div id="background" style="visibility: hidden;">
   <div id="sidenav-bg"></div>
@@ -348,37 +350,36 @@ Notes on structure:
       onclick="open_close()"> <img style="height: 30px;"
         src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
     </button> <button type="button" class="accordion"> FEMA/DHS</button>
-    <div id="fema-dhs" class="sidebar_panel"><a class="droplistleaf" href="/trainingportal/fema-dhs/overview">
-        OVERVIEW</a> <a class="droplistleaf" style="white-space: nowrap;"
-        href="/trainingportal/fema-dhs/risk-management"> RISK MANAGEMENT</a> <a class="droplistleaf"
-        href="/trainingportal/fema-dhs/evacuation"> EVACUATION</a> <a class="droplistleaf"
-        href="/trainingportal/fema-dhs/incident-management"> INCIDENT MANAGEMENT</a> <a class="droplistleaf"
-        href="/trainingportal/fema-dhs/enhanced-incident-management"> ENHANCED INCIDENT MANAGEMENT</a></div>
+    <div id="fema-dhs" class="sidebar_panel"><a class="droplistleaf" href="/training/fema-dhs/overview"> OVERVIEW</a> <a
+        class="droplistleaf" style="white-space: nowrap;" href="/training/fema-dhs/risk-management"> RISK MANAGEMENT</a>
+      <a class="droplistleaf" href="/training/fema-dhs/evacuation"> EVACUATION</a> <a class="droplistleaf"
+        href="/training/fema-dhs/incident-management"> INCIDENT MANAGEMENT</a> <a class="droplistleaf"
+        href="/training/fema-dhs/enhanced-incident-management"> ENHANCED INCIDENT MANAGEMENT</a> <a class="droplistleaf"
+        href="/training/fema-dhs/risk-management-for-interscholastic-athletics">RISK MANAGEMENT FOR AFTER-SCHOOL
+        ACTIVITIES AND INTERSCHOLASTIC ATHLETICS</a></div>
     <button type="button" class="accordion">INTERNATIONAL</button>
     <div id="international" class="sidebar_panel">
-      <div class="hoversubContainer"><a class="droplistleaf" href="/trainingportal/international/interpol"> INTERPOL</a>
-        <span style="float: right; height: 0px;"><button id="hsub_btn1" class="hoversub_btn" type="button">
-          </button></span>
+      <div class="hoversubContainer"><a class="droplistleaf" href="/training/international/interpol"> INTERPOL</a> <span
+          style="float: right; height: 0px;"><button id="hsub_btn1" class="hoversub_btn" type="button"> </button></span>
         <div id="hsub1" class="hoversub"><a class="hoversubLeaf"
-            href="/trainingportal/international/interpol/project-stadia">PROJECT STADIA</a> <a class="hoversubLeaf"
-            href="/trainingportal/international/interpol/international-sport-safety-and-security-professional-certificate">
+            href="/training/international/interpol/project-stadia">PROJECT STADIA</a> <a class="hoversubLeaf"
+            href="/training/international/interpol/international-sport-safety-and-security-professional-certificate">
             INTERNATIONAL SPORT SAFETY AND SECURITY PROFESSIONAL CERTIFICATE</a></div>
       </div>
-      <a class="droplistleaf" href="/trainingportal/international/alliance-members">ALLIANCE MEMBERS</a> <a
-        class="droplistleaf" href="/trainingportal/international/resource-links"> RESOURCE
-        LINKS</a>
+      <a class="droplistleaf" href="/training/international/alliance-members">ALLIANCE MEMBERS</a> <a
+        class="droplistleaf" href="/training/international/resource-links"> RESOURCE LINKS</a>
     </div>
     <button type="button" class="accordion">ONLINE</button>
     <div id="online" class="sidebar_panel">
-      <div class="hoversubContainer"><a class="droplistleaf" href="/trainingportal/online/set"><em>NEW</em> SPORTS &amp;
+      <div class="hoversubContainer"><a class="droplistleaf" href="/training/online/set"><em>NEW</em> SPORTS &amp;
           ENTERTAINMENT STAFF TRAINING</a> <span style="float: right; height: 0px;"><button id="hsub_btn2"
             class="hoversub_btn" type="button"> </button></span>
-        <div id="hsub2" class="hoversub"><a class="hoversubLeaf" href="/trainingportal/online/set/training">
-            TRAINING</a> <a class="hoversubLeaf" href="/trainingportal/online/set/reporting"> REPORTING</a> <a
-            class="hoversubLeaf" href="/trainingportal/online/set/testing"> TESTING</a> <a class="hoversubLeaf"
-            href="/trainingportal/online/set/contact"> CONTACT</a></div>
-        <a class="droplistleaf" href="/trainingportal/online/risk-management-for-interscholastic-athletics"> RISK
-          MANAGEMENT FOR INTERSCHOLASTIC ATHLETICS</a>
+        <div id="hsub2" class="hoversub"><a class="hoversubLeaf" href="/training/online/set/training"> TRAINING</a> <a
+            class="hoversubLeaf" href="/training/online/set/reporting"> REPORTING</a> <a class="hoversubLeaf"
+            href="/training/online/set/testing"> TESTING</a> <a class="hoversubLeaf"
+            href="/training/online/set/contact"> CONTACT</a></div>
+        <a class="droplistleaf" href="/training/online/risk-management-for-interscholastic-athletics"> RISK MANAGEMENT
+          FOR AFTER-SCHOOL ACTIVITIES AND INTERSCHOLASTIC ATHLETICS</a>
       </div>
     </div>
   </div>
@@ -386,8 +387,13 @@ Notes on structure:
   <div id="eventsportal" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
       onclick="open_close()"> <img style="height: 30px;"
         src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
-    </button> <a class="accordion" href="/events/national-conference"> CONFERENCE</a> <a class="accordion"
-      href="/events/summits">SUMMITS</a> <!-- <a class="accordion" href="/roi">WORKSHOP</a> -->
+    </button>
+    <!--<button type="button" class="accordion">SUMMITS</button> -->
+    <!-- <a class="accordion" href="/roi">WORKSHOP</a> -->
+    <div id="summits"><a class="accordion" href="/marathon">MARATHON SAFETY AND SECURITY</a> <a
+        class="accordion" href="/intercollegiate">INTERCOLLEGIATE ATHLETICS SAFETY AND SECURITY</a> <a class="accordion">INTERSCHOLASTIC
+        ATHLETICS AND AFTER SCHOOL SAFETY AND SECURITY</a> <a class="accordion">PROFESSIONAL SPORTS SAFETY AND
+        SECURITY</a> <a class="accordion">ENTERTAINMENT SAFETY AND SECURITY</a></div>
   </div>
   <!-- ========================================[RESEARCH]============================================================ -->
   <div id="research" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
@@ -447,7 +453,6 @@ Notes on structure:
     <div id="academics" class="sidebar_panel"><a class="droplistleaf"
         href="/professionaldevportal/academics/mba-program"> MBA PROGRAM</a> <a class="droplistleaf"
         href="/professionaldevportal/academics/graduate-certificate">GRADUATE CERTIFICATE</a></div>
-    <a class="accordion" href="/professionaldevportal/interscholastic">INTERSCHOLASTIC (COMING SOON)</a>
   </div>
   <!-- <script src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/JSFiles/sidebarNavConcept3_min.js"></script> -->
   <script>
@@ -466,7 +471,7 @@ Notes on structure:
     //get Nav Variables
     var aboutportal = document.getElementById('about');
     var knowledgeportal = document.getElementById('knowledge');
-    var trainingportal = document.getElementById('training');
+    var training = document.getElementById('training');
     var researchportal = document.getElementById('research');
     var labportal = document.getElementById('lab');
     var professionaldevportal = document.getElementById('professionaldev');
@@ -482,7 +487,7 @@ Notes on structure:
     var path = window.location.pathname;
 
     var K = "/knowledgeportal"
-    var T = "/trainingportal"
+    var T = "/training"
     var PD = "/professionaldevportal"
     var R = "/researchportal"
     var L = "/labportal"
@@ -640,7 +645,7 @@ Notes on structure:
           toggleVis(knowledgeportal);
 
         } else if (path.includes(T)) {
-          toggleVis(trainingportal);
+          toggleVis(training);
         } else if (path.includes(PD)) {
           toggleVis(professionaldevportal);
         } else if (path.includes(R)) {

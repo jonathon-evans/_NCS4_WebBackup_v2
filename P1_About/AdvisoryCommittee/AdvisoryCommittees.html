@@ -196,14 +196,14 @@
         <div id="IC_" class="flex-row">
           <div class="flex-cell spacer"></div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in intercollegiate">
+            <div class="flex-row" ng-repeat="x in intercollegiate | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 0"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
               <!--<div class="flex-cell committeetable placecol" ng-if="$index%2 == 0">{{x.org}}</div>-->
             </div>
           </div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in intercollegiate">
+            <div class="flex-row" ng-repeat="x in intercollegiate | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 1"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
             </div>
@@ -224,13 +224,13 @@
         <div id="IS_" class="flex-row">
           <div class="flex-cell spacer"></div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in interscholastic">
+            <div class="flex-row" ng-repeat="x in interscholastic | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 0"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
             </div>
           </div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in interscholastic">
+            <div class="flex-row" ng-repeat="x in interscholastic | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 1"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
             </div>
@@ -251,14 +251,14 @@
         <div id="M_" class="flex-row">
           <div class="flex-cell spacer"></div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in marathon">
+            <div class="flex-row" ng-repeat="x in marathon | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 0"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
               <!-- <div class="flex-cell committeetable placecol" ng-if="$index%2 == 0"></div> -->
             </div>
           </div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in marathon">
+            <div class="flex-row" ng-repeat="x in marathon | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 1"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
               <!-- <div class="flex-cell committeetable placecol" ng-if="$index%2 == 1"></div> -->
@@ -280,13 +280,13 @@
         <div id="PS_" class="flex-row">
           <div class="flex-cell spacer"></div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in psecurity">
+            <div class="flex-row" ng-repeat="x in psecurity | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 0"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
             </div>
           </div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in psecurity">
+            <div class="flex-row" ng-repeat="x in psecurity | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 1"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
             </div>
@@ -307,13 +307,13 @@
         <div id="Pro_" class="flex-row">
           <div class="flex-cell spacer"></div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in pro">
+            <div class="flex-row" ng-repeat="x in pro | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 0"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
             </div>
           </div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" ng-repeat="x in pro">
+            <div class="flex-row" ng-repeat="x in pro | orderBy: 'lname'">
               <div class="flex-cell committeetable namescol" ng-if="$index%2 == 1"><strong>{{x.lname}}, {{x.fname}}</strong>
                 - {{x.org}}</div>
             </div>

@@ -118,11 +118,11 @@
 </style>
 
 <div ng-app='NatAdvisoryCouncil' ng-controller='NACctrl' >
-
+<!--
   <div ng-show>
     <img style="width: 300px; height: auto; display: block; margin: auto;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/Loadingsome.gif" alt="loading">
-  </div> <!-- this class evaluates to false when angular loads -->
-
+  </div> 
+-->
 
   <div id="tableWrap" ng-class="{cloak:true}">
 
@@ -141,7 +141,7 @@
         <div id="IC_" class="flex-row">
           <div class="flex-cell spacer"></div>
           <div class="flex-cell ct_col">
-            <div class="flex-row" style="text-indent: -22px; padding-left: 22px;" ng-repeat="x in council">
+            <div class="flex-row" style="text-indent: -22px; padding-left: 22px;" ng-repeat="x in council | orderBy: 'lname'">
               <div class="flex-cell entry"><strong>{{x.fname}} {{x.lname}}</strong> - {{x.org}} - {{x.title}}</div>
             </div>
           </div>

@@ -4,18 +4,41 @@
         padding-left: 3em;
     }
 </style>
-<h1 style="text-decoration: underline;">Staff Publications &amp; Articles</h1>
 <br />
 <div ng-app="Publications" ng-controller="PubCtrl">
+    Select a category to filter.<br />
+    <!--
+    <div style="padding-right: 20px; display: inline-block">
+        <p style="text-decoration: underline">By Category</p>
+        <select ng-model="selected" ng-options="x for x in tags"></select>
+    </div>
+    -->
+    <div style="padding: 20px; display: inline-block">
+        <p style="text-decoration: underline">By Author</p>
+        <select ng-model="selected" ng-options="x for x in auth">By Author</select>
+    </div>
+    <div style="padding: 20px; display: inline-block">
+        <p style="text-decoration: underline">By Year</p>
+        <select ng-model="selected" ng-options="x for x in years">By Year</select>
+    </div>
+    <div style="padding: 20px; display: inline-block">
+            <p style="text-decoration: underline">By Category</p>
+            <select ng-model="selected" ng-options="x for x in tags">By Year</select>
+    </div>
+    
+    
+    <br />
     <ul class="pubs">
-        <li ng-repeat="x in pubList | orderBy : filt">
-            <div>
-                <p ng-if="x.link"><a href="{{x.link}}">{{x.authors + " (" + x.year + "). " + x.desc}}</a>
-                </p>
-                <p ng-if="!x.link">{{x.authors + " (" + x.year + "). " + x.desc}}</a>
-                </p>
-            </div>
-        </li>
+        <div>
+            <li ng-repeat="x in pubList | filter : selected | orderBy : filt">
+                <div>
+                    <p ng-if="x.link"><a href="{{x.link}}">{{x.authors + " (" + x.year + "). " + x.desc}}</a>
+                    </p>
+                    <p ng-if="!x.link">{{x.authors + " (" + x.year + "). " + x.desc}}</a>
+                    </p>
+                </div>
+            </li>
+        </div>
         <br />
         <br />
     </ul>

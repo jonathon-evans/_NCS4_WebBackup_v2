@@ -1,8 +1,7 @@
 app = angular.module("AdvisoryCommittees", []);
 
-app.controller("ACctrl", function($scope) {
-  $scope.intercollegiate = [
-    {
+app.controller("ACctrl", function ($scope) {
+  $scope.intercollegiate = [{
       fname: "David",
       lname: "Allison",
       org: "University of Texas",
@@ -28,13 +27,13 @@ app.controller("ACctrl", function($scope) {
       org: "Duke University",
     },
     {
-      fname: "Craig",
-      lname: "Caldwell",
+      fname: "Matt",
+      lname: "Elliott",
       org: "University of Alabama",
     },
     {
-      fname: "Robert",
-      lname: "Carney",
+      fname: "Jason",
+      lname: "Weaving",
       org: "Boise State University",
     },
     {
@@ -48,14 +47,14 @@ app.controller("ACctrl", function($scope) {
       org: "Kansas State University",
     },
     {
+      fname: "Matt",
+      lname: "Davidson",
+      org: "University of Nebraska",
+    },
+    {
       fname: "Scott",
       lname: "Dickson",
       org: "The Ohio State University",
-    },
-    {
-      fname: "Mike",
-      lname: "Dowling",
-      org: "University Southern California",
     },
     {
       fname: "James",
@@ -66,11 +65,6 @@ app.controller("ACctrl", function($scope) {
       fname: "Evan",
       lname: "Feinglass",
       org: "University of Connecticut",
-    },
-    {
-      fname: "Cass",
-      lname: "Ferguson",
-      org: "Atlantic 10 Conference",
     },
     {
       fname: "Gloria",
@@ -101,6 +95,11 @@ app.controller("ACctrl", function($scope) {
       fname: "Brian",
       lname: "Kelly",
       org: "Southern Methodist University",
+    },
+    {
+      fname: "Keith",
+      lname: "Kopinsk",
+      org: "Univeristy of Notre Dame",
     },
     {
       fname: "Keri",
@@ -138,11 +137,6 @@ app.controller("ACctrl", function($scope) {
       org: "Baylor University",
     },
     {
-      fname: "Amy",
-      lname: "Reis",
-      org: "West Coast Conference",
-    },
-    {
       fname: "Nicholas",
       lname: "Scull",
       org: "Georgia Southern University",
@@ -158,19 +152,13 @@ app.controller("ACctrl", function($scope) {
       org: "Grand Valley State University",
     },
     {
-      fname: "Joey",
-      lname: "Strum",
-      org: "Louisiana Lafayette University",
-    },
-    {
       fname: "Liz",
       lname: "Woollen",
       org: "University of Oklahoma",
     },
 
   ];
-  $scope.interscholastic = [
-    {
+  $scope.interscholastic = [{
       fname: "Raymond",
       lname: "Barnhart",
       org: "Maryville Police Department",
@@ -179,11 +167,6 @@ app.controller("ACctrl", function($scope) {
       fname: "Amy",
       lname: "Benton-Skeens",
       org: "Carmel High School",
-    },
-    {
-      fname: "Jose",
-      lname: "Bermudez",
-      org: "Gulliver Schools",
     },
     {
       fname: "Brett",
@@ -241,11 +224,6 @@ app.controller("ACctrl", function($scope) {
       org: "Nassau County Police Department",
     },
     {
-      fname: "Eric",
-      lname: "McCurdy",
-      org: "Seattle Public Schools",
-    },
-    {
       fname: "Arthur",
       lname: "O'Neal",
       org: "Saginaw Public Schools",
@@ -279,15 +257,19 @@ app.controller("ACctrl", function($scope) {
       fname: "Andre",
       lname: "Walker",
       org: "Houston ISD",
-    },
-    {
-      fname: "James",
-      lname: "Wheeler",
-      org: "Nashville Public Schools",
-    },
+    }
 
   ];
-  $scope.marathon = [
+  $scope.marathon = [{
+      fname: "Michael",
+      lname: "Finley",
+      org: "NCS4",
+    },
+    {
+      fname: "Stuart",
+      lname: "Wall",
+      org: "Boston Athletic Association",
+    },
     {
       fname: "Virginia",
       lname: "Brophy Achman",
@@ -312,11 +294,6 @@ app.controller("ACctrl", function($scope) {
       fname: "Stacy",
       lname: "Embretson",
       org: "Lost Angeles Marathon",
-    },
-    {
-      fname: "Austin",
-      lname: "Garrett",
-      org: "Chattanooga Police",
     },
     {
       fname: "Eddie",
@@ -364,19 +341,9 @@ app.controller("ACctrl", function($scope) {
       org: "Houston Marathon",
     },
     {
-      fname: "Josh",
-      lname: "Nemzer",
-      org: "Nemzer Event Management",
-    },
-    {
       fname: "Mike",
       lname: "Nishi",
       org: "Chicago Marathon",
-    },
-    {
-      fname: "Christine",
-      lname: "Packard",
-      org: "Massachusetts Emergency",
     },
     {
       fname: "P.Z.",
@@ -395,8 +362,7 @@ app.controller("ACctrl", function($scope) {
     },
 
   ];
-  $scope.psecurity = [
-    {
+  $scope.psecurity = [{
       fname: "Edgar",
       lname: "Bustamante",
       org: "5 Star Event Services",
@@ -473,8 +439,7 @@ app.controller("ACctrl", function($scope) {
     },
 
   ];
-  $scope.pro = [
-    {
+  $scope.pro = [{
       fname: "John",
       lname: "Ball",
       org: "Pacers Sports & Entertainment",
@@ -525,14 +490,9 @@ app.controller("ACctrl", function($scope) {
       org: "MetLife Stadium",
     },
     {
-      fname: "Rick",
+      fname: "Richard",
       lname: "Fenton",
-      org: "Detroit Tigers",
-    },
-    {
-      fname: "Michael",
-      lname: "Hartnett",
-      org: "FBI",
+      org: "Ilitch Holdings",
     },
     {
       fname: "Kevin",
@@ -555,14 +515,9 @@ app.controller("ACctrl", function($scope) {
       org: "Detroit Lions",
     },
     {
-      fname: "James",
-      lname: "Johnston",
-      org: "Spurs Sports & Entertainment",
-    },
-    {
       fname: "Billy",
       lname: "Lagenstein",
-      org: "U.S. Bank Stadium",
+      org: "National Football League",
     },
     {
       fname: "Todd",
@@ -590,14 +545,9 @@ app.controller("ACctrl", function($scope) {
       org: "San Fransisco 49ers",
     },
     {
-      fname: "Russ",
-      lname: "Simons",
-      org: "Venue Solutions Group",
-    },
-    {
       fname: "Bill",
       lname: "Squires",
-      org: "New York Giant",
+      org: "New York Football Giants",
     },
     {
       fname: "Barry",
@@ -608,6 +558,11 @@ app.controller("ACctrl", function($scope) {
       fname: "Ben",
       lname: "Williams",
       org: "Houston Astros",
+    },
+    {
+      fname: "Paul",
+      lname: "Turner",
+      org: "AT&T Dallas Cowboys",
     },
   ];
 

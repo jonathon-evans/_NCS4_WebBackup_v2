@@ -9,10 +9,22 @@ app.controller("NACctrl", function($scope) {
       title: "Director of Worldwide Public Safety and Justice	",
     },
     {
+      fname: "Heather",
+      lname: "Bergey",
+      org: "FBI",
+      title: "CMU Unit Chief"
+    },
+    {
       fname: "Matt",
       lname: "Bettenhausen",
       org: "AEG Worldwide",
       title: "Senior Vice President & Chief Security Officer",
+    },
+    {
+      fname: "Scott",
+      lname: "Breor",
+      org: "Department of Homeland Security",
+      title: "Deputy Director"
     },
     {
       fname: "Andrea",
@@ -27,10 +39,10 @@ app.controller("NACctrl", function($scope) {
       title: "Senior Director Business Development Solutions and Services",
     },
     {
-      fname: "Richard",
-      lname: "Fenton",
-      org: "Ilitch Holdings Inc.",
-      title: "Vice President of Corporate Security",
+      fname: "William",
+      lname: "Evans",
+      org: "Boston College",
+      title: "Police Chief"
     },
     {
       fname: "Brian",
@@ -39,10 +51,22 @@ app.controller("NACctrl", function($scope) {
       title: "Partner, Co-Chair of Cyber and Global Security Practice Group",
     },
     {
+      fname: "Gary",
+      lname: "Gardner",
+      org: "TOTALeACCESS, Inc.",
+      title: "CEO"
+    },
+    {
       fname: "Carol",
       lname: "Haave",
       org: "Live Nation Entertainment",
       title: "Chief Security Officer",
+    },
+    {
+      fname: "Mike",
+      lname: "Harnett",
+      org: "Ilitch Holdings Inc.",
+      title: "Vice President of Corporate Security",
     },
     {
       fname: "Elliot",
@@ -61,6 +85,12 @@ app.controller("NACctrl", function($scope) {
       lname: "Lanier",
       org: "National Football League",
       title: "Senior Vice President of Security",
+    },
+    {
+      fname: "Joe",
+      lname: "Lewis",
+      org: "Joe Lewis Company",
+      title: "Founder & CEO"
     },
     {
       fname: "Lou",
@@ -91,6 +121,12 @@ app.controller("NACctrl", function($scope) {
       lname: "Reid",
       org: "Walt Disney World",
       title: "Vice President Security, Walt Disney World",
+    },
+    {
+      fname: "Russ",
+      lname: "Simons",
+      org: "Venue Solutions Group",
+      title: "Managing Partner"
     },
     {
       fname: "Paul",

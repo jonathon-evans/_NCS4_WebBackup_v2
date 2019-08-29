@@ -1,34 +1,98 @@
 <style>
+  .f-col a {
+    justify-content: center;
+    text-indent: 1.1em;
+    text-decoration: none;
+    z-index: 10;
+    margin-bottom: -2px;
+  }
+
+  .f-col a::before {
+    border-radius: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -10;
+    transition: opacity 1s ease;
+  }
+
+  a.flat_format:hover::before {
+    opacity: 1;
+  }
+
+  /* CONTENT SPECIFIC STYLING */
   #content1>.f-col a {
     background: #e4c060;
     background: -moz-linear-gradient(left, rgba(228, 196, 117, 1) 1%, rgba(229, 190, 84, 1) 51%, rgb(226, 174, 42) 100%);
     background: -webkit-linear-gradient(left, rgba(228, 196, 117, 1) 1%, rgba(229, 190, 84, 1) 51%, rgb(226, 174, 42) 100%);
     background: linear-gradient(to right, rgba(228, 196, 117, 1) 1%, rgba(229, 190, 84, 1) 51%, rgb(226, 174, 42) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e4c475', endColorstr='#e5b029', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e4c475', endColorstr='#e5b029', GradientType=1);
     color: white;
-    justify-content: center;
-    text-indent: 1.1em;
+
   }
 
-  /* #content_SUB a{
-    color: #1b93c3;
-    text-decoration: underline;
-  } */
+  #content1>.f-col a::before {
+    background: #e4c060;
+    background: -moz-linear-gradient(left, rgb(245, 211, 127) 1%, rgb(247, 208, 100) 51%, rgb(226, 174, 42) 100%);
+    background: -webkit-linear-gradient(left, rgb(245, 211, 127) 1%, rgba(247, 208, 100) 51%, rgb(226, 174, 42) 100%);
+    background: linear-gradient(to right, rgb(245, 211, 127) 1%, rgba(247, 208, 100) 51%, rgb(226, 174, 42) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f5d37f', endColorstr='#e5b029', GradientType=1);
+
+  }
+
+  #content1 a.flat_format {
+    color: #2d2d2d;
+  }
+
 
   #content2>.f-col a {
     background: rgb(62, 164, 201);
     background: -moz-linear-gradient(left, rgba(62, 164, 201, 1) 0%, rgba(45, 157, 191, 1) 59%, rgba(14, 124, 152, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(62, 164, 201, 1) 0%, rgba(45, 157, 191, 1) 59%, rgba(14, 124, 152, 1) 100%);
     background: linear-gradient(to right, rgba(62, 164, 201, 1) 0%, rgba(45, 157, 191, 1) 59%, rgba(14, 124, 152, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3ea4c9', endColorstr='#1390af', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3ea4c9', endColorstr='#1390af', GradientType=1);
     color: white;
-    justify-content: center;
-    text-indent: 1.1em;
+
   }
 
-  .flat_format.small {
-    border-color: #292929 !important;
+  #content2>.f-col a::before {
+    background: rgb(62, 164, 201);
+    background: -moz-linear-gradient(left, rgb(75, 184, 224) 0%, rgb(51, 170, 206) 59%, rgba(14, 124, 152, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(75, 184, 224) 0%, rgba(51, 170, 206) 59%, rgba(14, 124, 152, 1) 100%);
+    background: linear-gradient(to right, rgba(75, 184, 224) 0%, rgba(51, 170, 206) 59%, rgba(14, 124, 152, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#3ea4c9', endColorstr='#1390af', GradientType=1);
+
   }
+
+  #content3>.f-col a {
+    background: #3ebc42;
+    background: -moz-linear-gradient(left, rgb(95, 218, 99) 1%, rgb(72, 198, 76) 51%, rgb(53, 166, 57) 100%);
+    background: -webkit-linear-gradient(left, rgb(95, 218, 99) 1%, rgb(72, 198, 76) 51%, rgb(53, 166, 57) 100%);
+    background: linear-gradient(to right, rgb(95, 218, 99) 1%, rgb(72, 198, 76) 51%, rgb(53, 166, 57) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5fda63', endColorstr='#3ebc42', GradientType=1);
+    color: white;
+
+  }
+
+  #content3>.f-col a::before {
+    background: #5fda63;
+    background: -moz-linear-gradient(left, rgb(126, 255, 131) 1%, rgb(66, 237, 72) 51%, rgb(53, 166, 57) 100%);
+    background: -webkit-linear-gradient(left, rgb(126, 255, 131) 1%, rgb(66, 237, 72) 51%, rgb(53, 166, 57) 100%);
+    background: linear-gradient(to right, rgb(126, 255, 131) 1%, rgb(66, 237, 72) 51%, rgb(53, 166, 57) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#5fda63', endColorstr='#3ebc42', GradientType=1);
+
+  }
+
+  #content3 a.flat_format {
+    color: #2d2d2d;
+  }
+
+  /* END CONTENT SPECIFIC STYLING */
 
   .content_swap {
     opacity: 1;
@@ -47,9 +111,8 @@
   /* [fader end] */
 
   .header-button {
-    border-radius: 100px;
+    border-radius: 30px;
     font-weight: bold;
-    border: 3px solid black;
   }
 
   .flat_format {
@@ -67,11 +130,8 @@
     font-size: 1.7em;
   }
 
-  .flat_format img {
-    width: 100%;
-    height: auto;
-    max-height: 120px;
-    max-width: 120px;
+  .flat_format i {
+    font-size: 4em;
     padding: 10px;
     margin: auto;
   }
@@ -84,17 +144,7 @@
     border-radius: 0 0 20px 20px;
   }
 
-  #content1 a.flat_format {
-    color: #2d2d2d;
-  }
 
-  #content1 a.flat_format:hover {
-    color: #50b0cf;
-  }
-
-  #content2 a.flat_format:hover {
-    color: #eac257;
-  }
 
   .flex-table {
     display: table;
@@ -107,7 +157,7 @@
     display: flex;
     -webkit-flex-direction: row;
     flex-direction: row;
-    width 100%;
+    width: 100%;
   }
 
   .f-col {
@@ -136,7 +186,30 @@
     background: -moz-radial-gradient(center, ellipse cover, rgba(229, 204, 142, 1) 1%, rgba(232, 178, 32, 1) 100%);
     background: -webkit-radial-gradient(center, ellipse cover, rgba(229, 204, 142, 1) 1%, rgba(232, 178, 32, 1) 100%);
     background: radial-gradient(ellipse at center, rgba(229, 204, 142, 1) 1%, rgba(232, 178, 32, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#e5cc8e', endColorstr='#e8b220', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#e5cc8e', endColorstr='#e8b220', GradientType=1);
+  }
+
+  .G::before {
+    background: #e4c060;
+    background: -moz-linear-gradient(left, rgb(245, 211, 127) 1%, rgb(247, 208, 100) 51%, rgb(226, 174, 42) 100%);
+    background: -webkit-linear-gradient(left, rgb(245, 211, 127) 1%, rgba(247, 208, 100) 51%, rgb(226, 174, 42) 100%);
+    background: linear-gradient(to right, rgb(245, 211, 127) 1%, rgba(247, 208, 100) 51%, rgb(226, 174, 42) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f5d37f', endColorstr='#e5b029', GradientType=1);
+    border-radius: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    z-index: -10;
+    transition: opacity 1s ease;
+  }
+
+  .G:hover::before {
+    opacity: 1;
   }
 
   .B {
@@ -144,8 +217,16 @@
     background: -moz-radial-gradient(center, ellipse cover, rgba(117, 196, 216, 1) 0%, rgba(27, 147, 195, 1) 100%);
     background: -webkit-radial-gradient(center, ellipse cover, rgba(117, 196, 216, 1) 0%, rgba(27, 147, 195, 1) 100%);
     background: radial-gradient(ellipse at center, rgba(117, 196, 216, 1) 0%, rgba(27, 147, 195, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#75c4d8', endColorstr='#1b93c3', GradientType=1);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#75c4d8', endColorstr='#1b93c3', GradientType=1);
   }
+
+  .Gr {
+    background: rgb(53, 166, 57);
+    background: -moz-radial-gradient(center, ellipse cover, rgb(95, 218, 99) 0%, rgb(53, 166, 57) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgb(95, 218, 99) 0%, rgb(53, 166, 57) 100%);
+    background: radial-gradient(ellipse at center, rgb(95, 218, 99) 0%, rgb(53, 166, 57) 100%);
+  }
+
 
   div.f-row {
     padding-bottom: 20px;
@@ -169,16 +250,15 @@
     width: 100%;
     max-width: none;
     text-align: left;
-    border: 3px solid #424242;
     min-height: 3.2em;
     /* border-radius: 56px;
-  border: 3px solid #424242;
-  align-items: center;
-  justify-content: center;
-  color: #383838;
-  height: 6em;
-  margin-left: .5em;
-  margin-right: .5em; */
+      border: 3px solid #424242;
+      align-items: center;
+      justify-content: center;
+      color: #383838;
+      height: 6em;
+      margin-left: .5em;
+      margin-right: .5em; */
   }
 
   a.flat_format:hover {
@@ -205,52 +285,56 @@
     .flex-table {
       width: 90%;
     }
+
     /* .flat_format img {
-    max-width:40px !important;
-  } */
+        max-width:40px !important;
+      } */
   }
 
   @media (max-width: 900px) {
     .flex-table {
       width: 75%;
     }
-  }
 
-  @media (max-width: 550px) {
     .f-row {
       -webkit-flex-direction: column;
       flex-direction: column;
     }
+
     .spacer {
       display: none;
     }
   }
-
 </style>
 <br />
 <!-- <div class="f-row" style="width: 80%; margin: auto;">
-  <div class="f-content" style="flex-direction: column;">
-    <p style="font-size: 1.2em; text-indent: 3.5em; margin-left: 3%; margin-right: 3%;">Since 2008, training is a core aspect of our Center. While most of our focus has been on domestic training, we have recently partnered with INTERPOL to expand our training capabilities internationally.</p>
-  </div>
-</div> -->
+      <div class="f-content" style="flex-direction: column;">
+        <p style="font-size: 1.2em; text-indent: 3.5em; margin-left: 3%; margin-right: 3%;">Since 2008, training is a core aspect of our Center. While most of our focus has been on domestic training, we have recently partnered with INTERPOL to expand our training capabilities internationally.</p>
+      </div>
+    </div> -->
 <!-- <br />
-<br />
-<br /> -->
+    <br />
+    <br /> -->
 <div class="margins_wide_content flex-table">
   <div class="f-row">
     <div class="f-content header-button G flat_format">
       <div class="f-col sub">
-        <div id="btn1" class="f-col btn_head">
-          <div class="f-content"><img style="max-width: 132px;" src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/TrainingFP/courses_book.png" /></div>
+        <div id="btn1" class="f-col btn_head"><i class="fas fa-book-open" style="color: #1d93c2;"></i>
           <div class="f-content text-area"><span style="color: black;">FEMA/DHS</span></div>
         </div>
       </div>
     </div>
     <div class="f-content header-button B flat_format">
       <div class="f-col sub">
-        <div id="btn2" class="f-col btn_head">
-          <div class="f-content"><img src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/TrainingFP/Globe_GOLD.png" /></div>
+        <div id="btn2" class="f-col btn_head"><i class="fas fa-globe" style="color: #5fda63;"></i>
           <div class="f-content text-area"><span style="color: black;">International</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="f-content header-button Gr flat_format">
+      <div class="f-col sub">
+        <div id="btn3" class="f-col btn_head"><i class="fas fa-wifi" style="color: #ebbb3a;"></i>
+          <div class="f-content text-area"><span style="color: black;">Online</span></div>
         </div>
       </div>
     </div>
@@ -258,16 +342,27 @@
 </div>
 <br />
 <div id="content1" class="content_swap flex-table margins_wide_content">
-  <div class="f-col">
-    <a href="/trainingportal/fema-dhs/risk-management" class="f-content flat_format small"> <span>AWR-167: Risk Management</span> </a>
-    <a href="/trainingportal/fema-dhs/evacuation" class="f-content flat_format small"> <span>MGT-412: Evacuation</span> </a>
-    <a href="/trainingportal/fema-dhs/incident-management" class="f-content flat_format small"> <span>MGT-404: Incident Management</span> </a>
-    <a href="/trainingportal/fema-dhs/enhanced-incident-management" class="f-content flat_format small"> <span>MGT-440: Enhanced Incident Management</span> </a>
-    <a href="/trainingportal/fema-dhs/risk-management-for-interscholastic-athletics" class="f-content flat_format small"> <span style="font-size: .9em">Risk Management For Interscholastic Athletics (Coming Soon)</span> </a>
-  </div>
+  <div class="f-col"><a href="/training/fema-dhs/risk-management" class="f-content flat_format small">
+      <span>AWR-167: Risk Management</span> </a> <a href="/training/fema-dhs/evacuation"
+      class="f-content flat_format small"> <span>MGT-412: Evacuation and Protective Actions</span> </a> <a
+      href="/training/fema-dhs/incident-management" class="f-content flat_format small"> <span>MGT-404: Incident
+        Management</span> </a> <a href="/training/fema-dhs/enhanced-incident-management"
+      class="f-content flat_format small"> <span>MGT-440: Enhanced Incident Management</span> </a>
+      <a href="/training/online/risk-management-for-interscholastic-athletics"
+      class="f-content flat_format small"> <span>AWR-375-W Risk Management for After-School Activities <br />and Interscholastic Athletics</span> </a></div>
 </div>
 <div id="content2" class="content_swap flex-table margins_wide_content anim hide">
-  <div class="f-col"><a href="/trainingportal/international/interpol" class="f-content flat_format small"> <span>Interpol</span> </a> <a href="/trainingportal/international/international-institute-for-counter-terrorism" class="f-content flat_format small"> <span>International Institute for Counter-Terrorism</span> </a>    <a href="/trainingportal/international/strategic-partners" class="f-content flat_format small"> <span>Strategic Partners</span> </a> <a href="/trainingportal/international/resource-links" class="f-content flat_format small"> <span>Resource Links</span> </a></div>
+  <div class="f-col"><a href="/training/international/interpol" class="f-content flat_format small">
+      <span>Interpol</span> </a> <a href="/training/international/alliance-members"
+      class="f-content flat_format small"> <span>Alliance Partners</span> </a><a
+      href="/training/international/resource-links" class="f-content flat_format small"> <span>Resource
+        Links</span> </a></div>
+</div>
+<div id="content3" class="content_swap flex-table margins_wide_content anim hide">
+  <div class="f-col"><a href="/training/online/set" class="f-content flat_format small"> <span><em>NEW</em> Sports
+        &amp; Entertainment Staff Training (Online)</span> </a> <a
+      href="/training/online/risk-management-for-interscholastic-athletics" class="f-content flat_format small">
+      <span style="font-size: .9em;">AWR-375-W Risk Management for After-School Activities <br />and Interscholastic Athletics</span> </a></div>
 </div>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <!-- <script src="https://cdn.jsdelivr.net/bluebird/latest/bluebird.core.min.js"></script> -->
@@ -301,7 +396,7 @@
         }
       }
 
-      if (toggled !== "none") setTimeout(function() {
+      if (toggled !== "none") setTimeout(function () {
         toggled.classList.add(hide_class);
         setTimeout(callback(id), 10);
       }, anim_length); //amount of anim_class time
@@ -311,25 +406,25 @@
     }
   }
 
-  var animateThing = function(id) {
+  var animateThing = function (id) {
     var thing = document.getElementById(id);
     thing.classList.remove(hide_class);
-    setTimeout(function() {
+    setTimeout(function () {
       document.getElementById(id).classList.remove(anim_class);
     }, 10);
-    setTimeout(function() {
+    setTimeout(function () {
       key = true; //unlock buttons
     }, anim_length + 10); //amount of anim_class time
   }
 
 
-  $(document).ready(function() {
+  $(document).ready(function () {
     for (var i = 0; i < containers.length; i++) {
       if (!containers[i].classList.contains(hide_class)) {
         prev = containers[i].id;
       }
     }
-    $(button_class).click(function() {
+    $(button_class).click(function () {
       Animate(this.id, animateThing);
     });
   });

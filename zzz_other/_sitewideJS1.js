@@ -31,7 +31,7 @@ if(path.includes("/knowledgeportal")){  //keep tab active on subpages of a porta
         nav.K.classList.add("active");
         nav.K.classList.add("current-page");
       }
-} else if(path.includes("/trainingportal")){
+} else if(path.includes("/training")){
   if(!nav.T.classList.contains("active")){
         nav.T.classList.add("active");
         nav.T.classList.add("current-page");
