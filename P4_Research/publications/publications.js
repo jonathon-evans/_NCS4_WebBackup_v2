@@ -39,6 +39,7 @@ app.controller("PubCtrl", function ($scope) {
   }
   $scope.auth = {
     STACEY: "Hall, S",
+    JOHN: "Miller, J",
     JUSTIN: "Kurland, J",
     LOU: "Marciani, L",
     JOSLYN: "Zale, J",
@@ -62,6 +63,7 @@ app.controller("PubCtrl", function ($scope) {
   ]
   /*
     {
+      "nauthors": "",
       "authors": "",
       "year": ,
       "desc": [
@@ -701,6 +703,406 @@ app.controller("PubCtrl", function ($scope) {
       ],
       "link": "",
       "ctags": [$scope.tags._00_DEFAULT]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Pauline, G., & Donahue, P.",
+      "year": 2017,
+      "desc": [
+        "An investigation of safety training for triathlon events: Are volunteers prepared for emergencies? Journal of Contemporary Athletics, 11(2)."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J.",
+      "year": 2017,
+      "desc": [
+        "Safety and security. In Petersen, J., Judge, L., & Miller, J. (Eds.), Facility & Event Management: Applications in Sport Settings."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J.",
+      "year": 2017,
+      "desc": [
+        "Unintentional torts. In J. Miller & K. Schoepfer (Eds.), Legal Aspects of Sport. Burlington, MA: Jones & Bartlett Learning."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J.",
+      "year": 2017,
+      "desc": [
+        "Risk management. In J. Miller & K. Schoepfer (Eds.), Legal Aspects of Sport. Burlington, MA: Jones & Bartlett Learning."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J.",
+      "year": 2012,
+      "desc": [
+        "Security issues at sports events. In H. Appenzeller (Ed.), 3rd edition Risk management in sport: Issues and strategies. Carolina Academic Press Publishers: Raleigh, N.C."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Wendt, J.",
+      "year": 2010,
+      "desc": [
+        "Safety and negligence internship issues. In A Practical Guide to Sport Management Internships (Miller, J. & Seidler, T., Eds.). Carolina Academic Press."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J.",
+      "year": 2010,
+      "desc": [
+        "Managing internship risks: Avoidance and retention issues. In A Practical Guide to Sport Management Internships (Miller, J. & Seidler, T., Eds.). Carolina Academic Press."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Wendt, J.",
+      "year": 2010,
+      "desc": [
+        "Managing internship risks: Insurance issues. In A Practical Guide to Sport Management Internships (Miller, J. & Seidler, T., Eds.). Carolina Academic Press."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Martin, C. L. L., & Spurlock, A.",
+      "year": 2016,
+      "desc": [
+        "Cheerleading as a sport? Perceptions of intercollegiate athletic directors. International Journal of Sport Management, 17(2), 294-313."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Dunn, A.",
+      "year": 2011,
+      "desc": [
+        "Perceptions of terrorist threat: Implications for intercollegiate basketball venue managers. Journal of Event and Venue Management, 3(1), 2-10."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Veltri, F. & Gillentine, A.",
+      "year": 2008,
+      "desc": [
+        "Spectator perception of security at the Super Bowl after 9/11: Implications for facility managers. Sport Management and Related Topics Journal, 4(2), 16-25."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Wendt, J. T., & Seidler, T.",
+      "year": 2008,
+      "desc": [
+        "Tackling steroid abuse in interscholastic athletics: Perceptions of athletic directors. International Journal of Sport Management, 9(2), 117-133."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Gillentine, A. & Veltri, F.",
+      "year": 2008,
+      "desc": [
+        "Risk management strategies at Division I intercollegiate football stadiums: Do spectators perceive they are protected against terrorism? Journal of Contemporary Athletics, 3(1), 65-80."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Gillentine, A. & Veltri, F.",
+      "year": 2005,
+      "desc": [
+        "Student perspectives of university intramural sport risk management. Recreation Sports Journal, 29(1), 23-33."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Hart, E. & Miller, J.",
+      "year": 2014,
+      "desc": [
+        "Planning life safety I. IAVM Monographs Topics dealt with Emergency Planning, Importance of Emergency Planning, Development of an emergency plan, Human-Induced Terrorism Emergencies, Active Shooter, Bomb Threat, Fire, Mechanical/Equipment Failure, Severe Weather, Regulatory Components/Issues, Human Components/Issues, Venue Components/Issues, Business Components/Issues, Venue Preparedness, Staff Risk and Security Training, Venue as a Place of Refuge."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._04_EVACUATION]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Hart, E. & Miller, J.",
+      "year": 2014,
+      "desc": [
+        "Planning life safety II. IAVM Monographs. Topics included Life (Fire) Safety, Alternative Life Safety Measures, Self- Evacuation, Closed Circuit Television (CCTV), Assembly Occupancy, Aisle Accessway, Festival Seating, Flow Time, Life Safety Evaluation, Occupant Load Considerations, Access and Egress Routes within Assembly."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._04_EVACUATION]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Vogt, S., Scroggins, C., & Gillentine, A.",
+      "year": 2019,
+      "desc": [
+        "A content analysis of tailgating alcohol policies at NCAA Division I football games. International Journal of Sport Management, 20, 1-16."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Gillentine, A., Miller, J., Grady, J., & Pettus, K.",
+      "year": 2016,
+      "desc": [
+        "An examination of ADA requirements and implications associated with tailgating activities. Journal of Legal Aspects of Sport, 26(1), 52-65."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Pauline, G., Osborne, B., & Miller, J.",
+      "year": 2016,
+      "desc": [
+        "Do entry form waivers properly inform triathlon participants of the dangers of the sport? Journal of Legal Aspects of Sport, 26(2), 106-126."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J.",
+      "year": 2014,
+      "desc": [
+        " When fans rush the court: How do basketball venue managers handle it? Journal of Facility Planning, Design, and Management, 2(1), 11-24."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J.",
+      "year": 2014,
+      "desc": [
+        "When fans rush the court: How do basketball venue managers handle it? Journal of Facility Planning, Design, and Management, 2(1), 11-24."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Ammon, R.",
+      "year": 2014,
+      "desc": [
+        "Concussion management in interscholastic football: A state study. Journal of Contemporary Athletics, 8(3), 141-152."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Pauline, G. & Wendt, J. T.",
+      "year": 2013,
+      "desc": [
+        "An investigation of risk management protocols at triathlon events. Journal of Event and Venue Management, 4(2), 16- 33."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Wendt, J. T. & Miller, J.",
+      "year": 2012,
+      "desc": [
+        "Tragedy at Fujairah: Risk management issues at open-water swimming events. University of Denver Sports and Entertainment Law Journal."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Wendt, J. T.",
+      "year": 2012,
+      "desc": [
+        "Heat-related illness in interscholastic football: What coaches and athletic administrators need to understand. Journal of Contemporary Athletics, 6(2), 113-132."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Wendt, J. T., & Young, P. C.",
+      "year": 2010,
+      "desc": [
+        "Fourth Amendment considerations and application of risk management principles for pat-down searches at professional football games. Journal of Legal Aspects of Sport, 20(2), 108-134."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Young, S., & Martin. N.",
+      "year": 2009,
+      "desc": [
+        "To use or not to use? The status of waivers in intramural sports. Recreational Sports Journal, 33(2), 129-138."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Gillentine, A.",
+      "year": 2006,
+      "desc": [
+        "An analysis of risk management policies for tailgating activities at selected NCAA Division I football games. Journal of the Legal Aspects of Sport, 16(2), 197-215."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Rushing, G.",
+      "year": 2002,
+      "desc": [
+        "Risk management practices of university physical activity supervisors. Journal of Legal Aspects of Sport, 12(2), 117-131."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Madison, L.",
+      "year": 2017,
+      "desc": [
+        "Alcohol management. In Petersen, J., Judge, L., & Miller, J. (Eds.), Facility & Event Management: Applications in Sport Settings."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J., Vogt, S., Scroggins, C., & Gillentine, A.",
+      "year": 2019,
+      "desc": [
+        "A content analysis of tailgating alcohol policies at NCAA Division I football games. International Journal of Sport Management, 20, 1-16."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Gillentine, A., Miller, J. & Crow, B.",
+      "year": 2010,
+      "desc": [
+        "Developing a “Best Practice” sport model for tailgating events. Journal of Event and Venue Management, 2(2), 54-68."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Gillentine A.",
+      "year": 2006,
+      "desc": [
+        "An analysis of risk management policies for tailgating activities at selected NCAA Division I football games. Journal of the Legal Aspects of Sport, 16(2), 197-215."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Gillentine, A. & Miller, J.",
+      "year": 2006,
+      "desc": [
+        "Legal implications of tailgating. International Journal of Sport Management, 7, 100-109."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Gillentine, A., Miller, J. & Crow, B.",
+      "year": 2010,
+      "desc": [
+        "Developing a “Best Practice” sport model for tailgating events. Journal of Event and Venue Management, 2(2), 54-68."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._09_BEST_PRACTICES]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Wendt, J. T.",
+      "year": 2012,
+      "desc": [
+        "The lack of risk communication at an elite sports event: A case study of the FINA 10 K marathon swimming World Cup. International Journal of Sport Communication, 5, 265-278."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._10_EMERGENCY_COMMUNICATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Wendt, J. T. & Miller, J.",
+      "year": 2012,
+      "desc": [
+        "Tragedy at Fujairah: Risk management issues at open-water swimming events. University of Denver Sports and Entertainment Law Journal."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._10_EMERGENCY_COMMUNICATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Miller, J. & Wendt, J. T.",
+      "year": 2012,
+      "desc": [
+        "Heat-related illness in interscholastic football: What coaches and athletic administrators need to understand. Journal of Contemporary Athletics, 6(2), 113-132."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._10_EMERGENCY_COMMUNICATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Hart, E. & Miller, J.",
+      "year": 2014,
+      "desc": [
+        "Planning life safety I. IAVM Monographs Topics dealt with Emergency Planning, Importance of Emergency Planning, Development of an emergency plan, Human-Induced Terrorism Emergencies, Active Shooter, Bomb Threat, Fire, Mechanical/Equipment Failure, Severe Weather, Regulatory Components/Issues, Human Components/Issues, Venue Components/Issues, Business Components/Issues, Venue Preparedness, Staff Risk and Security Training, Venue as a Place of Refuge."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._10_EMERGENCY_COMMUNICATIONS]
+    },
+    {
+      "nauthors": "Miller",
+      "authors": "Hart, E. & Miller, J.",
+      "year": 2014,
+      "desc": [
+        "Planning life safety II. IAVM Monographs. Topics included Life (Fire) Safety, Alternative Life Safety Measures, Self- Evacuation, Closed Circuit Television (CCTV), Assembly Occupancy, Aisle Accessway, Festival Seating, Flow Time, Life Safety Evaluation, Occupant Load Considerations, Access and Egress Routes within Assembly."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._10_EMERGENCY_COMMUNICATIONS]
     },
   ];
 });
