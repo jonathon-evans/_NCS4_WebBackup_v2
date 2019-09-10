@@ -39,6 +39,7 @@ app.controller("PubCtrl", function ($scope) {
   }
   $scope.auth = {
     STACEY: "Hall, S",
+    BRIAN: "Menaker, B.",
     JOHN: "Miller, J",
     JUSTIN: "Kurland, J",
     LOU: "Marciani, L",
@@ -714,7 +715,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "An investigation of safety training for triathlon events: Are volunteers prepared for emergencies? Journal of Contemporary Athletics, 11(2)."
       ],
-      "link": "",
+      "link": "https://www.questia.com/library/journal/1P4-1929049827/an-investigation-of-safety-training-for-triathlon",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
@@ -734,7 +735,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Unintentional torts. In J. Miller & K. Schoepfer (Eds.), Legal Aspects of Sport. Burlington, MA: Jones & Bartlett Learning."
       ],
-      "link": "",
+      "link": "http://samples.jblearning.com/9781284072471/9781284078701_FMxx.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1138,6 +1139,76 @@ app.controller("PubCtrl", function ($scope) {
       ],
       "link": "",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
+    },
+    {
+      "nauthors": "Menaker",
+      "authors": "Menaker, B. E., McGranahan, D. A., & Sheptak Jr., R. D.",
+      "year": 2019,
+      "desc": [
+        " \"Game Day Alters Crime Pattern in the Vicinity of Sport Venues in Cleveland, OH,\" Journal of Sport Safety and Security, 4 (1), Article 1."
+      ],
+      "link": "http://aquila.usm.edu/jsss/vol4/iss1/1",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Menaker",
+      "authors": "Menaker, B. E. & Sheptak Jr, R. D.",
+      "year": 2019,
+      "desc": [
+        "The impact of game day on crime on a university police department: application of the civilizing process to sport-related law enforcement, Journal of Policy Research in Tourism, Leisure and Events"
+      ],
+      "link": "https://www.tandfonline.com/doi/full/10.1080/19407963.2018.1556675",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Menaker",
+      "authors": "Menaker, B. E., Sheptak Jr, R. D., & Curtis, A. K.",
+      "year": 2018,
+      "desc": [
+        "Revelry or Riot? An exploratory study of internet media coverage of sport championship celebrations. Sport Journal, 19."
+      ],
+      "link": "http://thesportjournal.org/article/revelry-or-riot-an-exploratory-study-of-internet-media-coverage-of-sport-championship-celebrations/",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER]
+    },
+    {
+      "nauthors": "Menaker",
+      "authors": "Menaker, B. E., Barry, A. E., & Howell, S. M.",
+      "year": 2018,
+      "desc": [
+        "Identifying the influence of opponent ranking and game characteristics on alcohol-related stadium ejections. The Journal of Primary Prevention, 39(2), 117-128."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
+    },
+    {
+      "nauthors": "Menaker",
+      "authors": "Menaker, B. E., Chaney, B. H., & Sheptak Jr, R. D.",
+      "year": 2016,
+      "desc": [
+        "Administrative perspectives of stadium alcohol policy: Alcohol-related public safety measures in college football stadia, Journal of Sport Safety and Security, 1(1) Article 1."
+      ],
+      "link": "https://aquila.usm.edu/jsss/vol1/iss1/1/",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
+    },
+    {
+      "nauthors": "Menaker",
+      "authors": "Menaker, B. E. & Chaney, E. H.",
+      "year": 2014,
+      "desc": [
+        "College football game day stadium incidents: Policy and environmental effects on alcohol-related ejections and crime. Journal of Policy Research in Tourism, Leisure and Events. 6(2), 119-132"
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Menaker",
+      "authors": "Menaker, B.E. & Connaughton, D.P.",
+      "year": 2010,
+      "desc": [
+        "Stadium alcohol policies: A comparison of alcohol policies available on college athletic department websites. International Journal of Sport Communication, 3(2), 151-162"
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
     },
   ];
 });
