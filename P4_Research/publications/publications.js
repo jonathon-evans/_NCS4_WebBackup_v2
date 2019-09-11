@@ -43,6 +43,7 @@ app.controller("PubCtrl", function ($scope) {
     JOHN: "Miller, J",
     JUSTIN: "Kurland, J",
     LOU: "Marciani, L",
+    DERYA: "Tekin, D",
     JOSLYN: "Zale, J",
   }
   $scope.years = [
@@ -137,16 +138,6 @@ app.controller("PubCtrl", function ($scope) {
       ],
       "link": "https://ideas.repec.org/a/taf/applec/v51y2019i36p3947-3957.html",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
-    },
-    {
-      "nauthors": "Kurland",
-      "authors": "Tekin, D., & Kurland, J",
-      "year": 2019,
-      "desc": [
-        "Turkish football fans\" perceptions of the legitimacy of crime prevention measures. International Journal of Law, Crime and Justice.",
-      ],
-      "link": "https://www.sciencedirect.com/science/article/pii/S1756061618303045",
-      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
     },
     {
       "nauthors": "Kurland",
@@ -745,7 +736,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Risk management. In J. Miller & K. Schoepfer (Eds.), Legal Aspects of Sport. Burlington, MA: Jones & Bartlett Learning."
       ],
-      "link": "",
+      "link": "http://samples.jblearning.com/9781284072471/9781284078701_FMxx.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -805,7 +796,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Perceptions of terrorist threat: Implications for intercollegiate basketball venue managers. Journal of Event and Venue Management, 3(1), 2-10."
       ],
-      "link": "",
+      "link": "https://www.sc.edu/study/colleges_schools/hrsm/research/journal_venue_and_event_management_archives/jvem_pdfs/vol3_no1/perceptions_terrorist_threat.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -815,7 +806,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "When fans rush the court: How do basketball venue managers handle it? Journal of Facility Planning, Design, and Management, 2(1), 11-24."
       ],
-      "link": "",
+      "link": "http://lequezspearman.com/wp-content/uploads/2014/03/JFPDM_2014_1-6.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -835,7 +826,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Tackling steroid abuse in interscholastic athletics: Perceptions of athletic directors. International Journal of Sport Management, 9(2), 117-133."
       ],
-      "link": "",
+      "link": "http://www.srlawebsite.com/wp-content/uploads/2012/06/Dr.-John-Miller-Ph.D.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -895,7 +886,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "An examination of ADA requirements and implications associated with tailgating activities. Journal of Legal Aspects of Sport, 26(1), 52-65."
       ],
-      "link": "",
+      "link": "https://www.researchgate.net/publication/290221454_Accessible_Tailgating_An_Examination_of_ADA_Requirements_and_Implications_Associated_With_Tailgating_Activities",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -905,7 +896,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Do entry form waivers properly inform triathlon participants of the dangers of the sport? Journal of Legal Aspects of Sport, 26(2), 106-126."
       ],
-      "link": "",
+      "link": "http://journals.iupui.edu/index.php/jlas/article/view/22227",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
 
@@ -926,7 +917,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "An investigation of risk management protocols at triathlon events. Journal of Event and Venue Management, 4(2), 16- 33."
       ],
-      "link": "",
+      "link": "https://pdfs.semanticscholar.org/d849/eed0a3cb51cebbb4206dadc6b8d55e3f68d6.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -936,7 +927,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Tragedy at Fujairah: Risk management issues at open-water swimming events. University of Denver Sports and Entertainment Law Journal."
       ],
-      "link": "",
+      "link": "https://www.law.du.edu/documents/sports-and-entertainment-law-journal/issues/12/Wendt-Miller-Tragedy-at-Fujai.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._10_EMERGENCY_COMMUNICATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -946,7 +937,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Heat-related illness in interscholastic football: What coaches and athletic administrators need to understand. Journal of Contemporary Athletics, 6(2), 113-132."
       ],
-      "link": "",
+      "link": "http://www.novapublishers.org/catalog/product_info.php?products_id=30941",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._10_EMERGENCY_COMMUNICATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -956,7 +947,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Fourth Amendment considerations and application of risk management principles for pat-down searches at professional football games. Journal of Legal Aspects of Sport, 20(2), 108-134."
       ],
-      "link": "",
+      "link": "https://books.google.com/books?id=nE7xDQAAQBAJ&lpg=PA88&ots=7AU5grVjba&dq=Fourth%20Amendment%20considerations%20and%20application%20of%20risk%20management%20principles%20for%20pat-down%20searches%20at%20professional%20football%20games.%20Journal%20of%20Legal%20Aspects%20of%20Sport%2C%2020(2)%2C%20108-134.&pg=PA64#v=onepage&q&f=false",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -966,7 +957,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "To use or not to use? The status of waivers in intramural sports. Recreational Sports Journal, 33(2), 129-138."
       ],
-      "link": "",
+      "link": "https://journals.sagepub.com/doi/abs/10.1123/rsj.33.2.129?journalCode=rsja",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -976,7 +967,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "An analysis of risk management policies for tailgating activities at selected NCAA Division I football games. Journal of the Legal Aspects of Sport, 16(2), 197-215."
       ],
-      "link": "",
+      "link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.511.2573&rep=rep1&type=pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._08_ALCOHOL, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -986,7 +977,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Risk management practices of university physical activity supervisors. Journal of Legal Aspects of Sport, 12(2), 117-131."
       ],
-      "link": "",
+      "link": "https://books.google.com/books?id=nE7xDQAAQBAJ&lpg=PA88&ots=7AU5grVke9&dq=Risk%20management%20practices%20of%20university%20physical%20activity%20supervisors.%20Journal%20of%20Legal%20Aspects%20of%20Sport%2C%2012(2)%2C%20117-131.&pg=PA88#v=onepage&q&f=false",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -996,7 +987,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Alcohol management. In Petersen, J., Judge, L., & Miller, J. (Eds.), Facility & Event Management: Applications in Sport Settings."
       ],
-      "link": "",
+      "link": "https://he.kendallhunt.com/product/facility-and-event-management-applications-sport",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
     },
     
@@ -1017,7 +1008,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Legal implications of tailgating. International Journal of Sport Management, 7, 100-109."
       ],
-      "link": "",
+      "link": "https://www.nccpsafety.org/assets/files/library/Components_of_Best_Practice_Model_for_Tailgating.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1027,7 +1018,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "The lack of risk communication at an elite sports event: A case study of the FINA 10 K marathon swimming World Cup. International Journal of Sport Communication, 5, 265-278."
       ],
-      "link": "",
+      "link": "https://journals.humankinetics.com/view/journals/ijsc/5/2/article-p265.xml",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._10_EMERGENCY_COMMUNICATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1037,7 +1028,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "“Ref, is this the final?” Concussion issues at the 2014 FIFA Men’s World Cup: A case study. Journal of Legal Aspects of Sport, 25(1), 1-9."
       ],
-      "link": "",
+      "link": "https://www.researchgate.net/publication/276380341_Ref_Is_This_the_Final_Concussion_Issues_at_the_2014_FIFA_Men's_World_Cup_A_Case_Study",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1057,7 +1048,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "The concussion crisis in the National Hockey League. Journal of Contemporary Athletics, 9(1), 33-48"
       ],
-      "link": "",
+      "link": "https://ir.stthomas.edu/cgi/viewcontent.cgi?article=1051&context=ocbeblpub",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1077,7 +1068,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Implications for concussion assessments and return-to-play standards in intercollegiate football: How are the risks managed? Journal of Sport Administration & Supervision, 3(1), 91-103."
       ],
-      "link": "",
+      "link": "https://quod.lib.umich.edu/j/jsas/6776111.0003.116/--implications-for-concussion-assessments-and-return-to-play?rgn=main;view=fulltext",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1087,7 +1078,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "A review of return to sport concerns following injury rehabilitation: Practitioner strategies for enhancing recovery outcomes. Physical Therapy in Sport, 12(1), 36-42."
       ],
-      "link": "",
+      "link": "https://www.ncbi.nlm.nih.gov/pubmed/21256448",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1137,7 +1128,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Campus recreation centers: An examination of security issues. Journal of Legal Aspects of Sport, 11(2), 169-180."
       ],
-      "link": "",
+      "link": "https://journals.iupui.edu/index.php/jlas/article/view/22020/21177",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1209,6 +1200,26 @@ app.controller("PubCtrl", function ($scope) {
       ],
       "link": "",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
+    },
+    {
+      "nauthors": "Tekin",
+      "authors": "Tekin, D.",
+      "year": 2018,
+      "desc": [
+        "“Controlling Football-Related Crime in Turkey: Situational Crime Prevention Approach and Implications”, Medeniyet Law Review, 3(4): 83-190."
+      ],
+      "link": "https://hukuk.medeniyet.edu.tr/tr/yayinlar/medeniyet-law-review",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Tekin, Kurland",
+      "authors": "Tekin, D. & Kurland, J",
+      "year": 2019,
+      "desc": [
+        "“Turkish football fans’ perceptions of the legitimacy of crime prevention measures”, International Journal of Law, Crime and Justice, Volume 58, September 2019, Pages: 56-68"
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S1756061618303045?via%3Dihub",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
     },
   ];
 });
