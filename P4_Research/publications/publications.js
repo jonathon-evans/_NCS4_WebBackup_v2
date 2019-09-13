@@ -43,6 +43,7 @@ app.controller("PubCtrl", function ($scope) {
     JOHN: "Miller, J",
     JUSTIN: "Kurland, J",
     LOU: "Marciani, L",
+    HYUNWOONG: "Pyun, H.",
     DERYA: "Tekin, D",
     JOSLYN: "Zale, J",
   }
@@ -1220,6 +1221,36 @@ app.controller("PubCtrl", function ($scope) {
       ],
       "link": "https://www.sciencedirect.com/science/article/pii/S1756061618303045?via%3Dihub",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Pyun",
+      "authors": "Pyun, H.",
+      "year": 2019,
+      "desc": [
+        "Exploring the causal relationship between Major League Baseball games and crime: A synthetic control analysis. Empirical Economics, 57(1), 365-383"
+      ],
+      "link": "https://doi.org/10.1007/s00181-018-1440-9",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Pyun",
+      "authors": "Pyun, H., & Hall, J. C.",
+      "year": 2019,
+      "desc": [
+        "Does the Presence of Professional Football Cause Crime in a City? Evidence from Pontiac, Michigan. Applied Economics, 51(36), 3958-3970."
+      ],
+      "link": "https://doi.org/10.1080/00036846.2019.1588942",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Pyun",
+      "authors": "Humphreys, B. R. & Pyun, H.",
+      "year": 2018,
+      "desc": [
+        "Professional Sports and Traffic Congestion: Evidence from US Cities. Journal of Regional Science, 58(5), 869-886."
+      ],
+      "link": "https://doi.org/10.1002/mde.2793",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
   ];
 });
