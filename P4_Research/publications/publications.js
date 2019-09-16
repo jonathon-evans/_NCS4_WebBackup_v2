@@ -21,7 +21,7 @@ app.controller("PubCtrl", function ($scope) {
     '-year',
     'nauthors'
   ];
-  
+
 
   $scope.tags = {
     _00_DEFAULT: "Show All",
@@ -40,6 +40,7 @@ app.controller("PubCtrl", function ($scope) {
   $scope.auth = {
     STACEY: "Hall, S",
     BRIAN: "Menaker, B.",
+    GORDON: "Gordon, K.O.",
     JOHN: "Miller, J",
     JUSTIN: "Kurland, J",
     LOU: "Marciani, L",
@@ -79,8 +80,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT]
     },
   */
-  $scope.pubList = [
-    {
+  $scope.pubList = [{
       "nauthors": "Hall",
       "authors": "Newland, B., Hall, S., & Koba, A. L.",
       "year": 2018,
@@ -99,16 +99,6 @@ app.controller("PubCtrl", function ($scope) {
       ],
       "link": "https://search.proquest.com/openview/b5c4b8eb76c09723e196347c2a2e363a/1?cbl=2034846&pq-origsite=gscholar",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
-    },
-    {
-      "nauthors": "Hall",
-      "authors": "Gordon, K.O., Czekanski, W.A., Hall, S., & McAfee, K.E.",
-      "year": 2019,
-      "desc": [
-        "Understanding the interface between security and customer service at NCAA Division I FCS football venues. Journal of Contemporary Athletics, 14(1)."
-      ],
-      "link": "",
-      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
     },
     {
       "nauthors": "Hall",
@@ -438,7 +428,7 @@ app.controller("PubCtrl", function ($scope) {
         "An analysis of the Spatio-temporal ‘footprint’ in and around Sheffield Wednesday (Hillsborough). Association of Chief Police Officers.",
       ],
       "link": "https://nam05.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.researchgate.net%2Fpublication%2F310322119_An_analysis_of_the_Spatio-temporal_%27footprint%27_of_crime_in_and_around_Sheffield_Wednesday_FC_Hillsborough&data=02%7C01%7C%7C5302bd69a00340db6c9d08d7142c22b8%7C7f3da4be2722432ebfa764080d1eb1dc%7C0%7C0%7C637000052109478637&sdata=u1rULGlptp5N8WheqfPXP7YmHbGapapprn730og9L8U%3D&reserved=0",
-      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES,, $scope.tags._09_BEST_PRACTICES]
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, , $scope.tags._09_BEST_PRACTICES]
     },
     {
       "nauthors": "Kurland",
@@ -991,7 +981,7 @@ app.controller("PubCtrl", function ($scope) {
       "link": "https://he.kendallhunt.com/product/facility-and-event-management-applications-sport",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
     },
-    
+
     {
       "nauthors": "Miller",
       "authors": "Gillentine, A., Miller, J. & Crow, B.",
@@ -1251,6 +1241,36 @@ app.controller("PubCtrl", function ($scope) {
       ],
       "link": "https://doi.org/10.1002/mde.2793",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Gordon, Hall",
+      "authors": "Gordon, K.O., Czekanski, W.A., Hall, S.A., & McAfee, K.E.",
+      "year": 2019,
+      "desc": [
+        " Understanding the interface between security and customer service at NCAA Division I FCS football venues. Journal of Contemporary Athletics, 14 (1)."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._09_BEST_PRACTICES]
+    },
+    {
+      "nauthors": "Gordon",
+      "authors": "Gordon, K.O.",
+      "year": 2018,
+      "desc": [
+        "Escape from ‘Owlcatraz’: An interaction ritual case study of the stadium naming rights agreement between Florida Atlantic University and The GEO Group, Inc. Journal of Issues in Intercollegiate Athletics, 11, 214-236."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._09_BEST_PRACTICES]
+    },
+    {
+      "nauthors": "Gordon",
+      "authors": "Gordon, K.O., Czekanski, W.A., & DeMeo, J.A.",
+      "year": 2016,
+      "desc": [
+        " Assessing the influence of sport security operations on the guest experience: Using the Delphi method to understand practitioner perspectives. Journal of Sport Safety and Security, 1 (1), Article 2, 1-13."
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._09_BEST_PRACTICES]
     },
   ];
 });
