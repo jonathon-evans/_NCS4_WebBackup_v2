@@ -1,0 +1,2095 @@
+<style>
+/*Structural Navigation
+        Instructions:  To find what you need, press ctrl-f and search a keyword from the following list.
+        Feel free to add your own sections as you see fit.  The ideal would be to have every piece of code
+        under it's own section.
+        Notation:  KW = keyword; TAG = tag, can be placed anywhere
+        
+            _OUTDATED         TAG, Possibly outdated material
+            _NEW              TAG, Recently Added
+            home_page        KW, Home Page Specific
+            nav_bar          KW, navbar Specific
+        
+        */
+
+:root {
+    --background-image1: url(https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Created%20Graphics/Backgrounds/NCS4_Website_new_v2.jpg);
+    --alpha-text-color: black;
+    --alpha-bg-color: #e8b220;
+    /*transparent-brown: rgba(67,21,9,.78)*/
+    /*full-brown: rgb(78,37,19)*/
+    /*#dba71a*/
+    --beta-bg-color: #eac257;
+    --gamma-bg-color: #e8b220;
+}
+
+.bodyBackground {
+    background: white;
+}
+
+/*=====Float Footer at Bottom no matter what the max height of the screen is*/
+html,
+body {
+    height: 100%;
+}
+
+p {
+    /* text-indent: 3em; */
+}
+
+p a,
+p img {
+    text-indent: 0px;
+}
+
+a {
+    color: #1b93c3;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+a:visited {
+    color: #1c5971;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0a96b6;
+    text-decoration: underline;
+}
+
+
+
+.no-max-width {
+    max-width: none !important;
+}
+
+.margins_wide {
+    width: 101.9% !important;
+    margin-left: -1%;
+}
+
+.margins_wide_content {
+    max-width: 1200px !important;
+    margin: auto;
+}
+
+#ContentColumn {
+    min-height: 44em;
+}
+
+#MPOuterMost {
+    background: inherit;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+    overflow-x: initial;
+}
+
+#MPOuterFooter {
+    position: absolute !important;
+    bottom: 0;
+    height: 17.5em;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+#MPFooterLink {
+    z-index: 1;
+    position: absolute !important;
+    height: 1.5em;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #bcbcbc;
+}
+
+#MPCopyright {
+    color: #969696;
+}
+
+@media (max-width: 991px) {
+    #MPOuterFooter {
+        height: 16em;
+    }
+
+    #MPOuter {
+        padding-bottom: 16em;
+    }
+}
+
+/*====END Float Footer*/
+/* navbar stuff :::::::::::::::::::::::::::::::[KW=nav_bar] */
+
+
+#NAV.stickyNav-wide {
+    /*max-width: 100%;*/
+    /*margin-top: 55px;*/
+}
+
+ul.nav {
+    max-width: 1200px;
+}
+
+.navbar-default .navbar-toggle {
+    background-color: #808080;
+}
+
+
+ul.navbar-nav {
+    float: right;
+    background-color: transparent;
+    /* margin-right: 4%; */
+}
+
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: white !important;
+}
+
+.navbar-default {
+    margin-top: 0px;
+    background-color: transparent;
+}
+
+/* navbar flickering fix */
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+}
+
+ul.nav.navbar-nav>li>a {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+ul.navbar-nav>li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:hover,
+.navbar .navbar-nav>.active>a:focus,
+.navbar .navbar-nav>li>a:hover {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* end navbar flickering fix */
+
+
+
+#MPAuxNav ul.level1 li a {
+    color: #222222;
+}
+
+
+
+#MPOuterHeader,
+#HEADER {
+    /*
+         background: url(https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Header%20Images/newheaderbg.jpg)  #333333;
+        background-size: initial;
+        */
+}
+
+#DesktopLogoDiv {
+    position: relative;
+    bottom: 10px;
+}
+
+#DesktopLogoDiv img {
+    padding: 6px;
+    top: 29px;
+    left: 28px;
+    height: 47px;
+    z-index: 2000;
+    position: fixed;
+}
+
+.pull-right {
+    z-index: 98;
+    /* position: fixed; */
+}
+
+#MPheader>div.row {
+    height: 0px;
+}
+
+#HEADER>.col-md-12 {
+    /*background-color:  #130623;/* rgba(77,31,19,.78)*/
+    */
+    /*height: 0px;*/
+    /*margin-top: -55px;*/
+}
+
+
+
+
+/****************************************************************************************/
+/* Custom CSS */
+/****************************************************************************************/
+
+
+/* ===============[FLEXBOX BASICS]================= */
+.flex-tablewrap {
+    width: 100%;
+    display: table;
+}
+
+.f-col {
+    width: 100%;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    -webkit-flex-direction: column;
+    /* Safari 6.1+ */
+    flex-direction: column;
+}
+
+.f-row {
+    width: 100%;
+    display: -webkit-flex;
+    /* Safari */
+    display: flex;
+    -webkit-flex-direction: row;
+    /* Safari 6.1+ */
+    flex-direction: row;
+}
+
+.f-cell {
+    display: table-cell;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* fix terms and conditions accept button: Check if this affects the rest of the site */
+input#MainCopy_AgreeButton,
+input#MainCopy_DisagreeButton {
+    position: relative !important;
+    bottom: 0 !important;
+    left: 0 !important;
+}
+
+/* ===============[END FLEXBOX BASICS]================= */
+/* ===============[START LIGHTBOX BASICS]================= */
+/* Modified version of Tiffany Ong's lightbox https://codepen.io/ongtiffany/pen/BoOeQV */
+
+a.lightbox img {
+    display: block;
+}
+
+.lightbox-target {
+    position: fixed;
+    top: 0;
+    left: 0px;
+    z-index: 10000000;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+    overflow: hidden;
+}
+
+.lightbox-target img {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, .3);
+    box-sizing: border-box;
+}
+
+a.lightbox-close {
+    display: block;
+    width: 50px;
+    height: 50px;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+    text-decoration: none;
+    position: absolute;
+    top: -80px;
+    right: 0;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+a.lightbox-close:before {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+a.lightbox-close:after {
+    content: "";
+    display: block;
+    height: 30px;
+    width: 1px;
+    background: black;
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.lightbox-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+}
+
+.lightbox-target:target img {
+    max-height: 85%;
+    max-width: 85%;
+    height: auto;
+    width: auto;
+}
+
+.lightbox-target:target a.lightbox-close {
+    top: 0px;
+}
+
+/* STRUCTURE:
+        <div>
+          <a class="lightbox" href="#TARGET">
+            <img src="" />
+          </a>
+          <div class="lightbox-target" id="TARGET">
+            <img src="" />
+            <a class="lightbox-close" href="#"></a>
+        </div>
+        
+         */
+
+/* ===============[END LIGHTBOX BASICS]================= */
+/* ===============[START DROPDOWN BASICS]================= */
+
+
+/* .f-cell h3{ */
+label.dropdown_D {
+    position: relative;
+    z-index: 2;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    padding-top: 1em;
+    font-size: 1.3em;
+    border-radius: 10px;
+    background: rgb(240, 249, 255);
+    background: -moz-linear-gradient(top, rgba(240, 249, 255, 1) 0%, rgba(203, 235, 255, 1) 59%, rgba(161, 219, 255, 1) 100%);
+    background: -webkit-linear-gradient(top, rgba(240, 249, 255, 1) 0%, rgba(203, 235, 255, 1) 59%, rgba(161, 219, 255, 1) 100%);
+    background: linear-gradient(to bottom, rgba(240, 249, 255, 1) 0%, rgba(203, 235, 255, 1) 59%, rgba(161, 219, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f9ff', endColorstr='#a1dbff', GradientType=0);
+}
+
+label.dropdown_D:hover {
+    background-color:
+}
+
+.open-state {
+    display: none;
+}
+
+.open-target {
+    position: relative;
+    z-index: 1;
+    margin-top: -25px;
+    opacity: 0;
+    overflow: hidden;
+    max-height: 0;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: .25s ease-in-out;
+}
+
+.open-state:checked~.open-target {
+    margin-top: 0;
+    opacity: 1;
+    max-height: 60em;
+}
+
+label.dropdown_D:before {
+    display: inline-block;
+    content: "▼";
+    transition: -ms-transform .25s ease-in-out;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+}
+
+.open-state~label.dropdown_D:before {
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.open-state:checked~label.dropdown_D:before {
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/* ===============[END DROPDOWN BASICS]================= */
+/* ===============[MININAV BASICS]================= */
+
+.mininav-container {
+    /* width: 95%; */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 10px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.mininav-cell {
+    display: flex;
+    padding: 0.5em;
+    margin-left: 4px;
+    margin-right: 4px;
+    /* margin: auto; */
+    max-width: 10em;
+    max-height: 3em;
+    min-width: 7em;
+    min-height: 3em;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 20px;
+    height: 100%;
+    width: 100%;
+    border: 2px solid grey;
+    align-items: center;
+    justify-content: center;
+}
+
+.mininav-cell>span {
+    color: white;
+}
+
+.cssp_grp .mininav-cell {
+    /* max-width: 14em; */
+
+}
+
+.cssp_grp {
+    padding-top: 0 !important;
+}
+
+.mininav-rowSub,
+.mininav-row {
+    display: -webkit-flex;
+    -webkit-flex-direction: row;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media (max-width: 1260px) {
+    .mininav-row {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 815px) {
+    .mininav-rowSub {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+.csvs_mininav_gradient {
+    background: #0f7c96;
+    background: -webkit-radial-gradient(#199fbf, #0f7c96);
+    background: -o-radial-gradient(#199fbf, #0f7c96);
+    background: -moz-radial-gradient(#199fbf, #0f7c96);
+    background: radial-gradient(#199fbf, #0f7c96);
+    font-weight: bold;
+}
+
+.cssp_mininav_gradient {
+    background: rgb(89, 89, 89);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(89, 89, 89, 1) 1%, rgba(30, 30, 30, 1) 65%, rgba(30, 30, 30, 1) 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(89, 89, 89, 1) 1%, rgba(30, 30, 30, 1) 65%, rgba(30, 30, 30, 1) 100%);
+    background: radial-gradient(ellipse at center, rgba(89, 89, 89, 1) 1%, rgba(30, 30, 30, 1) 65%, rgba(30, 30, 30, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#595959', endColorstr='#1e1e1e', GradientType=1);
+}
+
+.cssp_mininav_gradient:hover {
+    color: #EAC257;
+}
+
+.set_mininav_gradient {
+    background: #fff959;
+    background: -moz-radial-gradient(center, ellipse cover, #fff7a8 0%, #fff959 100%);
+    background: -webkit-radial-gradient(center, ellipse cover, #fff7a8 0%, #fff959 100%);
+    background: radial-gradient(ellipse at center, #fff7a8 0%, #fff959 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff7a8', endColorstr='#fff959', GradientType=1);
+}
+
+
+/* ===============[END MININAV BASICS]================= */
+
+
+/*TEMPORARY:  Move fp slider down a bit*/
+.ContentItemHtml.Tiny-Slider_Carousel {
+    margin-top: 57px;
+}
+
+
+/*For top ad space - MAY BE _OUTDATED*/
+#AdSpotHomeTop_AdSpots img {
+    width: 93%;
+    height: auto;
+    margin-bottom: 15px;
+    max-width: 1200px;
+    border-radius: 0px !important;
+}
+
+/* Have logout text visible */
+.logouttext {
+    color: white !important;
+}
+
+/* Turn certain links into the footer white */
+#MPBottomMenu ul[role=menubar] a {
+    color: #FFF !important;
+}
+
+/*
+        #MPOuter {
+            margin-top: 40px;
+        }
+        */
+
+/* For the calendar thumbnails */
+#MainCopy_ctl19_ContentPanel .col-md-2 {
+    width: 25% !important;
+}
+
+#MainCopy_ctl19_ContentPanel .col-md-10 {
+    width: 75% !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* Color change of FP Widgets */
+.ContentUserControl .row.heading,
+.ContentUserControl .row.heading h2,
+.home .ContentItemHtml h2,
+.connect-home .ContentItemHtml h2 {
+    background-color: #2b3c4a;
+}
+
+.connect-home .ContentItemHtml h2 {
+    padding: 30px;
+    margin-top: 0;
+}
+
+/* This is to fix the bottom items height and add a scroll feature. */
+.home .Content {
+    height: 455px;
+    overflow: auto;
+}
+
+.connect-home #MainCopy_ctl08_ctl00 .Content {
+    height: auto !important;
+}
+
+.connect-home .section10 .Content,
+.connect-home .section11 .Content,
+.connect-home .section12 .Content {
+    height: 455px;
+    overflow: auto;
+}
+
+/*  Set of media queries to prevent NAV overlapping the content */
+
+/*============================================================[CUSTOM RESPONSIVENESS CHANGES START]============================================================*/
+/*fix weird logo spacing on minimize*/
+@media (max-width: 1200px) {
+    #DesktopLogoDiv img {
+        margin-left: -15px;
+    }
+}
+
+
+
+/*
+        }
+        @media only screen and (max-width: 100px){
+          .navbar-nav{
+            margin-right:4%;
+          }
+        } */
+/*move header portal tabs to make room for ncs4 logo   [KW=nav_bar]*/
+@media (max-width: 1266) and (min-width: 1030px) {
+    .navbar-nav {
+        max-width: 700px !important;
+    }
+}
+
+@media (max-width: 1030px) and (min-width: 830px) {
+    .navbar-nav {
+        max-width: 570px !important;
+    }
+}
+
+@media (max-width: 830px) and (min-width: 767px) {
+    .navbar-nav {
+        max-width: 471px !important;
+    }
+}
+
+@media (max-width: 890px) {
+    .navbar-nav {
+        font-size: 0.8em !important;
+        width: 900px !important;
+        margin-right: -48px !important;
+    }
+}
+
+
+/*hide profile buttons on mobile*/
+@media (max-width: 767px) {
+
+    .btn-group,
+    .btn-group-vertical {
+        visibility: hidden;
+    }
+
+}
+
+/*get rid of white space under header*/
+@media (max-width: 991px) {
+    .ContentItemHtml .HtmlFooter {
+        padding: 0px;
+    }
+}
+
+/*fix spacing on header*/
+@media (max-width: 991px) {
+    #NAV.stickyNav-wide {
+        right: 0px;
+    }
+}
+
+@media only screen and (max-width: 1120px) and (min-width: 767px) {
+    /* account for adjustment of header height (screws up page height)*/
+    /* .FP-Spacer{
+          height: 90vh !important;
+          } */
+
+    /* Keep header height the same [_NEW]*/
+    #NAV {
+        /* height: 50px !important; */
+    }
+}
+
+/*=======[custom buttons]==========*/
+.cssp_button {
+    background: rgb(30, 30, 30);
+    background: -moz-linear-gradient(top, rgba(30, 30, 30, 1) 0%, rgba(30, 30, 30, 1) 35%, rgba(61, 61, 61, 1) 99%);
+    background: -webkit-linear-gradient(top, rgba(30, 30, 30, 1) 0%, rgba(30, 30, 30, 1) 35%, rgba(61, 61, 61, 1) 99%);
+    background: linear-gradient(to bottom, rgba(30, 30, 30, 1) 0%, rgba(30, 30, 30, 1) 35%, rgba(61, 61, 61, 1) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e1e1e', endColorstr='#3d3d3d', GradientType=0);
+    /* background: rgb(45, 45, 45); */
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    color: white !important;
+    border: 3px solid #666;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 26em;
+    min-width: 18em;
+    width: auto !important;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cssp_button_gold {
+    background: rgb(30, 30, 30);
+    background: -moz-linear-gradient(top, rgb(219, 167, 26) 0%, rgb(232, 185, 56) 35%, rgb(217, 189, 114) 99%);
+    background: -webkit-linear-gradient(top, rgb(219, 167, 26) 0%, rgb(232, 185, 56) 35%, rgb(217, 189, 114) 99%);
+    background: linear-gradient(to bottom, rgb(219, 167, 26) 0%, rgb(232, 185, 56) 35%, rgb(217, 189, 114) 99%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dba71a', endColorstr='#e4c060', GradientType=0);
+    /* background: rgb(45, 45, 45); */
+    display: inline-block;
+    white-space: nowrap;
+    text-align: center;
+    color: black !important;
+    border: 3px solid #666;
+    text-decoration: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.2em;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 26em;
+    min-width: 18em;
+    width: auto !important;
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.cssp_button:hover,
+cssp_button:focus {
+    /* background-color:#504c4c !important; */
+    color: #EAC257 !important;
+    text-decoration: none;
+}
+
+.cssp_button_gold:hover,
+cssp_button_gold:focus {
+    /* background-color:#504c4c !important; */
+    color: #2a6496 !important;
+    text-decoration: none;
+}
+
+.cssp_button:focus {
+    color: white !important;
+    text-decoration: none;
+}
+
+/* .cssp_button::after {
+            position: relative;
+            background-color: grey;
+            height: 6px;
+            bottom: -.6em;
+            display: block;
+            content: "";
+        } */
+
+/* make "more" link white on homepage sport security watch*/
+.MainCopy_ctl16_MoreLink {
+    color: white;
+}
+
+
+
+/*=======[end custom buttons]==========*/
+
+
+/*============================================================[CUSTOM RESPONSIVENESS CHANGES END]============================================================*/
+
+
+/* Just one range but google chrome says this is for tablet resolution */
+@media (width: 768px) {
+    ul.navbar-nav>li {
+        display: inline-block;
+        float: right;
+
+    }
+
+    #MPOuterHeader {
+        /*margin-bottom: 71px;*/
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 1001px) {
+    #MPOuterHeader {
+        /*margin-bottom: 21px;*/
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 501px) {
+    #MPOuterHeader {
+        /*margin-bottom: 71px;*/
+    }
+}
+
+@media (max-width: 500px) {
+    #MPOuterHeader {
+        /*margin-bottom: 5px;*/
+    }
+}
+
+@media (max-width: 768px) and (min-width: 501px) {
+    #DesktopLogoDiv img {
+        /*height: 140px !important;*/
+    }
+
+}
+
+@media (max-width: 500px) and (min-width: 376px) {
+    #DesktopLogoDiv img {
+        /*height: 120px !important;*/
+    }
+
+}
+
+@media (max-width: 375px) {
+    #DesktopLogoDiv img {
+        /*height: 90px !important;*/
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    /* move login link over on smaller screens to not obscure menubar */
+    .HLWelcome.HLWelcomeHeader {
+        margin-right: 43px !important;
+    }
+
+    #NAV {
+        background-color: #2c3e4c !important;
+    }
+
+    /* Fix wierd styling on smaller screens (navbar) */
+    ul.navbar-nav {
+        float: none;
+        max-width: none !important;
+    }
+}
+
+
+.no-pageTitle-padding {
+    padding: 0px;
+}
+
+.col-md-6.column.section5,
+.col-md-6.column.section6 {
+    /*margin-top: 15px;*/
+}
+
+.frontPageSlider {
+    margin-top: -1%;
+    height: 100%;
+    width: 100%;
+    float: left;
+}
+
+.ContentUserControl .HLLandingControl,
+.ContentUserControl.HLLandingControl,
+.home .ContentItemHtml {
+    padding: 0px;
+}
+
+/*=========================[Home-Specific Formatting:::::: KW=home_page]=================================*/
+
+/* adjust open area formatting*/
+.HLHomePage .row.row-wide.clearfix:first-child {
+    margin-top: -30px;
+    margin-left: -30px;
+    width: 100vw;
+    max-width: none;
+}
+
+
+/*.HLHomePage .col-md-6.column.section6 {
+            padding-left: 215px;
+            margin-top: 10px;
+        }*/
+
+/*nav color change [KW=nav_bar]*/
+.HLHomePage .navbar-default,
+#NAV {
+    background-color: #2c3e4c;
+    border-color: #2c3e4c;
+}
+
+/* nav fix positioning */
+.row.traditional-nav:not(.stickyNav) {
+    z-index: 10;
+    position: inherit;
+}
+
+/* .changeColorH{
+          background-color: #2c3e4c !important;
+          border-color: #2c3e4c !important;
+        } */
+.changeColorH {
+    background-color: transparent !important;
+    border-color: transparent !important;
+}
+
+#NAV.changeColorH_Lab {
+    background-color: #101010 !important;
+    border-color: #101010 !important;
+}
+
+@media (max-width: 768px) {
+    #NAV.changeColorH_Lab {
+        background-color: #101010 !important;
+        border-color: #101010 !important;
+    }
+
+}
+
+
+
+/*.HLLabPage .row.row-last.row-wide.clearfix{  //LABORATORY
+            margin-top: -30px;
+            margin-left: -30px;
+            width:100vw;
+            max-width: none;
+        }*/
+
+/* section changer */
+.coloredSection1H {
+    max-width: none;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: #1b93c3;
+}
+
+
+/*hide logo*/
+.home #Logo>.col-md-12 {
+    visibility: hidden;
+}
+
+/* open area formatting */
+.FPTitleText {
+    /*used on other pages too?*/
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    text-shadow: 2px 1px 6px #000000;
+    font-weight: bold;
+}
+
+.FP-Spacer {
+    height: 100vh;
+    /*accounting for header: 95.1vh*/
+}
+
+/*to be described*/
+.home .ContentItemHtml {
+    /*margin-bottom: -20px;*/
+    background-color: transparent;
+    border: 0px transparent;
+}
+
+
+/*===============================[CSVS & CSSP Header]==============================================================*/
+.T_transportclass p {
+    font-size: 16px;
+}
+
+.T_customNav {
+    /*border: 1px solid #545455;*/
+    margin-top: 0;
+    width: 102%;
+    margin-left: -8px;
+}
+
+.T_customNav a {
+    /* was td */
+    /* background-color: #eac257;*/
+    /*border-left: 1px solid #545455;
+        border-right: 1px solid #545455;
+        border-spacing: 15px; */
+    color: black;
+    font-weight: bold;
+    height: 48px;
+    outline: none;
+    width: 80px !important;
+    border-radius: 20px;
+    border: transparent;
+}
+
+.T_customNav a {
+    display: block;
+    text-align: center;
+    border: 2px solid grey;
+    text-decoration: none;
+    color: black !important;
+}
+
+.T_innerbutton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    position: relative;
+    top: 10px;
+    vertical-align: middle;
+    width: 80px;
+}
+
+.T_small {
+    top: 17px;
+}
+
+/*=============================================================================================*/
+
+.HLKnowledgePage .row.row-wide.clearfix:first-child {
+    /* margin: 0px; */
+    margin-top: -30px;
+    margin-left: -30px;
+    width: 100vw;
+    max-width: none;
+}
+
+.HLTrainingPage .row.row-wide.clearfix:first-child {
+    /* margin: 0px; */
+    margin-top: -1px;
+    margin-left: -30px;
+    width: 103vw;
+    max-width: none;
+}
+
+.HLAppliedResearchPage .row.row-wide.clearfix:first-child {
+    /* margin: 0px; */
+    margin-top: -1px;
+    margin-left: -30px;
+    width: 103vw;
+    max-width: none;
+}
+
+.HLProfessionalDevPage .row.row-wide.clearfix:first-child {
+    /* margin: 0px; */
+    margin-top: -1px;
+    margin-left: -30px;
+    width: 103vw;
+    max-width: none;
+}
+
+
+#MPBottomMenu.MPBottomMenu ul.FatFooterMenu li a.level1 {
+    color: #C79644;
+}
+
+.input-group {
+    padding: 8px;
+    margin-top: -8px;
+    background-color: #452117;
+}
+
+.input-group.connect_grp {
+    padding: 8px;
+    margin-top: -8px;
+    max-width: 18em;
+    background-color: transparent;
+    position: absolute;
+    right: 15px;
+    /* top: 0; */
+    bottom: -50px;
+}
+
+.btn.btn-default.btnSearch {
+    max-height: 34px;
+}
+
+/*fix menu bg-darkgray*/
+#MPButtonBar .dropdown-menu .active>a,
+#MPButtonBar li .dropdown-menu .active>a:hover,
+#MPButtonBar .dropdown-menu .dropdown-submenu .active a:hover,
+#MPButtonBar .dropdown-submenu .dropdown-submenu .active a:hover {
+    background-color: #452117;
+    color: white;
+}
+
+/* #MPButtonBar {
+          margin-left: 25px;
+        } */
+
+#Logo>.col-md-12 {
+    width: 90%;
+    margin-top: -48px;
+}
+
+
+#HEADER {
+    /* hide upper header*/
+    height: 0px;
+    top: 0;
+    right: 31px;
+    position: fixed;
+    z-index: 1001;
+
+}
+
+.skiplinkholder {
+    display: none;
+}
+
+/* [KW=nav_bar] */
+#MPButtonBar .navbar .navbardefault {
+    /*snap sticky into view */
+    margin-top: -55px;
+}
+
+#ProfileContainer {
+    position: absolute !important;
+    top: 45px;
+    right: 11px;
+}
+
+button.btn.btn-default.imgButton.dropdown-toggle {
+    border-radius: 25px 25px 0 0 !important;
+}
+
+/* overlay profile on header */
+@media(max-width: 1000px) {
+    /* .btn-group, .btn-group-vertical {
+             right: 3vw;
+          } */
+}
+
+.HLWelcome.HLWelcomeHeader {
+    /* overlay login on header */
+    position: absolute;
+    z-index: 25;
+    right: 0;
+}
+
+.btn.btn-default.imgButton.dropdown-toggle {
+    margin-left: -7px;
+    margin-right: 7px;
+}
+
+.MPheader img.welcome-profile-image {
+    width: 40px !important;
+    height: 40px !important;
+    Margin-top: -13px;
+}
+
+#Welcome_LoginLink {
+    margin-right: 20px;
+}
+
+div.collapse.navbar-collapse.navbar-ex1-collapse {
+    /* re-align navbar portals */
+    /*margin-left: -80px;*/
+    margin-right: 12em;
+}
+
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+    /* re-align navbar portals */
+    width: auto;
+    float: none !important;
+}
+
+div#NAV.row.traditional-nav.stickyNav.stickyNav-wide {
+    /* re-align navbar portals */
+    max-width: none !important;
+}
+
+
+/* change navbar to button quicker */
+@media (min-width: 880px) {
+    .navbar-toggle {
+        display: none;
+    }
+
+    .navbar-collapse.collapse {
+        display: block !important;
+        height: auto !important;
+        padding-bottom: 0;
+        overflow: visible !important;
+    }
+}
+
+/* #MPOuterFooter{
+          position: relative;
+        }
+        #MPFooterLink{
+          position: relative;
+        } */
+
+.navbar .navbar-nav>.active>a,
+.navbar .navbar-nav>.active>a:hover,
+.navbar .navbar-nav>.active>a:focus,
+.navbar .navbar-nav>li>a:hover {
+    background-color: #1b93c3;
+    color: #FFFFFF;
+    border-radius: 48px !important;
+    padding-top: 11px;
+    padding-bottom: 10px;
+}
+
+
+
+/*//EXPERIMENTAL: Adjust front page header:
+        This in combination with the css in FPOpen (margin-top: -50px) moves the header over the front page open area.
+        */
+#MPOuterHeader {
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+    background-color: transparent;
+}
+
+.ContentItemHtml.FPOpen {
+    margin-bottom: -80px;
+}
+
+/* adjust header color on scroll*/
+.navbar-default,
+#NAV {
+    /*background-color: #130623;  /*rgba(77,31,19,0.52)*/
+    */ width: 500%;
+    /*background-color: #2c3e4c;
+          border-color: #2c3e4c;*/
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3;
+    transition: background-color .3s;
+}
+
+
+/* NAVBAR UPDATE 6-6-18 */
+.navbar {
+    margin: 0;
+    margin-right: 11em;
+    /*  10.7 on smaller */
+    margin-left: 140px;
+}
+
+.navbar.athome {
+    margin-left: 0px;
+}
+
+.navbar.logged {
+    margin-right: 120px;
+}
+
+ul.navbar-nav {
+    max-width: 100% !important;
+    padding: 0;
+}
+
+div.collapse.navbar-collapse.navbar-ex1-collapse {
+    margin-right: 0;
+}
+
+div.collapse.navbar-collapse.navbar-ex1-collapse>div.row>div.col-md-12 {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-content: center;
+    /* justify-content: flex-end; */
+}
+
+@media (max-width: 890px) {
+    .navbar-nav {
+        font-size: 0.8em !important;
+        width: 100% !important;
+        margin-right: 0 !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .navbar,
+    .navbar.logged,
+    /* .navbar .notlogged,  */
+    .navbar.athome {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+
+/****************************************************************************************/
+/* End of Custom CSS */
+/****************************************************************************************/
+
+h3,
+.Heading3,
+h3 a,
+h3 a:hover {
+    color: #000000;
+    background-color: #E8E8E8;
+}
+
+.make-buttons .HtmlContent a {
+    display: block;
+
+    background: #edbf72 url(https://www.neatcreativemedia.com/econverse/themes/network/images/darkline.png) repeat-x bottom;
+    border: none !important;
+    color: #ffffff;
+    padding: 10px;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'montserratbold', sans-serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+.SloganText,
+.LogoImg {
+    display: block !important;
+    text-align: left;
+    padding: 10px;
+}
+
+hr,
+hr.delimiter,
+.HLLandingControl ul li {
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+}
+
+@media only screen and (min-width: 992px) {
+    .col-md-12>.ContentUserControl>.HLLandingControl.HLEngagement {
+        margin: 20px -2000px -3px -2000px;
+    }
+}
+
+/******* Event Control Styles *******/
+
+.home .HLLandingControl.HLEventList .form-group {
+    display: block;
+}
+
+.date-block,
+.event-list .date-block {
+    background-color: transparent;
+    border: 3px solid #ff970f;
+    width: 100%;
+    padding: 0;
+}
+
+.event-list .calendary-number {
+    font-size: 50px;
+    margin: 0;
+}
+
+.calendar-day {
+    display: none;
+}
+
+.calendary-number {
+    font-size: 40px;
+    font-weight: 600;
+    margin: -5px;
+    color: #ff970f;
+}
+
+.calendar-month {
+    text-transform: uppercase;
+    background-color: #ff970f;
+    font-weight: 600;
+    color: #ffffff;
+    padding: 5px 2px;
+}
+
+.event-list .calendar-month {
+    font-size: 115%;
+}
+
+.home .HLEventList .Content .col-md-2 {
+    width: 30%;
+}
+
+.home .HLEventList .Content .col-md-10 {
+    width: 70%;
+}
+
+.home .HLEventList .Content .col-md-10 .title-row {
+    padding-left: 10px;
+}
+
+
+.home #MainCopy_ctl21_ContentPanel .col-md-3.no-pad,
+.connect-home div#MainCopy_ctl17_ContentPanel .col-md-3.no-pad {
+    width: auto;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    max-height: 100px;
+    z-index: 1;
+}
+
+.home #MainCopy_ctl21_ContentPanel .col-md-3.no-pad img,
+.connect-home div#MainCopy_ctl17_ContentPanel .col-md-3.no-pad img {
+    width: auto;
+    height: 100%;
+    margin: 0;
+    max-height: unset;
+    max-width: 340px;
+}
+
+.home #MainCopy_ctl21_ContentPanel .row.title-row,
+.connect-home div#MainCopy_ctl17_ContentPanel .row.title-row {
+    position: relative;
+    padding-top: 110px;
+}
+
+.home #MainCopy_ctl21_ContentPanel .pull-right,
+.connect-home div#MainCopy_ctl17_ContentPanel .pull-right {
+    position: relative;
+}
+
+
+
+/**** ICONS ****/
+
+
+/*** theme specific icons follow (clr = #9f1f63) ***/
+
+.icon-connect .heading h2,
+.ContentItemHtml.icon-connect h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-connect-L-clr.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-connect-grey .heading h2,
+.ContentItemHtml.icon-connect-grey h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-connect-L-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-connect-white .heading h2,
+.ContentItemHtml.icon-connect-white h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-connect-L-white.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-openbook .heading h2,
+.ContentItemHtml.icon-openbook h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-book-L-clr.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-openbook-grey .heading h2,
+.ContentItemHtml.icon-openbook-grey h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-book-L-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-openbook-white .heading h2,
+.ContentItemHtml.icon-openbook-white h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-book-L-white.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-compass .heading h2,
+.ContentItemHtml.icon-compass h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-compass-L-clr.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-compass-grey .heading h2,
+.ContentItemHtml.icon-compass-grey h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-compass-L-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-compass-white .heading h2,
+.ContentItemHtml.icon-compass-white h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-compass-L-white.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 110px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+
+/******** general icons to follow *******/
+
+.icon-calendar .heading h2,
+.ContentItemHtml.icon-calendar h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-calendar.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-speechbubble .heading h2,
+.ContentItemHtml.icon-speechbubble h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-speechbubble.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-megaphone .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-megaphone.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-people .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-people.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-file .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-file.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+}
+
+.icon-network .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-network.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-calendar-grey .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-calendar-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-speechbubble-grey .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-speechbubble-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-megaphone-grey .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-megaphone-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-people-grey .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-people-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-file-grey .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-file-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.icon-network-grey .heading h2 {
+    background-image: url('http://www.neatcreativemedia.com/econverse/icons/icon-network-grey.png');
+    background-repeat: no-repeat;
+    background-position: center 20px;
+    padding-top: 130px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+/****** SMALL ICONS ******/
+
+.icon-file-small .heading h2 {
+    background: url('http://www.neatcreativemedia.com/econverse/themes/NACHA/images/icon-sm-file.png') no-repeat center top;
+    padding-top: 40px;
+    color: #ffffff;
+}
+
+.icon-megaphone-small .heading h2 {
+    background: url('http://www.neatcreativemedia.com/econverse/themes/NACHA/images/icon-sm-megaphone.png') no-repeat center top;
+    padding-top: 40px;
+    color: #ffffff;
+}
+
+.icon-twitter-small h2 {
+    background: url('http://www.neatcreativemedia.com/econverse/themes/NACHA/images/icon-twitter.png') no-repeat center top;
+    padding-top: 40px;
+    color: #ffffff;
+}
+
+.icon-speechbubble-small .heading h2 {
+    background: url('http://www.neatcreativemedia.com/econverse/themes/NACHA/images/icon-sm-speechbubble.png') no-repeat center top;
+    padding-top: 40px;
+    color: #ffffff;
+}
+
+/*
+        .HLLandingControl .heading, .ContentItemHtml .htmlheading {
+            color: #9f1f63;
+            background-color: transparent;
+        }
+        
+        .ContentUserControl .HLLandingControl, .ContentItemHtml {
+            border: none;
+        }
+        
+        
+        .ContentUserControl .HLLandingControl, .ContentUserControl.HLLandingControl, .MPContentArea .ContentItemHtml {
+            color: #464646;
+            background-color: transparent;
+            padding: 60px 10px;
+            position: relative;
+            line-height: 1.6;
+        }
+        
+        /* Carousel Slide Show CSS */
+
+/*
+        
+        .ContentItemHtml.rotate-me.content-overlap{
+        padding: 0;
+        border: none;
+        }
+        .carousel-inner .item {
+            width:100%;
+            height:300px;
+        }
+        .carousel-inner .container {
+            padding:0 45px !important;
+        }
+        .item h1 {
+            font-size:30px;
+        }
+        
+        */
+
+/* Disabled due to custom css I made
+        .carousel-inner img {
+            max-height:200px;
+            width:auto;
+        }
+        */
+@media only screen and (min-width:992px) {
+    .item img.cut-bottom {
+        margin-top: 0px;
+    }
+}
+
+
+.carousel-indicators li {
+    border: 0px;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    opacity: .5;
+    margin: 0px 5px
+}
+
+.carousel-indicators li.active {
+    opacity: 1;
+    height: 20px;
+    width: 20px;
+    border: 0px;
+    margin: 0px 5px
+}
+
+
+.HtmlContent .container,
+.contain-inner .HLLandingControl,
+.contain-inner .HtmlContent {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    padding: 0;
+}
+
+.carousel-control {
+    width: 8%
+}
+
+.carousel-control {
+    background-image: none !important
+}
+
+img.drop-shadow {
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(77, 36, 36, 0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(77, 36, 36, 0.75);
+    box-shadow: 0px 0px 10px 0px rgba(77, 36, 36, 0.75);
+}
+
+.item * {
+    font-family: Lato
+}
+
+.item h1 {
+    font-weight: 450
+}
+
+.btn-blank {
+    background-color: transparent;
+    border: 2px solid #fff
+}
+
+.interior div#MainCopy_ContentWrapper {
+    padding-top: 0px;
+    border: none;
+}
+
+.huge p.lead {
+    font-size: 34px
+}
+
+.rotate-me>h2 {
+    margin-bottom: 20px
+}
+
+.bg-full {
+    background-size: cover !important;
+    background-position: center !important
+}
+
+img.slide-bg.bgd {
+    display: none
+}
+
+.overlay1 {
+    padding: 0px !important;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/**********Carousel Slide bg Images/Colors ************/
+.txtr-connects {
+    /*background-image:url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/connects.png)*/
+    background-image: url(https://higherlogicdownload.s3.amazonaws.com/NCS4/1969728b-5308-4b72-9f49-1fd8f19d42cc/UploadedImages/Connect%20Banner.jpg)
+        /*background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            */
+
+}
+
+.txtr-connects2 {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/connects2.png)
+}
+
+.txtr-calendar {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-calendar.png)
+}
+
+.txtr-files {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-docs.png)
+}
+
+.txtr-boxes {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-boxes.png);
+    background-repeat: repeat
+}
+
+.txtr-swirl {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-swirl.png)
+}
+
+.txtr-swirl2 {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-swirl2.png)
+}
+
+.txtr-minigrid {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-minigrid.png)
+}
+
+.txtr-minigrid2 {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-minigrid2.png)
+}
+
+.txtr-diagonal {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-diagonal.png)
+}
+
+.txtr-diagonal2 {
+    background-image: url(//s3.amazonaws.com/higherlogiccloudfront/Custom/Slider/Backgrounds/txtr-diagonal2.png)
+}
+
+.bg-primarycolor {
+    background-color: [PrimaryColor]
+}
+
+.bg-secondarycolor {
+    background-color: [SecondaryColor]
+}
+
+.item.reverse * {
+    color: #fff
+}
+
+.bg-orange {
+    background-color: #666
+}
+
+.bg-purple {
+    background-color: #663b87
+}
+
+.bg-green {
+    background-color: #7cbf4a
+}
+
+.bg-darkgreen {
+    background-color: #398946
+}
+
+.bg-darkgray {
+    background-color: #666
+}
+
+.bg-blue {
+    background-color: #008baf
+}
+
+.bg-darkblue {
+    background-color: #3b5f8f
+}
+
+.bg-teal {
+    background-color: #00afa9
+}
+
+/**********Carousel Slide bg Images END************/
+img.align-left {
+    float: left;
+    margin: 0px 20px 20px 0px
+}
+
+img.align-right {
+    float: right;
+    margin-left: 20px
+}
+
+img.cut-bottom {}
+
+p img.align-left {
+    margin-top: 6px
+}
+
+/*
+        .carousel-inner {
+            text-align:center;
+            min-height:200px;
+            width:100%;
+        }
+        */
+/*FOUND1*/
+.item {
+    padding: 0px;
+    width: 100%;
+    text-align: left;
+    height: auto;
+    background-color: transparent;
+}
+
+.logicon-fa h2:before {
+    color: [PrimaryColor];
+    margin-right: 8px
+}
+
+.reverse.logicon-fa h2:before {
+    color: #fff
+}
+
+.reverse a.btn-default {
+    color: #000;
+}
+
+/*========== Mobile First Method ==========*/
+/* Custom,iPhone Retina */
+@media only screen and (min-width:320px) {}
+
+/* Extra Small Devices,Phones */
+@media only screen and (min-width:480px) {}
+
+/* Small Devices,Tablets */
+@media only screen and (min-width:768px) {
+    img.align-right.cut-bottom {}
+
+    .stockdemo .item .container {
+        padding: 0px;
+        height: auto;
+    }
+
+    .stockdemo .cycle-slide img.align-left {}
+}
+
+/* Medium Devices,Desktops */
+@media only screen and (min-width:992px) {
+
+    .huge p,
+    .huge h1,
+    .huge h2,
+    .huge h3 {}
+
+    .huge h2 {
+        font-size: 30px
+    }
+
+    .huge h3 {
+        font-size: 24px
+    }
+
+    .huge p,
+    .huge .btn {
+        font-size: 18px
+    }
+
+    .huge .btn {
+        margin-top: 15px;
+        margin-bottom: 20px
+    }
+
+    .item img.cut-bottom {}
+}
+
+/* Large Devices,Wide Screens */
+@media only screen and (min-width:1200px) {
+    .item {
+        height: auto;
+        overflow: hidden
+    }
+}
+
+/*========== Non-Mobile First Method ==========*/
+/* Large Devices,Wide Screens */
+@media only screen and (max-width:1200px) {}
+
+/* Medium Devices,Desktops */
+@media only screen and (max-width:992px) {
+
+    img.align-right,
+    img.align-left {
+        max-width: 100px;
+        float: left;
+        margin-right: 10px;
+        margin-left: 0px;
+        margin-bottom: 10px
+    }
+
+    .carousel-control .glyphicon-chevron-left {
+        left: 5%
+    }
+
+    .carousel-control .glyphicon-chevron-right {
+        right: 5%
+    }
+}
+
+/* Small Devices,Tablets */
+@media only screen and (max-width:768px) {
+
+    .cycle-slide h1,
+    .item h1 {
+        font-size: 32px
+    }
+}
+
+/* Extra Small Devices,Phones */
+@media only screen and (max-width:480px) {
+
+    img.align-right.cut-bottom,
+    .carouselShowHide img {
+        display: none
+    }
+}
+
+/* Custom,iPhone Retina */
+@media only screen and (max-width:320px) {}
+
+@media only screen and (max-width:682px) {
+
+    /*.container img{display: none;}*/
+    .carousel-inner .item {
+        height: initial;
+        width: initial;
+    }
+}
+
+.home .carouselShowHide {
+    display: block;
+    overflow-x: hidden;
+}
+
+/* End of Carousel Slide Show CSS */
+</style>

@@ -1,0 +1,274 @@
+<style>
+    a {
+        color: inherit !important;
+    }
+
+    .portal_button {
+        text-align: center;
+        width: 330px;
+        background: #ECBB36;
+        color: #fff;
+        border: none;
+        position: relative;
+        height: 60px;
+        font-size: 1.6em;
+        padding: 0 2em;
+        margin: 2px;
+        cursor: pointer;
+        transition: 800ms ease all;
+        outline: none;
+    }
+
+    .portal_button:hover {
+        background: #fff;
+        color: #ECBB36;
+    }
+
+
+    .portal_button:before,
+    .portal_button:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 2px;
+        width: 0;
+        background: #ECBB36;
+        transition: 400ms ease all;
+    }
+
+    .portal_button:after {
+        right: inherit;
+        top: inherit;
+        left: 0;
+        bottom: 0;
+    }
+
+    .portal_button:hover:before,
+    .portal_button:hover:after {
+        width: 100%;
+        transition: 800ms ease all;
+    }
+
+    ._Portals {
+
+        text-align: center;
+        background-color: transparent;
+        max-height: 9.5em;
+        /* min-width: 9em; */
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
+    .change_td {
+        height: 27vh;
+        width: 25vw;
+        text-align: center;
+    }
+
+    .Portal-Spacer {
+        border: none;
+        max-width: 90%;
+        height: 11em;
+        /*66vh extended*/
+        /*PX:  517px extended, 217px else*/
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center top;
+        background-size: cover;
+        margin-top: -1px;
+        /*hides mystery border*/
+        transition: height 1s ease-in-out;
+        margin: auto;
+    }
+
+    .portal_link {
+        position: relative;
+        z-index: 0;
+    }
+
+    .portal_map_L {
+        visibility: hidden;
+        opacity: 0;
+        display: table-cell;
+        position: absolute;
+        z-index: 1;
+        margin-left: -6%;
+        margin-top: 2%;
+        height: auto;
+        width: 12%;
+        transition: visibility 0s, opacity 0.5s linear;
+        text-align: left;
+        color: black;
+        font-size: 1em;
+
+    }
+
+    .portal_map_R {
+        visibility: hidden;
+        opacity: 0;
+        display: table-cell;
+        position: absolute;
+        z-index: 1;
+        margin-left: -31%;
+        margin-top: 2%;
+        height: auto;
+        width: 12%;
+        transition: visibility 0s, opacity 0.5s linear;
+        text-align: left;
+        color: black;
+        font-size: 1em;
+    }
+
+    td.portal_link:hover+td.portal_map_L,
+    td.portal_link:hover+td.portal_map_R {
+        visibility: visible !important;
+        opacity: 1;
+    }
+
+
+
+    td.portal_map_L:hover,
+    td.portal_map_R:hover {
+        visibility: visible !important;
+        opacity: 1;
+    }
+
+    .portal_map_L a,
+    .portal_map_R a {
+        font-size: 1em;
+        text-decoration: none;
+    }
+
+    .choose_portal_text {
+        font-size: 2em;
+        margin-top: 24px;
+        margin-bottom: -16px;
+        text-align: center;
+        font-weight: bold;
+        color: #ebba3a;
+    }
+
+    .Portal_Info {
+        display: none;
+        position: absolute;
+        bottom: 4.6em;
+        left: 7em;
+        border-radius: 15px;
+        border: 1px solid grey;
+    }
+
+    .Portal_Info::before {
+        content: "LEARN MORE";
+    }
+
+    .p_image {
+        width: 150px;
+        height: auto;
+        background-color: transparent;
+    }
+
+    /*animation variables*/
+    #portal_area {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+    }
+
+    #portal_area td {
+        text-align: center;
+        width: 13%;
+    }
+
+    #panel {
+        display: none;
+        position: relative;
+        opacity: 0;
+        height: 0;
+        transition: all 1s ease-in-out;
+    }
+
+    #p_info {
+
+        position: relative;
+        top: 0px;
+        transition: all 1s ease-in-out;
+    }
+
+    #p_header {
+        text-align: center;
+        font-size: 1.7em;
+    }
+
+    p {
+        color: black;
+        font-size: 16px;
+    }
+</style>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+
+<br /><br />
+<div>
+    <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        The National Center for Spectator Sports Safety and Security (NCS<sup>4</sup>) at The University of Southern
+        Mississippi
+        (USM) is the world’s leading academic research institution for addressing sports safety and security risks. The
+        NCS4 has partnered with the National Federation of State High School Associations (NFHS) in an effort to keep
+        students and others that participate in interscholastic athletics and after school activities during the period
+        beyond the bell. More specifically, our mission is to coordinate with all public and private schools as well as
+        local, state and federal stakeholder to ensure a comprehensive and coordinated approach to interscholastic
+        athletics and after-school safety and security programs.
+    </p>
+    <br />
+    <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        To achieve this the NCS<sup>4</sup> is conducting research, providing guidance on best practices, and evaluating
+        interventions to establish and evidence-base of "what works" for creating safer and more secure schools for our
+        nation. In addition to partnering with NFHS, the NCS<sup>4</sup> works closely with industry, researchers, and
+        government
+        agencies to develop and deploy practical performance improvement tools and applications that bolster the
+        capacity of practitioners to respond effectively to current and future safety and security challenges.
+    </p>
+</div>
+<br /><br />
+<div class="Portal-Spacer">
+    <table style="margin:auto; text-align: center;">
+        <tbody class="change_tbody">
+            <tr id="portal_area">
+                    <td data-aos="fade-right" data-aos-once="true" class="portal_link">
+                            <button class="portal_button"><a
+                                    href="http://www.cvent.com/events/2020-interscholastic-summit/event-summary-810f38496a31446b8aff584550d00280.aspx">
+                                    SUMMIT
+                                </a></button>
+                        </td>
+                <td data-aos="fade-left" class="portal_link">
+                    <button class="portal_button"><a href="https://ncs4.usm.edu/connect/home">
+                            NCS<sup>4</sup> CONNECT
+                        </a></button>
+                </td>
+            </tr>
+            <tr id="portal_area">
+                <td data-aos="fade-right" data-aos-once="true" class="portal_link">
+                    <button class="portal_button"><a
+                            href="/training/online/risk-management-for-interscholastic-athletics">
+                            TRAINING
+                        </a></button>
+                </td>
+                <td data-aos="fade-left" class="portal_link">
+                        <button class="portal_button"><a href="https://forms.usm.edu/ncs4/view.php?id=107997">
+                                BEST PRACTICES
+                            </a></button>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    AOS.init({
+        easing: 'ease-in-sine',
+        duration: 1000
+    });
+</script>
