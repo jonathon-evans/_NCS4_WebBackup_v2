@@ -459,6 +459,21 @@ Notes on structure:
         href="/professionaldevportal/academics/mba-program"> MBA PROGRAM</a> <a class="droplistleaf"
         href="/professionaldevportal/academics/graduate-certificate">GRADUATE CERTIFICATE</a></div>
   </div>
+  <!-- ========================================[HIGHSCHOOL]============================================================ -->
+  <div id="highschoolportal" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
+    onclick="open_close()"> <img style="height: 30px;"
+      src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
+  </button> <a class="accordion" href="/aboutncs4"> ABOUT NCS4</a> <a class="accordion" href="/aboutncs4/our-staff">
+    OUR STAFF</a> <a class="accordion" href="/aboutncs4/research-fellows"> RESEARCH FELLOWS</a> <button type="button"
+    class="accordion"> ADVISORY BOARDS</button>
+  <div id="fema-dhs" class="sidebar_panel"><a class="droplistleaf" href="/aboutncs4/advisory-committees"> ADVISORY
+      COMMITTEES</a> <a class="droplistleaf" href="/aboutncs4/national-advisory-board"> NATIONAL ADVISORY BOARD</a>
+  </div>
+  <a class="accordion" href="/aboutncs4/news"> NEWS</a> <a class="accordion"
+    href="/aboutncs4/ncs4-recognition-awards"> NCS4 RECOGNITION AWARDS</a> <a class="accordion"
+    href="/aboutncs4/9-11-sport-security-memorial"> 9/11 SPORT SECURITY MEMORIAL</a> <a class="accordion"
+    href="/aboutncs4/contact"> CONTACT</a>
+</div>
   <!-- <script src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/JSFiles/sidebarNavConcept3_min.js"></script> -->
   <script>
     // <![CDATA[
@@ -481,6 +496,7 @@ Notes on structure:
     var labportal = document.getElementById('lab');
     var professionaldevportal = document.getElementById('professionaldev');
     var eventsportal = document.getElementById('eventsportal');
+    var highschoolportal = document.getElementById('highschoolportal')
 
 
     var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
@@ -498,6 +514,7 @@ Notes on structure:
     var L = "/labportal"
     var AB = "/aboutncs4"
     var E = "/events"
+    var HS = "/high-school"
 
     //check if internet explorer
     var ua = window.navigator.userAgent;
@@ -535,7 +552,7 @@ Notes on structure:
           scrunch = true;
 
           if (path.includes(K) || path.includes(T) || path.includes(PD) || path.includes(R) || path.includes(L) || path
-            .includes(AB) || path.includes(E)) { //make sure nothing goes wonky on other pages
+            .includes(AB) || path.includes(E) || path.includes(HS)) { //make sure nothing goes wonky on other pages
             document.getElementById("MPOuter").style["transition"] = "all 0.5s ease-in-out 0s";
             document.getElementById("MPOuter").style["margin-left"] = "219px";
             //move footer
@@ -580,7 +597,7 @@ Notes on structure:
           scrunch = false;
           //unscrunch page
           if (path.includes(K) || path.includes(T) || path.includes(PD) || path.includes(R) || path.includes(L) || path
-            .includes(AB) || path.includes(E)) { //make sure nothing goes wonky on other pages
+            .includes(AB) || path.includes(E) || path.includes(HS)) { //make sure nothing goes wonky on other pages
             document.getElementById("MPOuter").style["transition"] = "all 0.5s ease-in-out 0s";
             document.getElementById("MPOuter").style["margin-left"] = "40px";
             //move footer
@@ -637,7 +654,7 @@ Notes on structure:
     $(document).ready(function () {
       // hide background on other pages---------------------------------------
       if (!path.includes(K) && !path.includes(T) && !path.includes(PD) && !path.includes(R) && !path.includes(L) &&
-        !path.includes(AB) && !path.includes(E)) {
+        !path.includes(AB) && !path.includes(E) && !path.includes(HS)) {
         document.getElementById("sidenav-bg").style["visibility"] = "hidden";
       } else {
         document.getElementById("background").style["visibility"] = "visible"
@@ -665,6 +682,8 @@ Notes on structure:
           toggleVis(aboutportal);
         } else if (path.includes(E)) {
           toggleVis(eventsportal);
+        } else if (path.includes(HS)){
+          toggleVis(highschoolportal);
         } else if (path.includes('/testing')) {
           toggleVis(eventsportal);
         }

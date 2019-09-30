@@ -30,7 +30,7 @@
     <br />
     <ul class="pubs">
         <div>
-            <li ng-repeat="x in pubList | filter : selected | orderBy : filt">
+            <li ng-repeat="x in pubList | filter : selected : true | orderBy : filt">
                 <div>
                     <p ng-if="x.link"><a href="{{x.link}}">{{x.authors + " (" + x.year + "). " + x.desc}}</a>
                     </p>

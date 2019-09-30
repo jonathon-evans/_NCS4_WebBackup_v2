@@ -1,8 +1,6 @@
-
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
-
 <style>
-  #newsApp div{
+  #newsApp .news-container {
     border: 2px solid black;
     height: 90vh;
     width: 90%;
@@ -10,29 +8,90 @@
     overflow: scroll;
     padding-left: 0;
   }
-  #newsApp a{
-    display: block;
+
+  #newsApp .news-container>a {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 100px 6em auto;
+    align-items: center;
     border: 1px solid black;
     height: auto;
     width: auto;
-    padding:10px;
+    padding: 10px;
     color: #222222;
     text-decoration: none;
   }
-  #newsApp a:hover{
+
+  #newsApp a:hover {
     background-color: #f7e0a6;
   }
-  #newsApp a:visited{
+
+  #newsApp a:visited {
     color: #330d5b;
+  }
+
+  #newsApp .newsimg {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    border-radius: 5px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+  }
+
+  .cloak {
+    opacity: 1 !important;
+  }
+
+  .news-container {
+    opacity: 0;
+    -moz-transition: opacity 0.5s ease;
+    -o-transition: opacity 0.5s ease;
+    -webkit-transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+  }
+
+  @media (max-width: 900px) {
+    #newsApp .news-container>a {
+      grid-template-columns: repeat(7, 1fr);
+      grid-column-gap: 10px;
+    }
+
+    #newsApp .newsimg {
+      width: 280px;
+      height: 150px;
+      margin-bottom: 20px;
+      justify-self: center;
+      grid-column-start: 1;
+      grid-column-end: 8;
+      background-size: 280px auto !important;
+    }
+
+    #newsApp .newstitle {
+      grid-column-start: 2;
+      grid-column-end: 8;
+    }
   }
 </style>
 <h2>NCS<sup>4</sup> Articles</h2>
-<div id='newsApp' ng-app="myApp" ng-controller="newsCtrl">
-  SEARCH: <input ng-model='sifter' /><p></p>
-  <div >
-      <a ng-repeat="x in newslist | filter : sifter | orderBy: 'date':false:cust_comparator" href={{x.link}}><strong>{{x.date}}</strong>: {{x.title}}</a>
-  </div>
-
+<p style="font-style: italics;">Due to a recent USM website redesign, most old news links have been removed from here.
+  In the mean time, this feed will continue to stay up to date with the latest news. Check back later for more!</p>
+<div id="newsApp" ng-app="myApp" ng-controller="newsCtrl">SEARCH: <input ng-model="sifter" type="text" />
+  <p></p>
+  <div ng-show=""><img style="width: 300px; height: auto; display: block; margin: auto;"
+      src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/Loadingsome.gif"
+      alt="loading" /></div>
+  <div class="news-container" ng-class="{cloak:true}"><a
+      ng-repeat="x in newslist | filter : sifter | orderBy: 'date':false:cust_comparator" href="{{x.link}}"> <span
+        class="newsimg" ng-style="{
+              'background-image':'url('+(x.img || 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Logos/TESTSITE_HeaderBlack-whitebg.png')+')',
+              'background-size': x.img?'cover':'contain',
+            }"> </span> <!-- <span class="imgplaceholder" ng-if="!x.img"></span> --> <strong
+        style="display: inline-block; color: #1b93c3; width: 6em;">{{x.date}} </strong> <span
+        class="newstitle">{{x.title}}</span> </a></div>
 </div>
-
 <!-- <script src="newsList.js"></script> -->

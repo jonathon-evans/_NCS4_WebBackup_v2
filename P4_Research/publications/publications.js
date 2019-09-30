@@ -15,7 +15,7 @@ app.controller("PubCtrl", function ($scope) {
     $scope.reverse = ($scope.propertyName === propertyName) ? !$scope.reverse : false;
     $scope.propertyName = propertyName;
   };
-
+  
 
   $scope.filt = [
     '-year',
@@ -38,15 +38,17 @@ app.controller("PubCtrl", function ($scope) {
     _11_RISK_MANAGEMENT: "Risk Management"
   }
   $scope.auth = {
-    STACEY: "Hall, S",
-    BRIAN: "Menaker, B.",
+    HALL: "Hall, S.",
+    MENAKER: "Menaker, B.",
     GORDON: "Gordon, K.O.",
-    JOHN: "Miller, J",
-    JUSTIN: "Kurland, J",
-    LOU: "Marciani, L",
-    HYUNWOONG: "Pyun, H.",
-    DERYA: "Tekin, D",
-    JOSLYN: "Zale, J",
+    Humphreys: "Humphreys, B.",
+    MILLER: "Miller, J.",
+    KURLAND: "Kurland, J.",
+    MARCIANI: "Marciani, L.",
+    PYUN: "Pyun, H.",
+    RISTEA: "Ristea, A.",
+    TEKIN: "Tekin, D.",
+    ZALE: "Zale, J.",
   }
   $scope.years = [
     2019,
@@ -66,7 +68,9 @@ app.controller("PubCtrl", function ($scope) {
     2005,
     2003,
     2002,
-    2001
+    2001,
+    2000,
+    1999
   ]
   /*
     {
@@ -81,7 +85,7 @@ app.controller("PubCtrl", function ($scope) {
     },
   */
   $scope.pubList = [{
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Newland, B., Hall, S., & Koba, A. L.",
       "year": 2018,
       "desc": [
@@ -91,7 +95,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._05_CROWD_DISORDER, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S., Manning, D., Keiper, M., Jenny, S., & Allen, B. ",
       "year": 2019,
       "desc": [
@@ -101,7 +105,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Schwarz, E. C., Hall, S., & Shibli, S.",
       "year": 2019,
       "desc": [
@@ -111,7 +115,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._04_EVACUATION, $scope.tags._05_CROWD_DISORDER, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Zale",
+      "nauthors": "Zale, J.",
       "authors": "Zale, J., Kar, B., & Cochran, D.",
       "year": 2018,
       "desc": [
@@ -121,7 +125,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._04_EVACUATION]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J.",
       "year": 2019,
       "desc": [
@@ -131,7 +135,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": ["Ristea, A.", "Kurland, J."],
       "authors": "Ristea, A., Kurland, J., Resch, B., Leitner, M., & Langford, C.",
       "year": 2018,
       "desc": [
@@ -141,7 +145,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Tilley, N., & Johnson, S. D.",
       "year": 2018,
       "desc": [
@@ -151,7 +155,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J. & Piza, E.",
       "year": 2018,
       "desc": [
@@ -161,7 +165,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J. & Chen, P.",
       "year": 2017,
       "desc": [
@@ -171,7 +175,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
       "year": 2017,
       "desc": [
@@ -181,7 +185,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S., Allen, B., & Phillips, D.",
       "year": 2016,
       "desc": [
@@ -191,7 +195,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Filce, R., Hall, S., & Phillips, D.",
       "year": 2016,
       "desc": [
@@ -201,7 +205,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Schwarz, E. C., Hall, S., & Shibli, S.",
       "year": 2015,
       "desc": [
@@ -211,7 +215,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._04_EVACUATION, $scope.tags._05_CROWD_DISORDER, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Allen, B., Hall, S., & Phillips, D.",
       "year": 2015,
       "desc": [
@@ -221,7 +225,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S. ",
       "year": 2016,
       "desc": [
@@ -231,7 +235,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._04_EVACUATION, $scope.tags._05_CROWD_DISORDER, $scope.tags._09_BEST_PRACTICES, $scope.tags._10_EMERGENCY_COMMUNICATIONS]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2015,
       "desc": [
@@ -241,7 +245,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, , $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Cooper, W.E., Marciani, L., & Cieslak, T. J.",
       "year": 2014,
       "desc": [
@@ -251,7 +255,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Cooper, W.E., Marciani, L., & McGee, J.A.",
       "year": 2014,
       "desc": [
@@ -261,7 +265,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._04_EVACUATION, $scope.tags._05_CROWD_DISORDER, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._08_ALCOHOL, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Johnson, S. D., & Tilley, N.",
       "year": 2014,
       "desc": [
@@ -271,7 +275,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Tilley, N., & Johnson, S.D.",
       "year": 2014,
       "desc": [
@@ -281,7 +285,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2013,
       "desc": [
@@ -291,7 +295,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "McGee, J.A., Mey, R., & Hall, S.",
       "year": 2013,
       "desc": [
@@ -301,7 +305,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.,Byon, K., & Baker, T.",
       "year": 2013,
       "desc": [
@@ -311,7 +315,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Cieslak, T. J., & Hall, S.",
       "year": 2013,
       "desc": [
@@ -321,7 +325,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2013,
       "desc": [
@@ -331,7 +335,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Cooper, W.E., Marciani, L., & McGee, J.A.",
       "year": 2012,
       "desc": [
@@ -341,7 +345,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._04_EVACUATION, $scope.tags._05_CROWD_DISORDER, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._08_ALCOHOL, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2012,
       "desc": [
@@ -351,7 +355,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2012,
       "desc": [
@@ -361,7 +365,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2011,
       "desc": [
@@ -371,7 +375,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._05_CROWD_DISORDER, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2011,
       "desc": [
@@ -381,7 +385,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER]
     },
     {
-      "nauthors": "Zale",
+      "nauthors": "Zale, J.",
       "authors": "Zale, J. & Kar, B.",
       "year": 2012,
       "desc": [
@@ -391,7 +395,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._04_EVACUATION]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Fos, P., Marciani, L., & Zhang, L.",
       "year": 2011,
       "desc": [
@@ -401,7 +405,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Hamilton-Smith, N., Bradford, B., Hopkins, M., Kurland, J., Lightowler, C., McArdle, D., & Tilley, N.",
       "year": 2011,
       "desc": [
@@ -411,7 +415,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._04_EVACUATION]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
       "year": 2011,
       "desc": [
@@ -421,7 +425,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
       "year": 2011,
       "desc": [
@@ -431,7 +435,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, , $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
       "year": 2011,
       "desc": [
@@ -441,7 +445,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
       "year": 2011,
       "desc": [
@@ -451,7 +455,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
       "year": 2011,
       "desc": [
@@ -461,7 +465,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J. & Kautt, P.",
       "year": 2011,
       "desc": [
@@ -471,7 +475,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2010,
       "desc": [
@@ -481,7 +485,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Marciani, L., Cooper, W.E, & Phillips, J.",
       "year": 2010,
       "desc": [
@@ -491,7 +495,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._07_POLICY_EVALUATIONS]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2010,
       "desc": [
@@ -501,7 +505,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._05_CROWD_DISORDER, $scope.tags._07_POLICY_EVALUATIONS]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Cieslak, T., Marciani, L., Cooper, W.E., & McGee, J.A.",
       "year": 2010,
       "desc": [
@@ -511,7 +515,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Hamilton-Smith, N., Bradford, B., Hopkins, M., Kurland, J., Lightowler, C., McArdle, D., Tilley, N.",
       "year": 2010,
       "desc": [
@@ -521,7 +525,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
     },
     {
-      "nauthors": "Marciani",
+      "nauthors": "Marciani, L.",
       "authors": "Marciani, L.",
       "year": 2010,
       "desc": [
@@ -531,7 +535,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._05_CROWD_DISORDER]
     },
     {
-      "nauthors": "Kurland",
+      "nauthors": "Kurland, J.",
       "authors": "Kurland, J., Johnson, S.D., & Tilley, N.",
       "year": 2010,
       "desc": [
@@ -541,7 +545,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES, $scope.tags._08_ALCOHOL]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Schwarz, E. C., & Hall, S., & Shibli, S.",
       "year": 2010,
       "desc": [
@@ -551,7 +555,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._04_EVACUATION, $scope.tags._05_CROWD_DISORDER, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Zale",
+      "nauthors": "Zale, J.",
       "authors": "Zale, J.",
       "year": 2009,
       "desc": [
@@ -561,7 +565,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Cooper, W.E., Marciani, L., & McGee, J.A.",
       "year": 2009,
       "desc": [
@@ -571,7 +575,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Marciani", // CHECK WITH JUSTIN
+      "nauthors": ["Hall, S.", "Marciani, L."], // CHECK WITH JUSTIN
       "authors": "Marciani, L., Hall, S., & Finch, B.",
       "year": 2009,
       "desc": [
@@ -581,7 +585,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Marciani",
+      "nauthors": "Marciani, L.",
       "authors": "Marciani, L.",
       "year": 2009,
       "desc": [
@@ -591,7 +595,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._05_CROWD_DISORDER, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._09_BEST_PRACTICES, $scope.tags._10_EMERGENCY_COMMUNICATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Marciani",
+      "nauthors": "Marciani, L.",
       "authors": "Marciani, L.",
       "year": 2009,
       "desc": [
@@ -601,7 +605,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._02_FAN_PERCEPTION, $scope.tags._04_EVACUATION, $scope.tags._05_CROWD_DISORDER, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Marciani, L., Phillips, D., & Cunningham, T.",
       "year": 2009,
       "desc": [
@@ -611,7 +615,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Marciani, L., & Cooper, W.E.",
       "year": 2008,
       "desc": [
@@ -621,7 +625,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S., Ward, R, Cunningham, T, & Marciani, L.",
       "year": 2008,
       "desc": [
@@ -631,7 +635,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Marciani, L., & Cooper, W.E.",
       "year": 2008,
       "desc": [
@@ -641,7 +645,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": ["Hall, S.", "Marciani, L."],
       "authors": "Hall, S., Marciani, L., & Cooper, W.E, & Rolen, R.",
       "year": 2007,
       "desc": [
@@ -651,8 +655,8 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Hall",
-      "authors": "Hall, S., Marciani, Cooper, W.E., & Rolen, R.",
+      "nauthors": ["Hall, S.", "Marciani, L."],
+      "authors": "Hall, S., Marciani, L., Cooper, W.E., & Rolen, R.",
       "year": 2007,
       "desc": [
         "Introducing a risk assessment model for sport venues. The Sport Journal, (10) 2.",
@@ -661,7 +665,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Marciani",
+      "nauthors": ["Marciani, L.", "Hall, S."],
       "authors": "Marciani, L., & Hall, S.",
       "year": 2007,
       "desc": [
@@ -671,7 +675,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._09_BEST_PRACTICES, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Hall",
+      "nauthors": "Hall, S.",
       "authors": "Hall, S.",
       "year": 2006,
       "desc": [
@@ -681,7 +685,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Marciani",
+      "nauthors": "Marciani, L.",
       "authors": "Marciani, Lou, and Bernard, Bob.",
       "year": 2006,
       "desc": [
@@ -691,7 +695,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Pauline, G., & Donahue, P.",
       "year": 2017,
       "desc": [
@@ -701,7 +705,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J.",
       "year": 2017,
       "desc": [
@@ -711,7 +715,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J.",
       "year": 2017,
       "desc": [
@@ -721,7 +725,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J.",
       "year": 2017,
       "desc": [
@@ -731,7 +735,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J.",
       "year": 2012,
       "desc": [
@@ -741,7 +745,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Wendt, J.",
       "year": 2010,
       "desc": [
@@ -751,7 +755,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J.",
       "year": 2010,
       "desc": [
@@ -761,7 +765,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Wendt, J.",
       "year": 2010,
       "desc": [
@@ -771,7 +775,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Martin, C. L. L., & Spurlock, A.",
       "year": 2016,
       "desc": [
@@ -781,7 +785,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Dunn, A.",
       "year": 2011,
       "desc": [
@@ -791,7 +795,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J.",
       "year": 2014,
       "desc": [
@@ -801,7 +805,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Veltri, F. & Gillentine, A.",
       "year": 2008,
       "desc": [
@@ -811,7 +815,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Wendt, J. T., & Seidler, T.",
       "year": 2008,
       "desc": [
@@ -821,7 +825,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Gillentine, A. & Veltri, F.",
       "year": 2008,
       "desc": [
@@ -831,7 +835,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Gillentine, A. & Veltri, F.",
       "year": 2005,
       "desc": [
@@ -841,7 +845,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Hart, E. & Miller, J.",
       "year": 2014,
       "desc": [
@@ -851,7 +855,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._04_EVACUATION, $scope.tags._10_EMERGENCY_COMMUNICATIONS]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Hart, E. & Miller, J.",
       "year": 2014,
       "desc": [
@@ -861,7 +865,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._04_EVACUATION, $scope.tags._10_EMERGENCY_COMMUNICATIONS]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Vogt, S., Scroggins, C., & Gillentine, A.",
       "year": 2019,
       "desc": [
@@ -871,7 +875,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._08_ALCOHOL, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Gillentine, A., Miller, J., Grady, J., & Pettus, K.",
       "year": 2016,
       "desc": [
@@ -881,7 +885,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Pauline, G., Osborne, B., & Miller, J.",
       "year": 2016,
       "desc": [
@@ -892,7 +896,7 @@ app.controller("PubCtrl", function ($scope) {
     },
 
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Ammon, R.",
       "year": 2014,
       "desc": [
@@ -902,7 +906,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Pauline, G. & Wendt, J. T.",
       "year": 2013,
       "desc": [
@@ -912,7 +916,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Wendt, J. T. & Miller, J.",
       "year": 2012,
       "desc": [
@@ -922,7 +926,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._10_EMERGENCY_COMMUNICATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Wendt, J. T.",
       "year": 2012,
       "desc": [
@@ -932,7 +936,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._10_EMERGENCY_COMMUNICATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Wendt, J. T., & Young, P. C.",
       "year": 2010,
       "desc": [
@@ -942,7 +946,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Young, S., & Martin. N.",
       "year": 2009,
       "desc": [
@@ -952,7 +956,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Gillentine, A.",
       "year": 2006,
       "desc": [
@@ -962,7 +966,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._08_ALCOHOL, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Rushing, G.",
       "year": 2002,
       "desc": [
@@ -972,7 +976,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Madison, L.",
       "year": 2017,
       "desc": [
@@ -983,7 +987,7 @@ app.controller("PubCtrl", function ($scope) {
     },
 
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Gillentine, A., Miller, J. & Crow, B.",
       "year": 2010,
       "desc": [
@@ -993,7 +997,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Gillentine, A. & Miller, J.",
       "year": 2006,
       "desc": [
@@ -1003,7 +1007,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Wendt, J. T.",
       "year": 2012,
       "desc": [
@@ -1013,7 +1017,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._10_EMERGENCY_COMMUNICATIONS, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Wendt, J. & Miller, J.",
       "year": 2015,
       "desc": [
@@ -1023,7 +1027,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Vogt, S., Mersch, J., & Miller, J.",
       "year": 2015,
       "desc": [
@@ -1033,7 +1037,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Wendt, J.",
       "year": 2014,
       "desc": [
@@ -1043,7 +1047,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J.",
       "year": 2012,
       "desc": [
@@ -1053,7 +1057,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. J., Wendt, J. T., & Potter, N.",
       "year": 2011,
       "desc": [
@@ -1063,7 +1067,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Podlog, L., Dimmock, J., & Miller, J.",
       "year": 2011,
       "desc": [
@@ -1073,7 +1077,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Wendt, J.T., & Kern, S.",
       "year": 2008,
       "desc": [
@@ -1083,7 +1087,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J., Veltri, F., & Phillips, D",
       "year": 2007,
       "desc": [
@@ -1093,7 +1097,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Rushing, G. & Miller, J.",
       "year": 2007,
       "desc": [
@@ -1103,7 +1107,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Veltri, F.",
       "year": 2003,
       "desc": [
@@ -1113,7 +1117,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Miller",
+      "nauthors": "Miller, J.",
       "authors": "Miller, J. & Veltri, F.",
       "year": 2001,
       "desc": [
@@ -1123,7 +1127,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
-      "nauthors": "Menaker",
+      "nauthors": "Menaker, B.",
       "authors": "Menaker, B. E., McGranahan, D. A., & Sheptak Jr., R. D.",
       "year": 2019,
       "desc": [
@@ -1133,7 +1137,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Menaker",
+      "nauthors": "Menaker, B.",
       "authors": "Menaker, B. E. & Sheptak Jr, R. D.",
       "year": 2019,
       "desc": [
@@ -1143,7 +1147,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Menaker",
+      "nauthors": "Menaker, B.",
       "authors": "Menaker, B. E., Sheptak Jr, R. D., & Curtis, A. K.",
       "year": 2018,
       "desc": [
@@ -1153,7 +1157,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER]
     },
     {
-      "nauthors": "Menaker",
+      "nauthors": "Menaker, B.",
       "authors": "Menaker, B. E., Barry, A. E., & Howell, S. M.",
       "year": 2018,
       "desc": [
@@ -1163,7 +1167,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
     },
     {
-      "nauthors": "Menaker",
+      "nauthors": "Menaker, B.",
       "authors": "Menaker, B. E., Chaney, B. H., & Sheptak Jr, R. D.",
       "year": 2016,
       "desc": [
@@ -1173,7 +1177,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
     },
     {
-      "nauthors": "Menaker",
+      "nauthors": "Menaker, B.",
       "authors": "Menaker, B. E. & Chaney, E. H.",
       "year": 2014,
       "desc": [
@@ -1183,7 +1187,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Menaker",
+      "nauthors": "Menaker, B.",
       "authors": "Menaker, B.E. & Connaughton, D.P.",
       "year": 2010,
       "desc": [
@@ -1193,7 +1197,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
     },
     {
-      "nauthors": "Tekin",
+      "nauthors": "Tekin, D.",
       "authors": "Tekin, D.",
       "year": 2018,
       "desc": [
@@ -1203,7 +1207,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
     },
     {
-      "nauthors": "Tekin, Kurland",
+      "nauthors": ["Tekin, D.", "Kurland, J."],
       "authors": "Tekin, D. & Kurland, J",
       "year": 2019,
       "desc": [
@@ -1213,7 +1217,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
     },
     {
-      "nauthors": "Pyun",
+      "nauthors": "Pyun, H.",
       "authors": "Pyun, H.",
       "year": 2019,
       "desc": [
@@ -1223,7 +1227,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Pyun",
+      "nauthors": "Pyun, H.",
       "authors": "Pyun, H., & Hall, J. C.",
       "year": 2019,
       "desc": [
@@ -1233,17 +1237,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
-      "nauthors": "Pyun",
-      "authors": "Humphreys, B. R. & Pyun, H.",
-      "year": 2018,
-      "desc": [
-        "Professional Sports and Traffic Congestion: Evidence from US Cities. Journal of Regional Science, 58(5), 869-886."
-      ],
-      "link": "https://doi.org/10.1002/mde.2793",
-      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
-    },
-    {
-      "nauthors": "Gordon, Hall",
+      "nauthors": ["Gordon, K.O.", "Hall, S."],
       "authors": "Gordon, K.O., Czekanski, W.A., Hall, S.A., & McAfee, K.E.",
       "year": 2019,
       "desc": [
@@ -1253,7 +1247,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Gordon",
+      "nauthors": "Gordon, K.O.",
       "authors": "Gordon, K.O.",
       "year": 2018,
       "desc": [
@@ -1263,7 +1257,7 @@ app.controller("PubCtrl", function ($scope) {
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._09_BEST_PRACTICES]
     },
     {
-      "nauthors": "Gordon",
+      "nauthors": "Gordon, K.O.",
       "authors": "Gordon, K.O., Czekanski, W.A., & DeMeo, J.A.",
       "year": 2016,
       "desc": [
@@ -1271,6 +1265,606 @@ app.controller("PubCtrl", function ($scope) {
       ],
       "link": "",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._07_POLICY_EVALUATIONS, $scope.tags._09_BEST_PRACTICES]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R.",
+      "year": 2002,
+      "desc": [
+        "Alternative Measures of Competitive Balance in Sports Leagues, Journal of Sports Economics, vol. 3, no. 2, pp. 133-148."
+      ],
+      "link": "https://journals.sagepub.com/doi/abs/10.1177/152700250200300203",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D. & Humphreys, B.R.",
+      "year": 2005,
+      "desc": [
+        "Novelty Effects of New Facilities on Attendance at Professional Sporting Events, Contemporary Economic Policy, vol. 23, no. 3, pp. 436-455."
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/full/10.1093/cep/byi033",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D. & Humphreys, B.R.",
+      "year": 2007,
+      "desc": [
+        "Ticket Prices, Concessions and Attendance at Professional Sporting Events, International Journal of Sport Finance, vol. 2, no. 3, pp. 161-170."
+      ],
+      "link": "http://econ.unt.edu/~jhauge/Teaching/Sports/monopoly_Coates_Humphreys_2007.pdf",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D. & Humphreys, B.R.",
+      "year": 2010,
+      "desc": [
+        "Week to Week Attendance and Competitive Balance in the National Football League, International Journal of Sport Finance, vol. 5, no. 4, pp. 239-252."
+      ],
+      "link": "https://www.researchgate.net/profile/Donald_Alexander5/publication/241761031_Does_Athletic_Success_Generate_Legislative_Largess_from_Sports-Crazed_Representatives_The_Impact_of_Athletic_Success_on_State_Appropriations_to_Colleges_and_Universities/links/594931230f7e9b1d9b276a51/Does-Athletic-Success-Generate-Legislative-Largess-from-Sports-Crazed-Representatives-The-Impact-of-Athletic-Success-on-State-Appropriations-to-Colleges-and-Universities.pdf#page=5",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Price, J., Soebbing, B. P., Berri, D., & Humphreys, B.R.",
+      "year": 2010,
+      "desc": [
+        "Tournament Incentives, League Policy, and NBA Team Performance Revisited, Journal of Sports Economics, vol. 11, no. 2, pp. 117-135."
+      ],
+      "link": "https://journals.sagepub.com/doi/abs/10.1177/1527002510363103",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Soebbing, B. P.",
+      "year": 2012,
+      "desc": [
+        "A Test of Monopoly Price Dispersion Under Demand Uncertainty, Economics Letters, vol. 114, issue 3, pp. 304-307."
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S0165176511004010",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Paul, R., Humphreys, B.R., & Weinbach, A.",
+      "year": 2012,
+      "desc": [
+        "Uncertainty of outcome and attendance in college football: Evidence from Four Conferences, The Economic and Labour Relations Review, vol. 23, no. 2, pp. 69-81."
+      ],
+      "link": "https://journals.sagepub.com/doi/abs/10.1177/103530461202300206",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D. & Humphreys, B.R.",
+      "year": 2012,
+      "desc": [
+        "Game Attendance and Outcome Uncertainty in the National Hockey League, Journal of Sports Economics, vol. 13, no. 4, pp. 364-377."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002512450260",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Soebbing, B. P. & Humphreys, B.R.",
+      "year": 2013,
+      "desc": [
+        "Do Gamblers Think That Teams Tank? Evidence from the NBA, Contemporary Economic Policy, vol. 31, no. 2, pp. 301-313."
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1465-7287.2011.00298.x",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Bodvarsson, Ö. B. & Humphreys, B.R.",
+      "year": 2013,
+      "desc": [
+        "Labor Market Discrimination and Capital: The Effects of Fan Discrimination on Stadium and Arena Construction, Contemporary Economic Policy, vol. 31, no. 3, pp. 604-617."
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/j.1465-7287.2011.00303.x",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Soebbing, B. P., Humphreys, B.R., & Mason, D. S.",
+      "year": 2013,
+      "desc": [
+        "Exploring Incentives to Lose in Professional Team Sports: Do Conference Games Matter?, International Journal of Sport Finance, vol. 8, no. 3, pp. 192-207."
+      ],
+      "link": "http://eds.b.ebscohost.com/abstract?site=eds&scope=site&jrnl=15586235&AN=89868859&h=ut0S1Dg4crKmpllc2yeL19%2fQ9BzvTcczSzs5Pr7CDrZE352PbWnAejXJ4Lf1FEmfvsdcJPiGnUh8FM5IlJdgzA%3d%3d&crl=c&resultLocal=ErrCrlNoResults&resultNs=Ehost&crlhashurl=login.aspx%3fdirect%3dtrue%26profile%3dehost%26scope%3dsite%26authtype%3dcrawler%26jrnl%3d15586235%26AN%3d89868859",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Lei, X., & Humphreys, B.R.",
+      "year": 2013,
+      "desc": [
+        "Game Importance as a Dimension of Uncertainty of Outcome, Journal of Quantitative Analysis in Sports, vol. 9 issue 1, pp. 25-36."
+      ],
+      "link": "https://www.degruyter.com/view/j/jqas.2013.9.issue-1/jqas-2012-0019/jqas-2012-0019.xml",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., Humphreys, B.R., & Zhou, L.",
+      "year": 2014,
+      "desc": [
+        "Reference-dependent Preferences, Loss Aversion and Live Game Attendance, Economic Inquiry, vol. 52, no. 3, pp. 959-973."
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/ecin.12061",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Zhou, L.",
+      "year": 2015,
+      "desc": [
+        "Reference-Dependent Preferences, Team Relocations, and Major League Expansion. Journal of Economic Behavior and Organization, vol. 109, pp. 10-25."
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S0167268114002960",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Zhou, L.",
+      "year": 2015,
+      "desc": [
+        "The Louis-Schmelling Paradox and the League Standing Effect Reconsidered, Journal of Sports Economics, vol. 16, pp. 835-852."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002515587260",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Soebbing, B. P., Mason, D. S., & Humphreys, B.R.",
+      "year": 2016,
+      "desc": [
+        "Novelty Effects and Sports Facilities in Smaller Cities: Evidence From Canadian Hockey Arenas, Urban Studies, vol. 53, pp. 1674-1690."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/0042098015576862",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., Johnson, K. B., & Mason, D. S.",
+      "year": 2018,
+      "desc": [
+        "Estimating the Value of Medal Success in the Olympic Games, Journal of Sports Economics, vol. 19, no. 3, pp. 398-416."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002515626221",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Pérez, L.",
+      "year": 2019,
+      "desc": [
+        "Loss Aversion, Upset Preference, and Sports Television Viewing Audience Size, Journal of Behavioral and Experimental Economics, vol. 78, pp. 61-67."
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S2214804318305627",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Miceli, T. J.",
+      "year": 2019,
+      "desc": [
+        "The Peculiar Preferences of Sports Fans: Towards a Preference-Based Motivation for the Uncertainty of Outcome Hypothesis, Journal of Sports Economics, vol. 20, no. 6, pp. 782-796."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002518817590",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., Lee, Y. S., & Soebbing, B. P.",
+      "year": 2011,
+      "desc": [
+        "Outcome Uncertainty, Fan Travel, and Aggregate Attendance, Economic Inquiry, Forthcoming. Modeling Consumers' Participation in Gambling Markets and Frequency of Gambling, Journal of Gambling Business and Economics, vol. 5, no. 1, pp. 1-22. "
+      ],
+      "link": "http://eds.a.ebscohost.com/abstract?site=eds&scope=site&jrnl=17517990&AN=82745550&h=v%2bAKQWsXU5yngMKbmgGdmT0FrHs7zqf%2botoaNlnaQi4QnBaSf4d7R91SwgR0JnfiRS6k%2fI%2f5WMBM7D747cX2YQ%3d%3d&crl=c&resultLocal=ErrCrlNoResults&resultNs=Ehost&crlhashurl=login.aspx%3fdirect%3dtrue%26profile%3dehost%26scope%3dsite%26authtype%3dcrawler%26jrnl%3d17517990%26AN%3d82745550",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Pérez, L.",
+      "year": 2012,
+      "desc": [
+        "Who bets on sports? Characteristics of sports bettors and the consequences of expanding sports betting opportunities, Estudios Economia Aplicada, vol. 30, no. 2, pp. 579-597."
+      ],
+      "link": "https://www.redalyc.org/pdf/301/30124481010.pdf",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., Paul, R. J., & Weinbach, A. P.",
+      "year": 2013,
+      "desc": [
+        "Consumption Benefits and Gambling: Evidence From the NCAA Basketball Betting Market, Journal of Economic Psychology, vol. 39, pp. 376-386."
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S0167487013000652",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Paul, R. J., Weinbach, A. P., & Humphreys, B.R.",
+      "year": 2014,
+      "desc": [
+        "Bettor Belief in the ``Hot Hand'': Evidence from Detailed Betting Data on the NFL, Journal of Sports Economics, vol. 16, no. 6, pp. 636-649."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002512465414",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Feddersen, A., Humphreys, B.R., & Soebbing, B. P.",
+      "year": 2017,
+      "desc": [
+        "Sentiment Bias and Asset Prices: Evidence from Sports Betting Markets and Social Media, Economic Inquiry, vol. 55, no. 2, pp. 1110-1129."
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/ecin.12404",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Feddersen, A., Humphreys, B.R., & Soebbing, B. P.",
+      "year": 2018,
+      "desc": [
+        "Sentiment Bias in National Basketball Association Betting, Journal of Sports Economics, vol. 19, no. 4, pp. 455-492."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002516656726",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION]
+    },
+    {
+      "nauthors": ["Humphreys, B.", "Pyun, H."],
+      "authors": "Humphreys, B.R., & Pyun, H.",
+      "year": 2018,
+      "desc": [
+        "Professional Sporting Events and Traffic: Evidence from US Cities, Journal of Regional Science, vol. 58, no. 5, pp. 869-886"
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/jors.12389",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Carroll, K. A., & Humphreys, B.R.",
+      "year": 2000,
+      "desc": [
+        "Nonprofit Decisionmaking and Social Regulation: The Intended and Unintended Consequences of Title IX, Journal of Economic Behavior and Organization, vol. 43, pp. 359-376."
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S0167268100001220",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R.",
+      "year": 2006,
+      "desc": [
+        "The Relationship Between Big-Time College Football and State Appropriations to Higher Education, International Journal of Sport Finance, vol. 1, no. 2, pp. 119-128."
+      ],
+      "link": "https://www.researchgate.net/profile/Brad_Humphreys/publication/5142723_The_Relationship_Between_Big-Time_College_Football_and_State_Appropriations_for_Higher_Education/links/0c96052556639c21dc000000/The-Relationship-Between-Big-Time-College-Football-and-State-Appropriations-for-Higher-Education.pdf",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Mondello, M.",
+      "year": 2007,
+      "desc": [
+        "Intercollegiate Athletic Success and Donations at NCAA Division I Institutions, Journal of Sport Management, vol. 21, no. 2, pp. 265-280."
+      ],
+      "link": "https://journals.humankinetics.com/view/journals/jsm/21/2/article-p265.xml",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Ruseski, J. E.",
+      "year": 2009,
+      "desc": [
+        "Monitoring Cartel Behavior and Stability: Evidence From NCAA Football, Southern Economic Journal, vol. 79, no. 3, pp. 720-735."
+      ],
+      "link": "https://www.jstor.org/stable/27751412?seq=1#metadata_info_tab_contents",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Carroll, K. A., & Humphreys, B.R.",
+      "year": 2016,
+      "desc": [
+        "Opportunistic Behavior in a Cartel Setting: Effects of the 1984 Supreme Court Decision on College Football Television Broadcasts, Journal of Sports Economics, vol. 17, no. 6, pp. 601-628."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002514535605",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Hoffer, A., Humphreys, B.R., & Lacombe, D. J.",
+      "year": 2015,
+      "desc": [
+        "Trends in NCAA Athletic Spending: Arms Race or Rising Tide?, Journal of Sports Economics, vol. 16, no. 6, pp. 576-596."
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002515592541",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., Paul, R. J., & Weinbach, A. P.",
+      "year": 2016,
+      "desc": [
+        "Performance Expectations and the Tenure of Head Coaches: Evidence from NCAA Football, Research in Economics, vol. 70, issue 3, pp. 482-492.",
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S1090944316301090",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Ruseski, J. E.",
+      "year": 2018,
+      "desc": [
+        "Strategic Interaction in a Repeated Game: Evidence from NCAA Football Recruiting Review of Industrial Organization, vol. 52, no. 2, pp. 283-303.",
+      ],
+      "link": "https://link.springer.com/article/10.1007/s11151-017-9600-1",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R.",
+      "year": 2011,
+      "desc": [
+        "On-line Sports Betting and International Relations, The SAIS Review of International Affairs, volume 31, no. 1, pp. 103-116.",
+      ],
+      "link": "https://muse.jhu.edu/article/425427/summary",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._03_STAKEHOLDER_PERCEPTION]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 1999,
+      "desc": [
+        "The Growth Effects of Sports Franchises Stadia and Arenas, Journal of Policy Analysis and Management, vol. 14, no. 4, pp. 601-624.",
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1002/(SICI)1520-6688(199923)18:4%3C601::AID-PAM4%3E3.0.CO;2-A",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 2002,
+      "desc": [
+        "The Economic Impact of Postseason Play in Professional Sports, Journal of Sports Economics, vol. 3, no. 3, pp. 291-299.",
+      ],
+      "link": "https://journals.sagepub.com/doi/abs/10.1177/1527002502003003005",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 2001,
+      "desc": [
+        "The Economic Consequences of Professional Sports Lockouts and Strikes, Southern Economic Journal, vol. 67, no. 3, pp. 737-747.",
+      ],
+      "link": "https://www.jstor.org/stable/1061462?seq=1#metadata_info_tab_contents",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 2003,
+      "desc": [
+        "The Effects of Professional Sports on Earnings and Employment in the Retail and Services Sectors of U.S. Cities, Regional Science and Urban Economics, vol. 33, no. 2, pp. 175-198.",
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S0166046202000108",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 2003,
+      "desc": [
+        "Professional Sports Facilities, Franchises and Urban Economic Development, Public Finance and Management, vol. 3, no. 3, pp. 335-357.",
+      ],
+      "link": "https://core.ac.uk/download/pdf/7068694.pdf",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 2006,
+      "desc": [
+        "Proximity Benefits and Voting on Stadium and Arena Subsidies, Journal of Urban Economics, vol. 59, no. 2, pp. 285-299.",
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S0094119005000732",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 2006,
+      "desc": [
+        "\"Compensating Differentials and the Social Benefits of the NFL\" - A Comment, Journal of Urban Economics, vol. 60, no. 1, pp. 124-131.",
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Prokopowicz, S.",
+      "year": 2007,
+      "desc": [
+        "Assessing the Impact of Sports Mega-Events in Transition Economies: EURO 2012 in Poland and Ukraine, International Journal of Sport Management and Marketing, vol 2, no. 5-6, pp. 496-509.",
+      ],
+      "link": "https://s3.amazonaws.com/academia.edu.documents/3253262/ijsmm_uefa.pdf?response-content-disposition=inline%3B%20filename%3DAssessing_the_Impact_of_Sports_Mega-Even.pdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWOWYYGZ2Y53UL3A%2F20190925%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20190925T141840Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=0ca333f59e1fd617a4e3d2af443e98526ac285841c1796a3aafd972221f01c67",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Ruseski, J. E.",
+      "year": 2009,
+      "desc": [
+        "Estimates of the Dimensions of the Sports Market in the US, International Journal of Sport Finance, vol. 4, no. 2, pp. 94-113.",
+      ],
+      "link": "https://www.researchgate.net/profile/Wen_Jhan_Jane/publication/46532382_The_Causality_between_Salary_Structures_and_Team_Performance_A_Panel_Analysis_in_a_Professional_Baseball_League/links/56b17c8608aed7ba3feb257a.pdf#page=24",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 2008,
+      "desc": [
+        "Do Economists Reach a Conclusion on Subsidies for Sports Franchises, Stadiums, and Mega-Events?, Econ Journal Watch, vol. 5, no. 3, pp. 294-315.",
+      ],
+      "link": "http://college.holycross.edu/RePEc/spe/CoatesHumphreys_LitReview.pdf",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Coates, D., & Humphreys, B.R.",
+      "year": 2011,
+      "desc": [
+        "The Effect of Professional Sports on the Earnings of Individuals: Evidence from Microeconomic Data, Applied Economics, vol. 43, issue 29, pp. 4449-4459.",
+      ],
+      "link": "https://www.tandfonline.com/doi/full/10.1080/00036846.2010.491464",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Feng X., & Humphreys, B.R.",
+      "year": 2012,
+      "desc": [
+        "The Impact of Professional Sports Facilities on Housing Values: Evidence from Census Block Group Data, City, Culture and Society, vol. 3, no. 3, pp. 189-200.",
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S187791661200029X",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R.",
+      "year": 2014,
+      "desc": [
+        "New Sports Facilities and Residential Housing Markets, Journal of Regional Science, vol. 54, no. 4, pp. 629-663.",
+      ],
+      "link": "",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Zhou, L.",
+      "year": 2015,
+      "desc": [
+        "Sports Facilities, Agglomeration, and Public Subsidies, Regional Science and Urban Economics, vol. 54, pp. 60-73.",
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S0166046215000630",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Nowak, A.",
+      "year": 2017,
+      "desc": [
+        "Professional Sports Facilities, Teams and Property Values: Evidence from NBA Team Departures. Regional Science and Urban Economics, vol. 66, no. 1, pp 39-51.",
+      ],
+      "link": "https://www.sciencedirect.com/science/article/pii/S0166046217301175",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Feng, A., & Humphreys, B.R.",
+      "year": 2018,
+      "desc": [
+        "Assessing the Economic Impact of Sports Facilities on Residential Property Values: A Spatial Hedonic Approach, Journal of Sports Economics, vol. 19, no. 2, pp. 188-210.",
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002515622318",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Chikish, Y., Humphreys, B.R., & Nowak, A.",
+      "year": 2019,
+      "desc": [
+        "Sports Arenas, Teams and Property Values: Temporary and Permanent Shocks to Local Amenity Flows, Journal of Regional Analysis \& Policy, vol. 49, n0. 1, pp. 1-12.",
+      ],
+      "link": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3254241",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Harger, K., Humphreys, B.R., & Ross, A.",
+      "year": 2016,
+      "desc": [
+        "Do New Sports Facilities Attract New Businesses?, Journal of Sports Economics, vol. 17, no. 5, pp. 483-500.",
+      ],
+      "link": "https://journals.sagepub.com/doi/full/10.1177/1527002516641168",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R.",
+      "year": 2019,
+      "desc": [
+        "Should the Construction of New Professional Sports Facilities Be Subsidized?, Journal of Policy Analysis and Management, vol. 38, no. 1, pp. 264-270.",
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/full/10.1002/pam.22099",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Chikish, Y., Humphreys, B.R., Liu, C., & Nowak, A.",
+      "year": 2019,
+      "desc": [
+        "Sports-led Tourism, Spatial Displacement, and Hotel Demand, Economic Inquiry, vol. 57, no. 4, pp. 1859-1878.",
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/full/10.1111/ecin.12820",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Humphreys, B.",
+      "authors": "Humphreys, B.R., & Ruseski, J. E.",
+      "year": 2006,
+      "desc": [
+        "Financing Intercollegiate Athletics: The Role of Monitoring and Enforcing NCAA Recruiting Regulations, International Journal of Sport Finance, vol. 1, no. 3, pp. 151-161.",
+      ],
+      "link": "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.606.5182&rep=rep1&type=pdf",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
+    },
+    {
+      "nauthors": "Ristea, A.",
+      "authors": "Ristea, A., Leitner, M., & Martin, A. A.",
+      "year": 2018,
+      "desc": [
+        "Opinion mining from Twitter and spatial crime distribution for hockey events in Vancouver. In Proceedings of the 21th AGILE International Conference on Geographic Information Science, Lund. Sweden (pp. 12-15)",
+      ],
+      "link": "https://pdfs.semanticscholar.org/b20e/60d3c5f7107afc3775688b9edde49472ff5e.pdf",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Ristea, A.",
+      "authors": "Ristea, A., Langford, C., & Leitner, M.",
+      "year": 2017,
+      "desc": [
+        "Relationships between crime and twitter activity around stadiums. In 2017 25th International Conference on Geoinformatics (pp. 1-5). IEEE.",
+      ],
+      "link": "https://ieeexplore.ieee.org/abstract/document/8090933",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Ristea, A.",
+      "authors": "Krauthausen, P., Leitner, M., Ristea, A., & Curtis, A.",
+      "year": 2019,
+      "desc": [
+        "Collecting and analyzing soccer-related graffiti with the spatial video technology and GIS: a case study in Krakow, Poland. Urban Development Issues, 62(1), 61-73.",
+      ],
+      "link": "https://content.sciendo.com/view/journals/udi/62/1/article-p61.xml?lang=de",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES]
+    },
+    {
+      "nauthors": "Ristea, A.",
+      "authors": "Ristea, A., Andresen, M. A., & Leitner, M.",
+      "year": 2018,
+      "desc": [
+        "Using tweets to understand changes in the spatial crime distribution for hockey events in Vancouver. The Canadian Geographer/Le Géographe canadien, 62(3), 338-351.",
+      ],
+      "link": "https://onlinelibrary.wiley.com/doi/abs/10.1111/cag.12463",
+      "ctags": [$scope.tags._00_DEFAULT, $scope.tags._05_CROWD_DISORDER, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
   ];
 });
