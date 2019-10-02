@@ -37,6 +37,16 @@ app.controller("PubCtrl", function ($scope) {
     _10_EMERGENCY_COMMUNICATIONS: "Emergency/Crisis Communications",
     _11_RISK_MANAGEMENT: "Risk Management"
   }
+  $scope.category = {
+    PEER_REVIEWEDJOURNAL: "Peer-Reviewed Journal Article",
+    BOOK: "Book",
+    BOOK_CHAPTER: "Book Chapter",
+    REPORT: "Report",
+    PEER_REVIEWEDCONF: "Peer-Reviewed Conference Paper",
+    WHITE_PAPER: "White Paper",
+    MAGAZINE: "Magazine Article"
+  }
+
   $scope.auth = {
     HALL: "Hall, S.",
     MENAKER: "Menaker, B.",
@@ -50,6 +60,7 @@ app.controller("PubCtrl", function ($scope) {
     TEKIN: "Tekin, D.",
     ZALE: "Zale, J.",
   }
+
   $scope.years = [
     2019,
     2018,
@@ -481,7 +492,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Sport Event Safety and Security: The Importance of Training Your People. Security Magazine, 66-70.",
       ],
-      "link": "",
+      "link": "https://www.securitymagazine.com/articles/80915-sport-event-safety-and-security-the-importance-of-training-your-people-1",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING]
     },
     {
@@ -601,7 +612,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Stadium and Arena Security. Security Technology Executive. Vol 19, No.2, February, 2009, pages 30-33.",
       ],
-      "link": "",
+      "link": "https://www.securityinfowatch.com/home/article/10538073/stadium-arena-security",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._02_FAN_PERCEPTION, $scope.tags._04_EVACUATION, $scope.tags._05_CROWD_DISORDER, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -621,7 +632,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Sport venue security: Planning and preparedness for terrorist-related incidents. Sport Management and Related Topics Journal, Vol. 4, Issue 2, 6-15.",
       ],
-      "link": "",
+      "link": "http://www.thesmartjournal.com/venues.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
@@ -641,7 +652,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Emergency management and planning at major sports events. Journal of Emergency Management. January/February 2008, Vol. 6, No.1",
       ],
-      "link": "",
+      "link": "https://www.wmpllc.org/ojs-2.4.2/index.php/jem/article/view/1408",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._09_BEST_PRACTICES]
     },
     {
@@ -741,7 +752,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Security issues at sports events. In H. Appenzeller (Ed.), 3rd edition Risk management in sport: Issues and strategies. Carolina Academic Press Publishers: Raleigh, N.C."
       ],
-      "link": "",
+      "link": "https://cap-press.com/books/isbn/9781611631074/Risk-Management-in-Sport-Third-Edition",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._01_TRAINING, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -811,7 +822,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Spectator perception of security at the Super Bowl after 9/11: Implications for facility managers. Sport Management and Related Topics Journal, 4(2), 16-25."
       ],
-      "link": "",
+      "link": "http://ww.w.thesmartjournal.com/superbowl.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1033,7 +1044,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Assuming the risks in baseball practices. Journal for Facility Planning, Design, and Management, 3(1), 28-32."
       ],
-      "link": "",
+      "link": "https://search.proquest.com/openview/6b58cf5459b6d65cb7ed11508e93a24b/1?pq-origsite=gscholar&cbl=2037369",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1103,7 +1114,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Event risk management. In Facilities Planning for Health, Fitness, Physical Activity, and Sports: Concepts and Applications, 12th ed. Sawyer, T.H. (Ed.). Champaign, IL: Sagamore Publishing"
       ],
-      "link": "",
+      "link": "https://www.sagamorepub.com/products/Facility-Planning-Design-14th",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._11_RISK_MANAGEMENT]
     },
     {
@@ -1163,7 +1174,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Identifying the influence of opponent ranking and game characteristics on alcohol-related stadium ejections. The Journal of Primary Prevention, 39(2), 117-128."
       ],
-      "link": "",
+      "link": "https://link.springer.com/article/10.1007/s10935-018-0504-0",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
     },
     {
@@ -1183,7 +1194,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "College football game day stadium incidents: Policy and environmental effects on alcohol-related ejections and crime. Journal of Policy Research in Tourism, Leisure and Events. 6(2), 119-132"
       ],
-      "link": "",
+      "link": "https://www.tandfonline.com/doi/abs/10.1080/19407963.2014.895286",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL, $scope.tags._06_CRIME_DISORDER_VENUES]
     },
     {
@@ -1193,7 +1204,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Stadium alcohol policies: A comparison of alcohol policies available on college athletic department websites. International Journal of Sport Communication, 3(2), 151-162"
       ],
-      "link": "",
+      "link": "https://journals.humankinetics.com/view/journals/ijsc/3/2/article-p151.xml",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._08_ALCOHOL]
     },
     {
@@ -1253,7 +1264,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "Escape from ‘Owlcatraz’: An interaction ritual case study of the stadium naming rights agreement between Florida Atlantic University and The GEO Group, Inc. Journal of Issues in Intercollegiate Athletics, 11, 214-236."
       ],
-      "link": "",
+      "link": "https://www.researchgate.net/profile/Kiernan_Gordon/publication/326812696_Escape_from_%27Owlcatraz%27_An_interaction_ritual_case_study_of_the_stadium_naming_rights_agreement_between_Florida_Atlantic_University_and_The_GEO_Group_Inc/links/5b64749b0f7e9b00b2a596d6/Escape-from-Owlcatraz-An-interaction-ritual-case-study-of-the-stadium-naming-rights-agreement-between-Florida-Atlantic-University-and-The-GEO-Group-Inc.pdf",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._02_FAN_PERCEPTION, $scope.tags._03_STAKEHOLDER_PERCEPTION, $scope.tags._09_BEST_PRACTICES]
     },
     {
@@ -1683,7 +1694,7 @@ app.controller("PubCtrl", function ($scope) {
       "desc": [
         "\"Compensating Differentials and the Social Benefits of the NFL\" - A Comment, Journal of Urban Economics, vol. 60, no. 1, pp. 124-131.",
       ],
-      "link": "",
+      "link": "https://www.sciencedirect.com/science/article/pii/S0094119006000039",
       "ctags": [$scope.tags._00_DEFAULT, $scope.tags._07_POLICY_EVALUATIONS]
     },
     {
