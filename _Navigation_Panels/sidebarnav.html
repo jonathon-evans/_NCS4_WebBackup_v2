@@ -393,11 +393,11 @@ Notes on structure:
     </button>
     <!--<button type="button" class="accordion">SUMMITS</button> -->
     <!-- <a class="accordion" href="/roi">WORKSHOP</a> -->
-    <div id="summits"><a class="accordion" target="_blank" href="/marathon">MARATHON SAFETY AND SECURITY</a> <a class="accordion"
-      target="_blank" href="/intercollegiate">INTERCOLLEGIATE ATHLETICS SAFETY AND SECURITY</a> <a class="accordion"
-      target="_blank" href="http://www.cvent.com/d/wyqy52">INTERSCHOLASTIC
-        ATHLETICS AND AFTER SCHOOL SAFETY AND SECURITY</a> <a class="accordion"
-        target="_blank" href="http://www.cvent.com/d/9yqbr5">PROFESSIONAL SPORTS SAFETY AND
+    <div id="summits"><a class="accordion" target="_blank" href="/marathon">MARATHON SAFETY AND SECURITY</a> <a
+        class="accordion" target="_blank" href="/intercollegiate">INTERCOLLEGIATE ATHLETICS SAFETY AND SECURITY</a> <a
+        class="accordion" target="_blank" href="http://www.cvent.com/d/wyqy52">INTERSCHOLASTIC
+        ATHLETICS AND AFTER SCHOOL SAFETY AND SECURITY</a> <a class="accordion" target="_blank"
+        href="http://www.cvent.com/d/9yqbr5">PROFESSIONAL SPORTS SAFETY AND
         SECURITY</a> <a class="accordion">ENTERTAINMENT SAFETY AND SECURITY</a></div>
   </div>
   <!-- ========================================[RESEARCH]============================================================ -->
@@ -461,19 +461,19 @@ Notes on structure:
   </div>
   <!-- ========================================[HIGHSCHOOL]============================================================ -->
   <div id="highschoolportal" class="stickit" style="display: none;"><button type="button" class="togglesidebar"
-    onclick="open_close()"> <img style="height: 30px;"
-      src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
-  </button> <a class="accordion" href="/aboutncs4"> ABOUT NCS4</a> <a class="accordion" href="/aboutncs4/our-staff">
-    OUR STAFF</a> <a class="accordion" href="/aboutncs4/research-fellows"> RESEARCH FELLOWS</a> <button type="button"
-    class="accordion"> ADVISORY BOARDS</button>
-  <div id="fema-dhs" class="sidebar_panel"><a class="droplistleaf" href="/aboutncs4/advisory-committees"> ADVISORY
-      COMMITTEES</a> <a class="droplistleaf" href="/aboutncs4/national-advisory-board"> NATIONAL ADVISORY BOARD</a>
+      onclick="open_close()"> <img style="height: 30px;"
+        src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Flat%20Icons/menu-alt-512.png" />
+    </button> <a class="accordion" href="/aboutncs4"> ABOUT NCS4</a> <a class="accordion" href="/aboutncs4/our-staff">
+      OUR STAFF</a> <a class="accordion" href="/aboutncs4/research-fellows"> RESEARCH FELLOWS</a> <button type="button"
+      class="accordion"> ADVISORY BOARDS</button>
+    <div id="fema-dhs" class="sidebar_panel"><a class="droplistleaf" href="/aboutncs4/advisory-committees"> ADVISORY
+        COMMITTEES</a> <a class="droplistleaf" href="/aboutncs4/national-advisory-board"> NATIONAL ADVISORY BOARD</a>
+    </div>
+    <a class="accordion" href="/aboutncs4/news"> NEWS</a> <a class="accordion"
+      href="/aboutncs4/ncs4-recognition-awards"> NCS4 RECOGNITION AWARDS</a> <a class="accordion"
+      href="/aboutncs4/9-11-sport-security-memorial"> 9/11 SPORT SECURITY MEMORIAL</a> <a class="accordion"
+      href="/aboutncs4/contact"> CONTACT</a>
   </div>
-  <a class="accordion" href="/aboutncs4/news"> NEWS</a> <a class="accordion"
-    href="/aboutncs4/ncs4-recognition-awards"> NCS4 RECOGNITION AWARDS</a> <a class="accordion"
-    href="/aboutncs4/9-11-sport-security-memorial"> 9/11 SPORT SECURITY MEMORIAL</a> <a class="accordion"
-    href="/aboutncs4/contact"> CONTACT</a>
-</div>
   <!-- <script src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/JSFiles/sidebarNavConcept3_min.js"></script> -->
   <script>
     // <![CDATA[
@@ -521,9 +521,111 @@ Notes on structure:
     var msie = ua.indexOf("MSIE ");
     var trident = ua.indexOf('Trident/');
 
+    function repositionNav() {
+      width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
 
+      if (width < 768) nav_height = 50;
+      else nav_height = $(".navbar-nav").position().top + $(".navbar-nav").outerHeight(true);
+
+      bg.css("top", nav_height - ORIG_HEIGHT + "px")
+
+    }
 
     //======================[Helper Functions]=============================
+
+    //open function
+    function open_nav() {
+      width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if (width > 768) {
+        //scrunch page
+        scrunch = true;
+
+        if (path.includes(K) || path.includes(T) || path.includes(PD) || path.includes(R) || path.includes(L) || path
+          .includes(AB) || path.includes(E) || path.includes(HS)) { //make sure nothing goes wonky on other pages
+          document.getElementById("MPOuter").style["transition"] = "all 0.5s ease-in-out 0s";
+          document.getElementById("MPOuter").style["margin-left"] = "219px";
+          //move footer
+          document.getElementById("MPOuterFooter").style["transition"] = "all 0.5s ease-in-out 0s";
+          document.getElementById("MPOuterFooter").style["margin-left"] = "223px";
+          document.getElementById("MPOuterFooter").style["width"] = "calc(100% - 223px)";
+          document.getElementById("MPFooterLink").style["transition"] = "all 0.5s ease-in-out 0s";
+          document.getElementById("MPFooterLink").style["margin-left"] = "223px";
+          document.getElementById("MPFooterLink").style["width"] = "calc(100% - 223px)";
+          // console.log("SCRUNCH");
+        }
+      }
+
+      //move sidenav
+      if (bg.hasClass("move")) {
+        bg.removeClass("move");
+        if (setBySmallWidth) {
+          bg.removeClass("move")
+          if (msie > 0 || trident > 0) // If Internet Explorer, hit with crutch
+          {
+            sbg.removeClass("move");
+            stickits.each(function () {
+              this.removeClass("move");
+            });
+          }
+          setBySmallWidth = false;
+        }
+
+      }
+      if (msie > 0 || trident > 0) // If Internet Explorer, throw crutch at it
+      {
+        if (sbg.hasClass("move")) sbg.removeClass("move");
+        stickits.each(function () {
+          if (this.classList.contains("move")) this.classList.toggle("move");
+        });
+      }
+
+    }
+    //close function
+    function close_nav() {
+      width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      if (width > 768 || scrunch) {
+        scrunch = false;
+        //unscrunch page
+        if (path.includes(K) || path.includes(T) || path.includes(PD) || path.includes(R) || path.includes(L) || path
+          .includes(AB) || path.includes(E) || path.includes(HS)) { //make sure nothing goes wonky on other pages
+          document.getElementById("MPOuter").style["transition"] = "all 0.5s ease-in-out 0s";
+          document.getElementById("MPOuter").style["margin-left"] = "40px";
+          //move footer
+          document.getElementById("MPOuterFooter").style["transition"] = "all 0.5s ease-in-out 0s";
+          document.getElementById("MPOuterFooter").style["margin-left"] = "40px";
+          document.getElementById("MPOuterFooter").style["width"] = "calc(100% - 40px)";
+          document.getElementById("MPFooterLink").style["transition"] = "all 0.5s ease-in-out 0s";
+          document.getElementById("MPFooterLink").style["margin-left"] = "40px";
+          document.getElementById("MPFooterLink").style["width"] = "calc(100% - 40px)";
+          // console.log("UNSCRUNCH");
+        }
+      }
+      //close the open hoversubs
+      for (let i = 0; i < hsubBtns.length; ++i) {
+        if (hsub[i].classList.contains("hsub_ACTIVE")) {
+          hsub[i].classList.toggle("hsub_ACTIVE")
+        }
+      }
+
+      //close open sidebar_panels
+      for (var i = 0; i < acc.length; i++) {
+        if (acc[i].type == 'button') {
+          acc[i].classList.remove('active');
+          var sidebar_panel = acc[i].nextElementSibling;
+          sidebar_panel.style.maxHeight = null;
+          // sidebar_panel.style.transition = "max-height 0.05s ease-out";
+        }
+      }
+      // move sidenav
+      if (!bg.hasClass("move")) bg.addClass("move");
+      if (msie > 0 || trident > 0) // If Internet Explorer, kick crutch
+      {
+        if (!sbg.hasClass("move")) sbg.addClass("move");
+        stickits.each(function () {
+          if (!this.classList.contains("move")) this.classList.toggle("move");
+        });
+      }
+    }
 
     //Toggle Visibility
     //  Everything is display:none by default: this is used to toggle the right one into visibility
@@ -541,114 +643,22 @@ Notes on structure:
 
     //open/close menu
     function open_close() {
-      //alert(dlist.length);
+      //These two if statements remove the noTransition class so that there is an animation
+      if (bg.hasClass("noTransition")) {
+        bg.removeClass("noTransition");
+      }
+      if (sbg.hasClass("noTransition")) {
+        sbg.removeClass("noTransition");
+      }
       open = !open;
-      // console.log("OPEN:", open);
-      // console.log("SCRUNCH:", scrunch);
-      if (open) { //open it
-        width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        if (width > 768) {
-          //scrunch page
-          scrunch = true;
-
-          if (path.includes(K) || path.includes(T) || path.includes(PD) || path.includes(R) || path.includes(L) || path
-            .includes(AB) || path.includes(E) || path.includes(HS)) { //make sure nothing goes wonky on other pages
-            document.getElementById("MPOuter").style["transition"] = "all 0.5s ease-in-out 0s";
-            document.getElementById("MPOuter").style["margin-left"] = "219px";
-            //move footer
-            document.getElementById("MPOuterFooter").style["transition"] = "all 0.5s ease-in-out 0s";
-            document.getElementById("MPOuterFooter").style["margin-left"] = "223px";
-            document.getElementById("MPOuterFooter").style["width"] = "calc(100% - 223px)";
-            document.getElementById("MPFooterLink").style["transition"] = "all 0.5s ease-in-out 0s";
-            document.getElementById("MPFooterLink").style["margin-left"] = "223px";
-            document.getElementById("MPFooterLink").style["width"] = "calc(100% - 223px)";
-            // console.log("SCRUNCH");
-          }
-        }
-
-        //move sidenav
-        if (bg.hasClass("move")) {
-          bg.removeClass("move");
-          if (setBySmallWidth) {
-            bg.removeClass("move")
-            if (msie > 0 || trident > 0) // If Internet Explorer, hit with crutch
-            {
-              sbg.removeClass("move");
-              stickits.each(function () {
-                this.removeClass("move");
-              });
-            }
-            setBySmallWidth = false;
-          }
-
-        }
-        if (msie > 0 || trident > 0) // If Internet Explorer, throw crutch at it
-        {
-          if (sbg.hasClass("move")) sbg.removeClass("move");
-          stickits.each(function () {
-            if (this.classList.contains("move")) this.classList.toggle("move");
-          });
-        }
-
-      } else { //close it
-
-        width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-        if (width > 768 || scrunch) {
-          scrunch = false;
-          //unscrunch page
-          if (path.includes(K) || path.includes(T) || path.includes(PD) || path.includes(R) || path.includes(L) || path
-            .includes(AB) || path.includes(E) || path.includes(HS)) { //make sure nothing goes wonky on other pages
-            document.getElementById("MPOuter").style["transition"] = "all 0.5s ease-in-out 0s";
-            document.getElementById("MPOuter").style["margin-left"] = "40px";
-            //move footer
-            document.getElementById("MPOuterFooter").style["transition"] = "all 0.5s ease-in-out 0s";
-            document.getElementById("MPOuterFooter").style["margin-left"] = "40px";
-            document.getElementById("MPOuterFooter").style["width"] = "calc(100% - 40px)";
-            document.getElementById("MPFooterLink").style["transition"] = "all 0.5s ease-in-out 0s";
-            document.getElementById("MPFooterLink").style["margin-left"] = "40px";
-            document.getElementById("MPFooterLink").style["width"] = "calc(100% - 40px)";
-            // console.log("UNSCRUNCH");
-          }
-        }
-        //close the open hoversubs
-        for (let i = 0; i < hsubBtns.length; ++i) {
-          if (hsub[i].classList.contains("hsub_ACTIVE")) {
-            hsub[i].classList.toggle("hsub_ACTIVE")
-          }
-        }
-
-        //close open sidebar_panels
-        for (var i = 0; i < acc.length; i++) {
-          if (acc[i].type == 'button') {
-            acc[i].classList.remove('active');
-            var sidebar_panel = acc[i].nextElementSibling;
-            sidebar_panel.style.maxHeight = null;
-            // sidebar_panel.style.transition = "max-height 0.05s ease-out";
-          }
-        }
-        // move sidenav
-        if (!bg.hasClass("move")) bg.addClass("move");
-        if (msie > 0 || trident > 0) // If Internet Explorer, kick crutch
-        {
-          if (!sbg.hasClass("move")) sbg.addClass("move");
-          stickits.each(function () {
-            if (!this.classList.contains("move")) this.classList.toggle("move");
-          });
-        }
+      if (open) {
+        open_nav();
+      } else {
+        close_nav();
       }
 
     }
     const ORIG_HEIGHT = 50;
-
-    function repositionNav() {
-      width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-
-      if (width < 768) nav_height = 50;
-      else nav_height = $(".navbar-nav").position().top + $(".navbar-nav").outerHeight(true);
-
-      bg.css("top", nav_height - ORIG_HEIGHT + "px")
-
-    }
 
     //===============================[BODY]======================================
     $(document).ready(function () {
@@ -682,7 +692,7 @@ Notes on structure:
           toggleVis(aboutportal);
         } else if (path.includes(E)) {
           toggleVis(eventsportal);
-        } else if (path.includes(HS)){
+        } else if (path.includes(HS)) {
           toggleVis(highschoolportal);
         } else if (path.includes('/testing')) {
           toggleVis(eventsportal);
@@ -782,6 +792,38 @@ Notes on structure:
         }
       }
 
+      //======================[BIG TEST - JONATHON]==========================
+      //THIS BLOCK HIDES THE SIDEBAR ON PAGE LOAD. DELETE/COMMENT THIS OUT TO HAVE THE SIDEBAR SHOW BY DEFAULT
+
+      if (path.includes(K) || path.includes(T) || path.includes(PD) || path.includes(R) || path.includes(L) || path
+        .includes(AB) || path.includes(E) || path.includes(HS)) {
+        open = false;
+        
+        //Move Text Area
+        document.getElementById("MPOuter").style["margin-left"] = "40px";
+        document.getElementById("MPOuterFooter").style["margin-left"] = "40px";
+        document.getElementById("MPOuterFooter").style["width"] = "calc(100% - 40px)";
+        document.getElementById("MPFooterLink").style["margin-left"] = "40px";
+        document.getElementById("MPFooterLink").style["width"] = "calc(100% - 40px)";
+        setBySmallWidth = true;
+
+
+
+        //Put SideNav on side with no transition. See open_close() function 
+        bg.addClass("noTransition");
+        sbg.addClass("noTransition");
+        bg.addClass("move");
+        if (msie > 0 || trident > 0) // If Internet Explorer, kick crutch
+        {
+          if (!sbg.hasClass("move")) sbg.addClass("move");
+          stickits.each(function () {
+            if (!this.classList.contains("move")) this.classList.toggle("move");
+          });
+        }
+      }
+      //===========================================================================
+
+
     }); //end doc.ready ============================================================
 
     //listen for top width change to keep sidenav and topnav aligned
@@ -814,6 +856,8 @@ Notes on structure:
         }
       }
     }
+
+
     // ]]>
   </script>
 </div>
