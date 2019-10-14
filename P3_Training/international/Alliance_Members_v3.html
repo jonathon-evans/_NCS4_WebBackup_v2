@@ -5,7 +5,7 @@
     height: 250px;
     /* padding-left: 20px; */
     /* padding-right: 20px;
-      overflow-y: initial; */
+          overflow-y: initial; */
   }
 
   .f-col {
@@ -121,9 +121,9 @@
   }
 
   /*
-  .big:nth-last-child(n+2){
-    border-right: 1px solid black;
-  }*/
+      .big:nth-last-child(n+2){
+        border-right: 1px solid black;
+      }*/
 
   .bigger {
     color: white;
@@ -149,7 +149,7 @@
     .f-col.holder {
       border: 2px solid black;
       /* -webkit-flex-direction: row;
-        flex-direction: row; */
+            flex-direction: row; */
       max-height: 100vh;
     }
 
@@ -176,14 +176,14 @@
   }
 
   /*
-  transition: property duration timing-function delay|initial|inherit;
-  */
+      transition: property duration timing-function delay|initial|inherit;
+      */
 
   /* .variable{
-    display: none;
-    height: 400px;
-  } */
-
+        display: none;
+        height: 400px;
+      } */
+  
 </style>
 <!-- CONTENT 1 --> <br />
 <div class="flex-tablewrap">
@@ -274,7 +274,8 @@
   </div>
   <br /><br />
   <p>The yearly investment to become a Sports and Entertainment Technology Alliance Partner is $18,000 per year for
-    Global and $12,000 for Domestic. For more information, please contact NCS4 Director Dr. Lou Marciani at <a href="mailto:lou.marciani@usm.edu">Lou.Marciani@usm.edu</a>.</p>
+    Global and $12,000 for Domestic. For more information, please contact NCS4 Director Dr. Lou Marciani at <a
+      href="mailto:lou.marciani@usm.edu">Lou.Marciani@usm.edu</a>.</p>
 </div>
 <script>
   // <![CDATA[
@@ -288,13 +289,7 @@
     "desc": "Babel Street is a provider of advanced multi-lingual search and analytics software solutions. The company provides customers with the ability to identify, analyze, and report on potential and ongoing impacts to their organization. Through Babel Street’s world-class technology, users access and analyze millions of multi-lingual and geo-enabled, publicly available data sources in more than 200 languages at near real-time. By delivering this wealth of information in a single pane of glass, Babel Street helps organizations coordinate research across teams and identify patterns and risks earlier, while also reducing the time and number of tools needed to create actionable insights. The company currently serves many of the world’s leading brands in financial services, transportation, entertainment, sports, higher education, hospitality, and government.",
     "web": "https://www.babelstreet.com/",
     "logo": "https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate%20Logos/Strategic_Partners/babel_street_logo.png"
-  }, {
-    "name": "CEIA",
-    "desc": "CEIA is a world leading manufacturing company specialized in the design, engineering and production of Metal Detectors and Electromagnetic Inspection Devices.  CEIA event security solutions include metal detectors that comply with the strictest security standards and provide unmatched reliability, immunity to environmental interference and consistency for the detection of all the metal objects that could be considered a threat to individuals and their safety. Dynamic solutions and exceptional service are the foundation of CEIA’s commitment to customer satisfaction.",
-    "web": "http://www.ceia.net/",
-    "logo": "https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate%20Logos/Strategic_Partners/ceia_logo.png"
-
-  }, {
+  },  {
     "name": "Dell EMC",
     "desc": "Dell EMC, a part of Dell Technologies, enables organizations to modernize, automate and transform their data center using industry-leading converged infrastructure, servers, storage and data protection technologies. This provides a trusted foundation for businesses to transform IT, through the creation of a hybrid cloud, and transform their business through the creation of cloud-native applications and big data solutions. Dell EMC services customers across 180 countries – including 98% of the Fortune 500 – with the industry’s most comprehensive and innovative portfolio from edge to core to cloud.",
     "web": "https://www.dellemc.com/en-us/index.htm",
@@ -335,6 +330,18 @@
     "desc": "Honeywell Commercial Security is a leading global manufacturer of access control, video, intrusion and cloud based security solutions for commercial, industrial and institutional facilities. Honeywell invents and manufactures technologies that address some of the world’s most critical challenges.",
     "web": "https://www.security.honeywell.com/",
     "logo": "https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate%20Logos/HON-Connected_LogoLockup_Pipe_SECURITY-min.png"
+
+  }, {
+    "name": "Intel",
+    "desc": "The Internet of Things (IoT) will be the largest revolution in the data economy. At Intel, we understand the exponential power of data, and we’re making it practical and economical to put it to work from the edge to the cloud. Intel® technologies purpose-built for IoT deliver optimized performance at every point, practical ways to use artificial intelligence, broad connectivity support, and a built-in foundation of security to help protect your data and systems. Proven solutions from our partner ecosystem can reduce the time, cost, and risk of IoT deployments. By harnessing the massive flood of data generated by connected things—and using it to gain actionable insights—we’ll accelerate business transformation to a degree never seen before.",
+    "web": "https://www.intel.com/",
+    "logo": "https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate%20Logos/intel.png"
+
+  }, {
+    "name": "Ameristar Perimeter Security USA Inc.",
+    "desc": "Ameristar Perimeter Security USA Inc. is your single source for perimeter security products. Our extensive product line includes security bollards, wedge barriers, rising beam barriers, drop arm barriers, and security fencing and gates. Our crash ratings range from K4 to K8 to K12. Feel free to contact us if we can be a part of your next perimeter security project.",
+    "web": "https://www.ameristarsecurity.com",
+    "logo": "https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate%20Logos/ameristar2.png"
 
   }, ]
 
@@ -382,8 +389,8 @@
         //set html
         $(panel + " h3").text(companies[idnum - 1].name);
         $(panel + " span.desc").html(
-          companies[idnum - 1].desc + '<br /><br /> <strong>Website: </strong> <a href="' + companies[idnum - 1].web +
-          '">' + companies[idnum - 1].web + '</a>'
+          companies[idnum - 1].desc + '<br /><br /> <strong>Website: </strong> <a href="' + companies[idnum - 1]
+          .web + '">' + companies[idnum - 1].web + '</a>'
         );
       }
     } else {
@@ -424,15 +431,16 @@
       //set html
       $(panel + " h3").text(companies[idnum - 1].name);
       $(panel + " span.desc").html(
-        companies[idnum - 1].desc + '<br /><br /> <strong>Website: </strong> <a href="' + companies[idnum - 1].web +
-        '">' + companies[idnum - 1].web + '</a>'
+        companies[idnum - 1].desc + '<br /><br /> <strong>Website: </strong> <a href="' + companies[idnum - 1]
+        .web + '">' + companies[idnum - 1].web + '</a>'
       );
     }
 
 
     // console.log(p, portalMaps[p]);
     $("#panel").css("opacity", "0");
-    if (prev === p) { //if first+n time, check if prev is the same as current, if so close the header and do nothing, prev=null
+    if (prev ===
+      p) { //if first+n time, check if prev is the same as current, if so close the header and do nothing, prev=null
       prev = null;
       $("div.Portal-Spacer").css("height", "217px")
       $("#panel").css("height", "0px");
