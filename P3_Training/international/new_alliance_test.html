@@ -5,7 +5,7 @@
     height: 250px;
     /* padding-left: 20px; */
     /* padding-right: 20px;
-            overflow-y: initial; */
+                overflow-y: initial; */
   }
 
   .f-col {
@@ -121,9 +121,9 @@
   }
 
   /*
-        .big:nth-last-child(n+2){
-          border-right: 1px solid black;
-        }*/
+            .big:nth-last-child(n+2){
+              border-right: 1px solid black;
+            }*/
 
   .bigger {
     color: white;
@@ -149,7 +149,7 @@
     .f-col.holder {
       border: 2px solid black;
       /* -webkit-flex-direction: row;
-              flex-direction: row; */
+                  flex-direction: row; */
       max-height: 100vh;
     }
 
@@ -175,16 +175,379 @@
     }
   }
 
+  /*=================================================================================================================*/
+  /*=================================================================================================================*/
+  .info-button-wrapper {
+    font-weight: bold;
+    max-width: 250px;
+    height: 250px;
+    text-align: center;
+    padding: 60px 30px 30px 30px;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+
+  .info-button-wrapper .show1 {
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: all 200ms ease-in-out;
+    -moz-transition: all 200ms ease-in-out;
+    -ms-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+  }
+
+  .circleBase {
+    display: inline-block;
+    border-radius: 50%;
+  }
+
+  .type1 {
+    font-weight: bold;
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    background: #000;
+    border: 3px solid #ECBB36;
+    color: white;
+  }
+
+  .info-button-wrapper:hover {
+    padding: 30px;
+  }
+
+  .info-button-wrapper:hover .show1 {
+    display: inline-block;
+    opacity: 1.0;
+  }
+
+  .info-button-wrapper:hover .circleBase {
+    border: 3px solid #ECBB36;
+  }
+
+  /*===============================================================================================================================*/
+
+  .accordion1 {
+    font-weight: bolder;
+    font-size: 130%;
+    background-color: #FFD046;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+
+
+  .accordion1:hover {
+    background-color: #bb8e11;
+  }
+
+  .panel1 {
+    font-weight: bold;
+    text-align: left;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion1:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+  }
+
+  .active1:after {
+    content: "\2796";
+  }
+
+  /*===============================================================================================================================*/
+  .row1 {
+    display: table-row;
+    width: 800px;
+  }
+
+  .info1 {
+    display: table-cell;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #FFD046;
+    margin: 5px;
+    width: 260px;
+  }
+
+  .info1>p {
+    font-weight: bold;
+    padding: 30px;
+  }
+
   /*
-        transition: property duration timing-function delay|initial|inherit;
-        */
+            transition: property duration timing-function delay|initial|inherit;
+            */
 
   /* .variable{
-          display: none;
-          height: 400px;
-        } */
+              display: none;
+              height: 400px;
+            } */
 </style>
 <!-- CONTENT 1 --> <br />
+
+<div style="text-align: center; width: 100%">
+  <img
+    src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Carousel%20Images/Homeslide/Rotating_Banner-Tech_Alliance-10_10_19.jpg" />
+</div>
+
+<div align="center">
+  <div>
+    <table>
+      <tr>
+        <td style="text-align: center;">
+          <div class="info-button-wrapper">
+            <div class="circleBase type1" id="hover">
+              <p style="padding: 35px 0;">
+                Mission
+              </p>
+            </div>
+            <br /><br />
+            <div class="show1">
+              <p>
+                The Sports and Entertainment Technology Alliance was created to foster education on
+                current and new technologies, and promote best practices for safer and smarter
+                schools, sport and entertainment venues and events.
+              </p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="info-button-wrapper">
+            <div class="circleBase type1" id="hover">
+              <p style="padding: 35px 0;">
+                Vision
+              </p>
+            </div>
+            <br /><br />
+            <div class="show1">
+              <p>
+                The Alliance is the driving force for identifying innovative safety and security
+                solutions through integrated technology design, development, and process enhancement
+                with respect to sport venue operations management and associated first responder
+                capabilities.
+              </p>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="info-button-wrapper">
+            <div class="circleBase type1" id="hover">
+              <p style="padding: 35px 0;">
+                Purpose
+              </p>
+            </div>
+            <br /><br />
+            <div class="show1">
+              <p>
+                The primary goal of the Technology Alliance is to test technology against use cases
+                and threats to proposed new smart technologies for the Stadium and School 2025
+                projects.
+              </p>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <!--===============================================================================================================-->
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <!--===============================================================================================================-->
+  <h1 style="text-align: center; color:#000">Invest in the Future with a Technology Alliance Partnership</h1>
+  <br />
+  <div style="max-width: 100%; margin: auto;">
+    <button class="accordion1" type="button">Research Projects</button>
+    <div class="panel1">
+      <br />
+      <ul>
+        <li>
+          Critical safety and security issues driven from Department of Homeland Security, other agencies
+          National Advisory Council that need specific research retreatment.
+        </li>
+      </ul>
+    </div>
+
+    <button class="accordion1" type="button">National Sports Security Laboratory</button>
+    <div class="panel1">
+      <br />
+      <ul>
+        <li>
+          Partners receive access to NCS4’s National Security Sports Laboratory (NSSL). NSSL capabilities
+          include a discounted basis for Lab Tested Designation, installation of technology for
+          operations, research and training programs.
+        </li>
+        <li>
+          Technology Alliance Partners also have access to other tested solutions for integration and full
+          use of the NSSL for meetings and functions.
+        </li>
+      </ul>
+    </div>
+
+    <button class="accordion1" type="button">Knowledge Portal</button>
+    <div class="panel1">
+      <br />
+      <ul>
+        <li>
+          Within the knowledge portal, partners receive exclusive access to a comprehensive knowledge
+          repository of good practices in all aspects of sport security technology.
+        </li>
+        <li>
+          The knowledge portal functions as an online collaborative platform where experts can share,
+          discuss, analyze, and publish information on evolving aspects of sports and entertainment
+          security technology.
+        </li>
+      </ul>
+    </div>
+
+    <button class="accordion1" type="button">National Sports Safety and Security Conference</button>
+    <div class="panel1">
+      <br />
+      <ul>
+        <li>
+          The National Sports Safety and Security Conference is a national environment to disseminate
+          technology products, research, and whitepapers regarding the work and findings of members as
+          well as the working groups. As Technology Alliance partners, you’ll receive discounts on
+          exhibiting technology and participating in presentations at the Technology Alliance Pavilion.
+        </li>
+      </ul>
+    </div>
+
+    <button class="accordion1" type="button">Applied Research</button>
+    <div class="panel1">
+      <br />
+      <ul>
+        <li>
+          Participate in special working groups to explore and design safety and security solutions for
+          Smart Stadiums and Schools Twenty25. The working groups will develop the new models through
+          collaborative projects, testing new integrated solutions with safety and security best
+          practices, creating standards, and developing white papers.
+        </li>
+      </ul>
+    </div>
+    <button class="accordion1" type="button">Working Groups</button>
+    <div class="panel1">
+      <br />
+      <ul>
+        <li>
+          Work with leading sport security professionals and subject matter experts to solve common
+          problems. All Technology Alliance Partners are expected to maintain an active participation in
+          all working groups.
+        </li>
+        <li>
+          The available working groups include:<ul>
+            <li>
+              Digital Content Management
+            </li>
+            <li>
+              Integrated Security System
+            </li>
+            <li>
+              Building Automation System
+            </li>
+            <li>
+              Event Management System
+            </li>
+            <li>
+              Crowd Management
+            </li>
+            <li>
+              Network Management
+            </li>
+            <li>
+              Command and Control Center
+            </li>
+
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--===============================================================================================================-->
+  <br />
+  <br />
+  <br />
+
+  <!--===============================================================================================================-->
+
+  <h1 style="text-align: center; color:#000">Return on Investment</h1>
+  <br />
+  <div style="max-width: 100%; margin: auto; display: table;">
+    <div class="row1">
+      <div class="info1" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000"
+        data-aos-anchor-placement="bottom-bottom">
+        <p>Meet industry security thought leaders from professional, collegiate, international, and high
+          school entities.</p>
+      </div>
+      <div class="info1" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000"
+        data-aos-anchor-placement="bottom-bottom" data-aos-delay="600">
+        <p>Receive access to and input from Security Industry Association leadership and efforts for
+          political action committees and government advisement on various security industry issues in
+          front of U.S. legislation.</p>
+      </div>
+      <div class="info1" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000"
+        data-aos-anchor-placement="bottom-bottom" data-aos-delay="1200">
+        <p>Build your corporate brand as an innovative solution provider dedicated to solving critical
+          sports and entertainment security issues. Use of Technology Alliance investment as part of your
+          marketing materials including your Lab Tested Designation.</p>
+      </div>
+    </div>
+    <br />
+    <div class="row1">
+      <div class="info1" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000"
+        data-aos-anchor-placement="bottom-bottom">
+        <p>Receive compliance through independent supervision of tests by NSSL.</p>
+      </div>
+      <div class="info1" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000"
+        data-aos-anchor-placement="bottom-bottom" data-aos-delay="600">
+        <p>Partners have primary access to join domestic and international training programs.</p>
+      </div>
+      <div class="info1" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="3000"
+        data-aos-anchor-placement="bottom-bottom" data-aos-delay="1200">
+        <p>Enjoy branding on NCS4’s website, permission to market your Lab Tested Designation, and
+          whitepapers can be used for marketing material.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--===============================================================================================================-->
+<br />
+<br />
+<br />
+<!--===============================================================================================================-->
+
+
+<div style="text-align: center">
+  <img
+    src="https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Created%20Graphics/Tech_Alliance_Concepts_Banner.jpg" />
+</div>
+
+
+
+<!--===============================================================================================================-->
+<br />
+<br />
+<br />
+<!--===============================================================================================================-->
 <div class="flex-tablewrap">
   <!--  -->
   <div class="f-col holder">
@@ -258,7 +621,7 @@
       <div id="11" class="f-cell corpimg">
         <p class="imgholder"><img alt="" /></p>
       </div>
-      <div id="12" class="f-cell">
+      <div id="12" class="f-cell corpimg">
         <p class="imgholder"><img alt="" /></p>
       </div>
     </div>
@@ -272,11 +635,27 @@
     </div>
   </div>
   <br /><br />
-  <p>The yearly investment to become a Sports and Entertainment Technology Alliance Partner is $18,000 per year for
-    Global and $12,000 for Domestic. For more information, please contact NCS4 Director Dr. Lou Marciani at <a
+  <p>For more information, please contact NCS<sup>4</sup> Director Dr. Lou Marciani at <a
       href="mailto:lou.marciani@usm.edu">Lou.Marciani@usm.edu</a>.</p>
 </div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <script>
+  AOS.init();
+  var acc = document.getElementsByClassName("accordion1");
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active1");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      }
+    });
+  }
   // <![CDATA[
   var companies = [{
     "name": "Axis Communications",
