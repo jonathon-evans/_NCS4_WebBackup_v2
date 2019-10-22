@@ -171,7 +171,7 @@
           <a ng-click="page.flip(1)">></a>
         </div>
         <div class="flex-tablewrap" >
-          <div class="f-cell" ng-repeat="x in (filtered_list = (corp_list | filter : sifter | filter : selected ) | slice:(page.active-1)*chunk_size:(page.active-1)*chunk_size + chunk_size)" >
+          <div class="f-cell" ng-repeat="x in (filtered_list = (corp_list | filter : sifter | filter : selected | orderBy : 'corp') | slice:(page.active-1)*chunk_size:(page.active-1)*chunk_size + chunk_size)" >
             <div class="imgholder">
               <a href="{{x.website_link}}"><img src={{x.logo}} alt={{x.corp}} /></a>
             </div>

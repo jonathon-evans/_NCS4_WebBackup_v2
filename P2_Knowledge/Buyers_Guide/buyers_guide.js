@@ -179,7 +179,7 @@ app.controller('BPctrl', function ($scope) {
     },
     {
       corp: 'Babel Street',
-      logo: 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate Logos/babel_street.jpg',
+      logo: 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate%20Logos/Primary-Lightbabelstreet.png',
       pdf: 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/SubPages/Buyers_Guide/babel_street2.pdf',
       website_text: 'www.babelstreet.com',
       website_link: 'http://www.babelstreet.com/',
@@ -249,6 +249,15 @@ app.controller('BPctrl', function ($scope) {
       desc: ['Sengex is a leader in large scale cyber and physical threat detection and mitigation. Our security engineering practice develops, integrates and deploys the most complete threat detection, identification, and mitigation solutions in the areas of medical devices, wireless devices, UAV/Drones and weapons, resulting in the removal of targeted threats.'],
       ctags: [$scope.tags.DEFAULT, $scope.tags.DETECTION_SCREENING, $scope.tags.MONITORING, $scope.tags.SITUATIONAL_AWARENESS, $scope.tags.TRAINING],
       logo: 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate Logos/Sengex_logo.png',
+      pdf: null,
+    },
+    {
+      corp: 'DSA Detection',
+      website_text: 'www.dsadetection.com',
+      website_link: 'https://www.dsadetection.com/',
+      desc: ['DSA Detection manufactures and distributes its own brand of DHS-approved trace detection consumables used in the operation and maintenance of all explosive trace detection (ETD) instruments commercially available. DSA also manufactures X-ray correct inert explosive simulants, IED training aids, and test articles used in training screeners to identify threats and to verify security checkpoint equipment is properly identifying threats. DSA then combines all its products and training expertise into comprehensive and in-depth classroom training for threat recognition and security equipment operation, tailored to meet all levels of detection.'],
+      ctags: [$scope.tags.DEFAULT, $scope.tags.DETECTION_SCREENING, $scope.tags.SITUATIONAL_AWARENESS, $scope.tags.TRAINING],
+      logo: 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate%20Logos/DSALogo_8000x1512_600ppi.jpg',
       pdf: null,
     },
   ]
