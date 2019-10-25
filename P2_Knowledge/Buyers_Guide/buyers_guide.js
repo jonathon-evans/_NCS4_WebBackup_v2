@@ -137,7 +137,7 @@ app.controller('BPctrl', function ($scope) {
     },
     {
       corp: 'CEIA USA',
-      logo: 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate Logos/CEIA USA.jpg',
+      logo: 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/Corporate%20Logos/ceia.jpg',
       pdf: 'https://higherlogicdownload.s3.amazonaws.com/NCS4/9c6c4d55-e531-4334-a8e4-aa15c3ebd848/UploadedImages/SubPages/Buyers_Guide/ceia_final_2.pdf',
       website_text: 'www.ceia-usa.com',
       website_link: 'http://www.ceia-usa.com/',
